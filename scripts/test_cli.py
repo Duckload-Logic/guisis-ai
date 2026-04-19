@@ -28,7 +28,9 @@ def predict_remote(url, text):
 def predict_local(text):
     """Test using TestClient (no server process needed)."""
     if not HAS_FASTAPI:
-        return {"error": "FastAPI/src not found in path. Cannot run local mode."}
+        return {
+            "error": "FastAPI/src not found in path. Cannot run local mode."
+        }
 
     with TestClient(app) as client:
         response = client.post("/api/v1/classify", json={"text": text})
