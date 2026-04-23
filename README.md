@@ -41,18 +41,28 @@ Handles system-level concerns such as model loading and resource management.
 - **ML Engine**: Hugging Face Transformers (DistilBERT)
 - **Validation**: Pydantic v2
 - **Testing**: Unittest, Pytest
-- **Environment**: Python 3.10+
+- **Environment**: Python 3.11 recommended for OCR (Python 3.13 is not stable with PaddleOCR in this project)
 
 ## Getting Started
 
 ### Installation
 
 1. Clone the repository.
-2. Create a virtual environment:
+2. Create a virtual environment (Windows, recommended for OCR):
+
+   ```bash
+   py -3.11 -m venv .venv_gpu
+   source .venv_gpu/Scripts/activate
+   pip install -r requirements/gpu.txt
+   ```
+
+   Alternative generic setup:
+
    ```bash
    python -m venv .venv
    source .venv/bin/activate  # Or .venv\Scripts\activate on Windows
    ```
+
 3. Install dependencies:
    ```bash
    pip install -r requirements/dev.txt

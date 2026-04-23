@@ -67,3 +67,4 @@ uvicorn.log
 debug.log
 
 ai_models
+outputs
