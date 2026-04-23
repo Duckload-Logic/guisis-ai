@@ -38,14 +38,12 @@ class ClassifierService:
         # Ensure model is ready on initialization
         self.tokenizer, self.model = ModelLoader.load_model()
 
-    def classify(
+    async def classify(
         self, request: ClassificationRequest
     ) -> ClassificationResponse:
         """
         Performs inference on the provided text.
         """
-        logger.info(f"[Service] Classifying text: {request.text[:50]}...")
-
         try:
             # Preprocessing
             inputs = self.tokenizer(
