@@ -17,8 +17,8 @@ class Settings(BaseModel):
     app_name: str = "PUPT-OGOS AI Classification API"
     version: str = "1.0.0"
 
-    app_host: str = os.getenv("APP_HOST")
-    app_port: int = int(os.getenv("APP_PORT"))
+    app_host: str = os.getenv("APP_HOST", "0.0.0.0")
+    app_port: int = int(os.getenv("APP_PORT", "8000"))
 
     # ML Model Config
     model_path: str = str(MODEL_PATH)
