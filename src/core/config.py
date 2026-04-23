@@ -17,6 +17,9 @@ class Settings(BaseModel):
     app_name: str = "PUPT-OGOS AI Classification API"
     version: str = "1.0.0"
 
+    app_host: str = os.getenv("APP_HOST")
+    app_port: int = int(os.getenv("APP_PORT"))
+
     # ML Model Config
     model_path: str = str(MODEL_PATH)
     device: str = "cpu"  # Force CPU for stability
