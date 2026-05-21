@@ -66,5 +66,5 @@ app.log
 uvicorn.log
 debug.log
 
-outputs
+/outputs
 tests
