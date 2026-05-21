@@ -1,0 +1,2002 @@
+text,urgency,category
+"Hi po, gusto ko lang po magpa-schedule ng appointment next week tungkol sa shifting application ko.",MEDIUM,ACADEMIC
+"Ma’am, pwede po ba mag-set ng meeting next week regarding my application?",MEDIUM,ACADEMIC
+"Good morning, kailangan ko po magpa-schedule ng appointment para sa shifting, salamat po!",MEDIUM,ACADEMIC
+"Tanong ko lang po, pwede bang mag-set ng appointment next week para sa application ko?",MEDIUM,ACADEMIC
+"Sir, pwede po mag-book ng meeting next week tungkol sa shifting application ko?",MEDIUM,ACADEMIC
+"Hey Ma’am, medyo kinakabahan po ako, pwede ba magpa-schedule ng appointment next week?",MEDIUM,PERSONAL
+Gusto ko lang po sana mag-arrange ng appointment next week about my shifting application.,MEDIUM,ACADEMIC
+Okay lang ba po na magpa-schedule ako ng meeting next week regarding my application?,MEDIUM,ACADEMIC
+"Ma’am, tulungan niyo po sana ako magpa-schedule ng appointment next week, thank you!",MEDIUM,ACADEMIC
+"Pwede po mag-set ng appointment next week para sa shifting application ko, please?",MEDIUM,CAREER GUIDANCE
+"Sir, pwede po ba mag-book ng meeting para sa application ko?",MEDIUM,ACADEMIC
+"Di ko na po maintindihan kung paano magpa-schedule, pwede po ba magpa-appointment next week?",MEDIUM,ACADEMIC
+"Natatakot po ako pumasok kung hindi ko po makukuha yung appointment, pwede po ba magpa-schedule?",MEDIUM,ACADEMIC
+"Sobrang stressed na po ako sa exams, kailangan ko po magpa-schedule ng appointment next week, please.",HIGH,ACADEMIC
+"Wala na po akong gana, pwede po ba magpa-schedule ng appointment para sa shifting application ko?",MEDIUM,CAREER GUIDANCE
+"Gusto ko po sana magpa-schedule ng meeting para sa shifting, sana po ma-accommodate.",MEDIUM,CAREER GUIDANCE
+"Ma’am, sobrang dami ko nang pinagkakagulo, kailangan ko po magpa-schedule ng appointment next week.",MEDIUM,ACADEMIC
+"Hindi ko na po kaya, pwede po ba magpa-schedule ng appointment para sa shifting application ko?",MEDIUM,CAREER GUIDANCE
+Okay lang po ba kung magpa-schedule ako ng appointment next week tungkol sa shifting?,LOW,ACADEMIC
+"Pwede po ba magpa-set ng meeting next week regarding my shifting application, salamat po?",MEDIUM,CAREER GUIDANCE
+"Hi po, medyo kinakabahan po ako sa Calculus, parang baka bumagsak talaga.",MEDIUM,ACADEMIC
+"Ma'am, gusto ko lang po sana magtanong tungkol sa Calculus, hirap na hirap talaga ako.",MEDIUM,ACADEMIC
+"Tanong ko lang po, sa Calculus po, parang hindi ko na talaga gets.",MEDIUM,ACADEMIC
+"Sir, pwede po bang magpatulong sa Calculus? Sobrang stress na po ako ngayon.",HIGH,ACADEMIC
+"Good morning, ma'am, feeling ko talaga babagsak ako sa Calculus, sana may makatulong.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan yung Calculus, baka bumagsak ako, please help.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magpaalam na hirap ako sa Calculus, sana ma-accommodate niyo ako.",MEDIUM,ACADEMIC
+"Ma'am, natatakot po ako pumasok sa Calculus, baka mas lumala pa.",MEDIUM,ACADEMIC
+Pwede po ba magpa-schedule ng meeting para sa Calculus? Parang wala na po akong pag-asa.,MEDIUM,ACADEMIC
+"Sir, sobrang stressed na po ako sa Calculus, kailangan ko po ng tulong.",MEDIUM,ACADEMIC
+"Tanong ko lang po, sa Calculus, feeling ko talagang babagsak ako.",MEDIUM,ACADEMIC
+"Di ko na po kaya yung Calculus, wala na po akong gana, please help.",MEDIUM,ACADEMIC
+"Ma’am, parang wala na po akong pag-asa sa Calculus, kailangan ko ng guidance.",MEDIUM,ACADEMIC
+Gusto ko po sana magpaalam na halos hindi ako makatulog dahil sa Calculus.,MEDIUM,ACADEMIC
+"Sir, medyo kinakabahan po ako sa Calculus, please, sana may ma-offer kayo.",MEDIUM,ACADEMIC
+"Pwede po bang magpatulong sa Calculus, parang hindi ko na alam kung saan ako magsisimula.",MEDIUM,ACADEMIC
+"Di ko po maintindihan yung Calculus, parang wala na po akong pag-asa, please help.",MEDIUM,ACADEMIC
+"Ma’am, sobrang stressed na po ako sa Calculus, kailangan ko na po ng tulong agad.",HIGH,ACADEMIC
+"Sir, parang babagsak na po ako sa Calculus, please, kailangan ko po ng guidance po.",MEDIUM,ACADEMIC
+"Hi po, medyo kinakabahan po ako sa thesis defense, hirap talaga matulog.",MEDIUM,PERSONAL
+"Tanong ko lang po, sir, sobrang anxious po ako sa thesis, di ako makatulog.",MEDIUM,ACADEMIC
+"Ma'am, gusto ko lang po sana malaman kung may tips po kayo para makatulog.",LOW,PERSONAL
+"Good morning, sir, wala na po akong gana, natatakot po ako sa thesis defense.",HIGH,ACADEMIC
+"Gusto ko lang po sana magpaalam, Ma'am, sobrang stressed na po ako sa thesis.",HIGH,ACADEMIC
+"Sir, tulungan niyo po ako, hindi po ako makatulog dahil sa thesis.",HIGH,ACADEMIC
+"Hi, parang gusto ko nang sumuko sa thesis defense, wala na po akong gana.",HIGH,ACADEMIC
+"Ma'am, medyo kinakabahan po ako, hindi ako makatulog sa pag-aalala.",MEDIUM,ACADEMIC
+"Okay po, sir, sobrang stressed na po ako, tulungan niyo po ako sa thesis.",HIGH,ACADEMIC
+"Gusto ko lang po sana mag-check, Ma'am, natatakot po ako sa thesis defense.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan kung paano mag-focus, sobrang anxious na po ako.",MEDIUM,ACADEMIC
+"Paano po, Ma'am, hindi ako makatulog, parang gusto ko nang mag-drop out.",HIGH,ACADEMIC
+"Sir, tulong po, parang wala na po akong pag-asa sa thesis, sobrang stressed na.",HIGH,ACADEMIC
+"Hi po, wala na po akong gana, natatakot po ako pumasok sa thesis defense.",MEDIUM,ACADEMIC
+"Ma'am, medyo kinakabahan po ako talaga, di ako makatulog.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magtanong, sir,  parang hindi ko na kayang mag-handle.",MEDIUM,ACADEMIC
+"Sir, tulungan niyo po ako, sobrang overwhelmed na po ako sa thesis, wala na po akong gana.",HIGH,ACADEMIC
+"Okay po, Ma'am, hindi ko na po kaya, sobrang stressed na po ako at hindi ako makatulog.",MEDIUM,PERSONAL
+"Di ko na po maintindihan, parang gusto ko nang sumuko, natatakot po ako sa thesis.",MEDIUM,ACADEMIC
+"Hi po, may problema po kasi sa bahay, yung parents ko nag-aaway.",MEDIUM,FAMILY
+"Ma'am, medyo kinakabahan po ako, yung parents ko nag-aaway at nakakaapekto sa studies ko.",MEDIUM,FAMILY
+"Tanong ko lang po, sobrang stressed na po ako dahil sa away ng parents, hirap na mag-concentrate.",MEDIUM,PERSONAL
+"Gusto ko lang po sana malaman kung may pwedeng gawin, parents ko talaga, napaka-stressing!",MEDIUM,PERSONAL
+"Sir, natatakot po ako pumasok sa school, yung gulo sa bahay, talagang nakakakaba.",MEDIUM,FAMILY
+"Okay lang po ba kung pwede ko po kayong pag-usapan tungkol sa bahay? Parents ko, wala na po kasi akong magawa.",MEDIUM,PERSONAL
+"Di ko na po maintindihan ang mga readings ko, sobrang affected ako sa situation sa bahay.",MEDIUM,PERSONAL
+"Ma'am, wala na po akong gana mag-aral, yung stress sa bahay, nakakaapekto sa lahat.",MEDIUM,PERSONAL
+"Pwedeng ba po ako makipag-usap sa inyo tungkol sa parents ko?  Feeling ko, wala na po akong pag-asa.",MEDIUM,FAMILY
+"Gusto ko lang po sabihin na sobrang hirap po, ang daming problema.",MEDIUM,PERSONAL
+"Sana po ma-understand niyo po, yung parents ko, hindi ko na po kayang mag-handle.",MEDIUM,FAMILY
+Okay po ba kung pwede ko po ikwento sa inyo yung nangyayari sa bahay?  Kinakabahan po talaga ako.,MEDIUM,PERSONAL
+"Di ko po alam kung ano na gagawin ko, sobrang overwhelmed na po ako sa mga problema.",HIGH,PERSONAL
+"Ma'am, tulong po sana, hindi ko na po kaya yung gulo sa bahay.",HIGH,FAMILY
+"Parang wala na po akong pag-asa sa buhay, kasi overwhelmed na po ako.",HIGH,PERSONAL
+"Sana po may ma-recommend kayo, para makatulong sa situation namin sa bahay.",MEDIUM,FAMILY
+"Gusto ko lang po sabihin, sobrang affected na po ako, wala na po akong lakas.",HIGH,PERSONAL
+"Hindi ko na po kayang i-face yung gulo ng parents ko, natatakot po ako.",HIGH,FAMILY
+"Ma’am, kailangan ko po ng tulong, sobra na po yung stress.",MEDIUM,ACADEMIC
+"Pwedeng ba nating pag-usapan yung problemang ito, parang wala na po akong magawa.",MEDIUM,PERSONAL
+"Hi po, medyo kinakabahan po ako, parang may nararamdaman ako pag nasa classroom.",LOW,PERSONAL
+"Tanong ko lang po, minsan hindi ako makahinga, sobrang weird no?",MEDIUM,HEALTH
+"Ma'am, gusto ko lang po sana itanong, natatakot po ako pumasok kung may panic attack.",HIGH,HEALTH
+"Sir, tulungan niyo po ako, hindi ko alam kung ano gagawin kapag nagpanic ako.",HIGH,HEALTH
+"Good morning, parang sobrang stressed na po ako, hindi ko kaya 'to.",MEDIUM,PERSONAL
+"Gusto ko lang po sana sabihin, wala na po akong gana, hindi ko na gustong pumunta.",MEDIUM,PERSONAL
+"Di ko na po maintindihan yung nangyayari, parang bumabagsak na ako.",MEDIUM,ACADEMIC
+"Ma'am, tulong naman po, hindi ko kayang 'wag makahinga sa harap ng lahat.",CRITICAL,HEALTH
+"Okay lang po ba 'to, medyo kinakabahan pa rin ako pag nasa classroom.",LOW,PERSONAL
+"Hindi po ako makahiga, parang napapanto, sana may makatulong.",LOW,PERSONAL
+"Sir, please, sobrang stressed na po ako, kailangan ko ng tulong.",MEDIUM,PERSONAL
+Gusto ko lang po sana malaman kung may pwedeng gawin para sa akin.,LOW,ACADEMIC
+"Parang wala na po akong pag-asa, hindi ko na po alam kung paano.",HIGH,PERSONAL
+"Tanong ko lang po, natatakot po ako pumasok, ramdam ko na 'to.",MEDIUM,PERSONAL
+"Di ko na po kaya, sobrang kinakabahan ako, baka mas lumala pa.",HIGH,PERSONAL
+"Ma'am, please, kailangan ko po ng advice, hindi ko na po alam kung ano ang gagawin.",MEDIUM,PERSONAL
+Okay lang po ba kung magtanong ako tungkol sa anxiety ko?,LOW,HEALTH
+"Hindi po ako makatulog, parang may multo, sana may makakita sa akin.",MEDIUM,PERSONAL
+"Gusto ko lang po sana sabihin na wala na po akong pag-asa, sobrang sad na po.",HIGH,PERSONAL
+"Sir, please, hindi ko na po kaya, sobrang stressed na po ako, kailangan ko ng tulong agad.",HIGH,ACADEMIC
+"Hi po, may tanong lang po tungkol sa scholarship applications. Paano ba mag-submit ng requirements?",MEDIUM,ACADEMIC
+"Tanong ko lang po, medyo confused ako sa proseso ng pag-apply. Kailangan ko ba ng specific format?",LOW,ACADEMIC
+"Good morning po, Ma'am, gusto ko lang po malaman kung may available scholarships for PUP students. Salamat po!",MEDIUM,FINANCIAL
+"Gusto ko lang po sana, paano mag-apply para sa scholarship, kasi kailangan ko ng tulong pinansyal. Pwede po ba magtanong?",MEDIUM,FINANCIAL
+"Sir, natatakot po ako pumasok kung hindi ko alam kung paano mag-apply para sa scholarship. Ano po ba ang steps?",MEDIUM,ACADEMIC
+"Ma'am, sobrang stressed na po ako sa pag-aaral, plus kailangan ko ng scholarship. Paano po ba ito gagawin?",HIGH,ACADEMIC
+"Di ko na po maintindihan kung paano mag-apply, parang komplikado. Kailangan ko po talaga ng tulong!",MEDIUM,ACADEMIC
+Okay lang po ba kung magtanong ako tungkol sa scholarship application process? Medyo kinakabahan po ako.,LOW,ACADEMIC
+"Paano po mag-apply para sa scholarship, kasi wala na po akong pambayad. Salamat po, Ma’am.",HIGH,FINANCIAL
+Gusto ko lang po sana malaman kung may deadline pa para sa scholarship applications.  Wala na po akong gana mag-aral kung hindi ako matutulungan.,MEDIUM,ACADEMIC
+"Ma’am, pwede po bang magtanong tungkol sa mga scholarship opportunities?  Parang hopeless na po kasi yung sitwasyon ko.",HIGH,FINANCIAL
+"Sir, please tulong po! Sobrang stressed na po ako sa pag-aaral at sa pinansyal. Paano mag-apply sa scholarship?",HIGH,FINANCIAL
+"Hindi ko na po kaya, sobrang hirap po mag-apply at walang pambayad.  Kailangan ko po ng scholarship urgently!",CRITICAL,FINANCIAL
+"Di ko po maintindihan kung anong documents ang kailangan, parang confusing.  Paano po mag-apply para sa scholarship?",HIGH,ACADEMIC
+"Ma'am, tulong naman po, medyo kinakabahan po ako sa scholarship application. Ano pong requirements?",MEDIUM,ACADEMIC
+Gusto ko lang po sana malaman kung may workshop para sa scholarship applications? Sana po makatulong.,LOW,ACADEMIC
+Okay lang po ba kung magtanong ako tungkol sa mga scholarship deadlines?  Wala na po akong pag-asa kung hindi ako makakuha ng tulong.,MEDIUM,ACADEMIC
+"Sir,  parang susuko na po ako, sobrang stressed na po ako sa pinansyal at pag-aaral.  Paano po mag-apply sa scholarship?",HIGH,ACADEMIC
+"Paano po mag-apply para sa scholarship, kasi wala na po akong ibang choice. Sana po makatulong kayo.",MEDIUM,ACADEMIC
+"Ma'am, sana po may ma-recommend kayong scholarship para sa akin, please?  Wala na po akong pag-asa kung hindi ako makakatulong.",MEDIUM,ACADEMIC
+"Hi po, gusto ko lang po sana malaman kung may pwede po akong gawin tungkol sa group works, sobrang stress na po ako.",MEDIUM,ACADEMIC
+"Ma'am, medyo kinakabahan po ako kasi isa lang ako lagi yung gumagawa ng lahat ng assignments.",MEDIUM,ACADEMIC
+"Tanong ko lang po, parang wala na po akong tulong yung groupmates ko, sobrang stressed na talaga.",MEDIUM,ACADEMIC
+"Sir, tulong po, sobrang overwhelmed na po ako sa group projects, lagi na lang ako yung nagtatrabaho.",MEDIUM,ACADEMIC
+"Good morning, gusto ko lang po i-update, sobrang stress na po ako sa group works, baka bumaba yung grade ko.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan kung paano mag-coordinate sa group, so stressful na po talaga.",MEDIUM,ACADEMIC
+"Ma'am, natatakot po ako pumasok sa class dahil sa group works, sobrang busy ako.",MEDIUM,PERSONAL
+"Gusto ko lang po sana i-check kung may pwede po akong gawin, wala na po akong gana sa group projects.",MEDIUM,ACADEMIC
+"Okay lang po ba kung ako lang po lagi yung nag-a-assign, sobrang stressed na po ako, seriously.",MEDIUM,ACADEMIC
+"Wala na po akong gana sa group projects, sobrang hirap po, so overwhelmed na po ako.",MEDIUM,ACADEMIC
+Paano po ba mag-handle ng group projects kung isa lang po ako lagi yung nagtatrabaho?,MEDIUM,ACADEMIC
+"Sir, sobrang stressed na po ako, parang wala na po akong pag-asa sa grades ko sa group works.",MEDIUM,ACADEMIC
+"Di ko na po kaya yung pressure ng group works, sobrang kinakabahan po ako, honestly.",MEDIUM,ACADEMIC
+"Ma'am, tulong po, feeling ko po kukunin na ako ng stress sa group works, sobrang hirap.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana malaman kung may pwede po akong gawin, wala na po akong tulong yung ibang members.",MEDIUM,ACADEMIC
+"Okay po ba kung ako lang po yung nag-a-update ng progress, so stressed na po ako, please help.",MEDIUM,ACADEMIC
+Paano po ba mag-communicate sa group kung ako lang po yung lagi na lang nagpapadala ng updates?,MEDIUM,ACADEMIC
+"Ma'am, sobrang overwhelmed na po ako sa group works, wala na po akong pwedeng gawin, please.",MEDIUM,ACADEMIC
+"Hindi ko na po kaya yung pressure ng deadlines, so stressed na po ako, seriously.",MEDIUM,PERSONAL
+"Wala na po akong gana sa mga group projects, sobrang sad na po ako, please help me.",MEDIUM,ACADEMIC
+"Hi po, medyo wala na po akong gana kumain lately, kinakabahan lang po.",MEDIUM,PERSONAL
+"Tanong ko lang po, sir, hindi na ako masyadong kumain ng isang linggo, wala na po akong gana.",MEDIUM,PERSONAL
+"Good morning Ma’am, parang wala na po akong gana, gusto ko lang po malaman kung okay lang ba.",MEDIUM,PERSONAL
+"Gusto ko lang po sana malaman, sobrang wala na po akong gana, sana may ma-suggest kayo.",MEDIUM,PERSONAL
+"Ma'am, parang gusto ko na lang po mag-skip ng meals, wala na po akong gana.",MEDIUM,PERSONAL
+"Uy, sir, wala na po akong gana sa isang linggo, nakakabahala po.",MEDIUM,PERSONAL
+"Hey Ma’am, wala na po akong gana, naguguluhan na po kasi ako.",MEDIUM,PERSONAL
+"Sir, medyo stressed na po ako, wala na po akong gana, please help!",MEDIUM,PERSONAL
+"Di ko na po maintindihan kung bakit wala na po akong gana, natatakot po ako.",MEDIUM,PERSONAL
+"Ma’am, parang wala na po akong gana, sana may advice kayo tungkol dito.",MEDIUM,PERSONAL
+"Okay po, wala na po akong gana, sana ma-schedule natin ‘to.",LOW,PERSONAL
+"Gusto ko lang po sana magpaalam na wala na po akong gana sa isang linggo, please.",LOW,PERSONAL
+"Sir, sobrang stressed na po ako, wala na po akong gana, tulungan niyo po ako!",HIGH,PERSONAL
+"Uy, wala na po akong gana, parang wala na rin akong pag-asa.",MEDIUM,PERSONAL
+"Ma’am, wala na po akong gana, pakiramdam ko wala na rin akong lakas.",HIGH,HEALTH
+"Parang gusto ko na lang po mag-isa, wala na po akong gana, please understand.",MEDIUM,PERSONAL
+"Hindi ko na po kaya, wala na po akong gana, sobrang stressed na talaga.",HIGH,PERSONAL
+"Di ko na po alam kung ano ang gagawin, wala na po akong gana, please help!",HIGH,PERSONAL
+"Sir, wala na po akong gana, feeling ko pagod na pagod na po ako.",MEDIUM,PERSONAL
+"Ma'am, wala na po akong gana, medyo kinakabahan na po ako, sana makatulong kayo.",MEDIUM,PERSONAL
+"Hi po, natatakot po talaga ako pumunta sa GC, may bully kasi.",HIGH,FAMILY
+"Ma'am, medyo kinakabahan po ako sa GC, may nang-aaway sakin.",MEDIUM,FAMILY
+"Tanong ko lang po, Sir, ano po gagawin ko kung may bully sa GC?",MEDIUM,PERSONAL
+"Gusto ko lang po sana i-report ko ‘to, parang takot pa rin ako.",MEDIUM,PERSONAL
+"Okay po, pero sobrang natatakot pa rin ako kung pumasok sa GC.",MEDIUM,PERSONAL
+"Sir, tulong po, medyo worried ako sa situation sa GC.",MEDIUM,PERSONAL
+"Di ko po alam kung paano, pero natatakot po ako kung may mangyayari.",MEDIUM,PERSONAL
+"Ma’am, please, ang hirap po, gusto ko lang po humingi ng tulong sa GC.",MEDIUM,PERSONAL
+"Okay lang po sana kung ma-monitor niyo yung situation, kinakabahan po ako.",MEDIUM,PERSONAL
+"Gusto ko lang po i-inform kayo, kasi talagang natatakot ako sa GC.",MEDIUM,PERSONAL
+"Parang wala na po akong magagawa, sobrang stressed na po ako sa GC bullying.",HIGH,PERSONAL
+"Hindi ko po alam kung paano mag-handle, parang takot po ako sumama.",MEDIUM,PERSONAL
+"Ma'am, please, gusto ko lang po sana ipaalam na may bully po.",MEDIUM,PERSONAL
+"Sir, medyo hopeless na po ako, talagang natatakot ako pumunta sa GC.",HIGH,PERSONAL
+"Di ko na po kaya, sobrang stressed na talaga ako sa bully sa GC!",HIGH,PERSONAL
+"Okay lang po sana kung may ma-assign kayong supervisor sa GC, kinakabahan ako.",MEDIUM,PERSONAL
+"Parang wala na pong pag-asa, sobrang sad na po ako sa sitwasyon.",MEDIUM,PERSONAL
+Gusto ko lang po sana sabihin na talagang natatakot ako sa GC!,MEDIUM,PERSONAL
+"Okay po, pero please, kailangan po ng tulong, sobrang natatakot pa rin ako.",MEDIUM,PERSONAL
+"Hi po, pwede po ba magpa-excuse slip for tomorrow? Medyo lagnatan na po ako, kailangan ko na po ng slip.",MEDIUM,HEALTH
+"Tanong ko lang po, pwede ba magpa-excuse kasi may lagnat ako tomorrow? Kailangan ko na po ng permiso para magpahinga.",MEDIUM,ACADEMIC
+"Ma’am, pwede po ba magpa-excuse slip? Parang lagnahan na po ako, gusto ko po magpahinga.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magpa-excuse slip, may lagnat po kasi ako ngayon. Salamat po!",MEDIUM,ACADEMIC
+"Sir, pwede po magpa-excuse slip? Medyo nagpapawala na po ako, lagnat na po kasi.",MEDIUM,ACADEMIC
+"Uy, ma'am, pwede po ba magpa-excuse slip for tomorrow? Parang lagnat na po talaga, kailangan ko po magpahinga.",MEDIUM,ACADEMIC
+Okay lang po ba kung magpa-excuse slip ako dahil lagnatan na ako? Salamat po!,MEDIUM,ACADEMIC
+"Parang kinakabahan po ako, pwede po ba magpa-excuse slip dahil sa lagnat ko? Tulungan niyo po ako.",MEDIUM,HEALTH
+"Naku, pwede po ba magpa-excuse slip, may lagnat na po ako, sobrang pagod na po ako.",MEDIUM,HEALTH
+"Ma’am, pwede po ba magpa-excuse slip, feeling ko lagnatan na po ako, gusto ko po magpahinga at magpagaling.",MEDIUM,HEALTH
+"Gusto ko lang po magpa-excuse slip, parang lagnahan na po ako, sana po ma-accommodate.",LOW,HEALTH
+"Sir, pwede po ba magpa-excuse slip? Medyo kinakabahan na po ako sa lagnat, kailangan ko po magpahinga.",MEDIUM,HEALTH
+"Hindi ko na po kaya, sobrang stressed na po ako sa lagnat, kailangan ko po ng excuse slip.",HIGH,PERSONAL
+"Parang wala na po akong gana, lagnatan na po ako, kailangan ko po ng pahinga.",MEDIUM,PERSONAL
+"Ma’am, pwede po ba magpa-excuse slip dahil sa lagnat ko, natatakot po ako pumunta sa school.",MEDIUM,PERSONAL
+"Uy, pwede po ba magpa-excuse slip kasi lagnatan na po ako, gusto ko po magpahinga at magpagaling.",MEDIUM,HEALTH
+"Sana po pwede magpa-excuse slip dahil lagnat na po ako, feeling ko pagod na pagod na.",MEDIUM,HEALTH
+"Okay lang po ba na magpa-excuse slip kasi parang lagnatan na po ako, kailangan ko po ng pahinga.",MEDIUM,HEALTH
+"Di ko po alam kung ano ang gagawin, sobrang stressed na po ako sa lagnat, kailangan ko po ng tulong.",MEDIUM,PERSONAL
+"Please po, pwede po ba magpa-excuse slip kasi lagnatan na po ako, gusto ko lang po magpahinga at magpagaling.",MEDIUM,HEALTH
+"Hi po, medyo magulo talaga yung schedule ko, pwede ba magpa-transfer ng section?",MEDIUM,ACADEMIC
+"Tanong ko lang po, natatakot po ako pumasok kung ganun pa yung section ko.",MEDIUM,ACADEMIC
+"Ma'am, gusto ko lang po sana magpa-transfer, sobrang busy na po ako ngayon.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magpa-transfer, medyo kinakabahan po ako sa current section ko.",MEDIUM,ACADEMIC
+"Sir, pwede po ba i-check yung schedule ko?  Parang wala na po akong choice.",MEDIUM,ACADEMIC
+"Hello po, sobrang stressed na po ako sa sched, sana makapagpa-transfer ako.",MEDIUM,ACADEMIC
+Okay lang po ba magpa-transfer?  Parang hindi na talaga ako makapag-adjust.,MEDIUM,ACADEMIC
+"Ma'am, pwede po ba ako magpa-transfer?  Wala na po akong ibang gagawin.",MEDIUM,ACADEMIC
+"Good morning, medyo magulo talaga schedule ko, please help po.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan yung schedule ko, sana makapagpa-transfer ako.",MEDIUM,ACADEMIC
+"Parang wala na po akong gana, sobrang stressed na po ako sa sched, please po.",MEDIUM,PERSONAL
+Pwede po ba i-adjust yung schedule ko? Medyo panic na po ako.,MEDIUM,ACADEMIC
+"Okay po, sana makapagpa-transfer ako, sobrang hirap na po.",MEDIUM,ACADEMIC
+"Ma'am, tumulong po kayo, parang hindi na po ako maka-focus sa schedule ko.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magpa-transfer, feeling ko wala na pong pag-asa.",MEDIUM,ACADEMIC
+"Sir, tulong po, so frustrated na po ako sa schedule ko.",MEDIUM,ACADEMIC
+"Hindi ko na po kaya, sobrang dami na po ng gawain, please help po!",HIGH,ACADEMIC
+"Parang wala na po akong pag-asa, wala na po akong gana sa section ko.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan, please, pwede po ba magpa-transfer ako?",MEDIUM,ACADEMIC
+"Ma'am, sana po makatulong kayo, natatakot po ako sa exam.",MEDIUM,ACADEMIC
+"Hi po, medyo kinakabahan po ako sa grades ko, sana matulungan niyo ako.",MEDIUM,ACADEMIC
+"Tanong ko lang po, parang worried na worried ako sa grades, baka ma-drop ako.",MEDIUM,ACADEMIC
+"Good morning, Sir, sobrang tense na po ako sa grades, please tulungan niyo.",MEDIUM,ACADEMIC
+"Ma'am, gusto ko lang po sana i-check yung grades ko, natatakot po ako sa program.",MEDIUM,ACADEMIC
+"Uy, kinakabahan po ako talaga sa grades, sana may pwede kaming gawin.",MEDIUM,ACADEMIC
+"Sir, parang ang dami kong pinag-aalala sa grades, baka ma-dismiss nga.",MEDIUM,ACADEMIC
+"Ma'am, tulong naman po, wala na po akong gana sa pag-aaral, sobrang stressed na.",MEDIUM,PERSONAL
+"Gusto ko lang po sana magpaalam, kinakabahan po ako sa grades, please advise.",MEDIUM,ACADEMIC
+"Hey, natatakot po ako pumasok sa klase, baka may i-drop na ako.",MEDIUM,ACADEMIC
+"Parang wala na po akong pag-asa, sobrang stressed na po ako sa grades.",HIGH,ACADEMIC
+"Hi, medyo panic na po ako sa grades, sana may magawa pa tayo.",MEDIUM,ACADEMIC
+"Sir, kinakabahan po ako, baka ma-dismiss na po ako sa program, please.",HIGH,ACADEMIC
+"Ma'am, wala na po akong gana, sobrang worried na po ako sa grades.",HIGH,ACADEMIC
+"Uy, please tulungan niyo po ako, kinakabahan po ako sa grades, thank you.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magtanong, natatakot po ako sa future, sobrang stressed.",MEDIUM,PERSONAL
+"Parang hindi na ako makagalaw, sobrang kinakabahan ako sa grades, please!",HIGH,ACADEMIC
+"Ma’am, wala na po akong pakialam sa grades, hindi ko na po kaya.",HIGH,ACADEMIC
+"Hey, hindi ko na po maintindihan, baka ma-drop na ako, please tulong!",HIGH,ACADEMIC
+"Sir, kinakabahan po talaga ako, please, sana may magawa pa tayo.",MEDIUM,ACADEMIC
+"Hi po, medyo pagod na talaga ako, busy kasi ako sa trabaho.",MEDIUM,PERSONAL
+"Tanong ko lang po, sobrang dami kong ginagawa, wala na akong oras sa pag-aaral.",MEDIUM,ACADEMIC
+"Ma'am, gusto ko lang po sana malaman kung may pwede akong gawin dahil wala na talaga akong energy.",HIGH,PERSONAL
+"Sir, natatakot po ako, baka bumagsak ako sa mga klase dahil sa trabaho.",HIGH,ACADEMIC
+"Good morning, sobrang stressed na po ako, hindi ko na kaya yung pressure.",MEDIUM,PERSONAL
+"Uy, di ko na po maintindihan yung mga assignments, ubos na yung oras ko.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magpaalam na wala na akong oras para mag-aral, salamat po.",MEDIUM,ACADEMIC
+"Ma’am, medyo kinakabahan po ako, hindi ko alam kung paano ako mag-manage ng oras.",MEDIUM,ACADEMIC
+"Hey, wala na po akong gana mag-aral, sobrang pagod na talaga ako.",MEDIUM,PERSONAL
+"Sir, tulong naman po, hindi ko na po kaya yung ganito, napapa-stress na ako.",MEDIUM,PERSONAL
+"Hi, parang wala na akong lakas, ubos na ubos na talaga yung energy ko.",MEDIUM,PERSONAL
+"Ma'am, di ko na po alam kung paano, sobrang hirap na ng situation.",MEDIUM,ACADEMIC
+"Okay lang po ba na sabihin ko na wala na akong time para sa studies, please?",MEDIUM,ACADEMIC
+"Tanong ko lang po, natatakot po ako na bumaba yung grades ko.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana mag-request ng tulong, sobrang stressed na talaga ako ngayon.",MEDIUM,PERSONAL
+"Sir, sobrang overwhelmed na po ako, hindi ko kayang balansehin yung trabaho at pag-aaral.",MEDIUM,ACADEMIC
+"Uy, wala na po akong gana sa school, sobrang pagod na talaga.",MEDIUM,PERSONAL
+"Ma’am, sana po may ma-recommend kayo na pwede kong gawin para makapag-focus ako sa pag-aaral.",MEDIUM,ACADEMIC
+"Di ko na po kaya, sobrang stressed na po ako, wala na akong magagawa.",HIGH,PERSONAL
+"Hi po, medyo nahihiya lang po ako sa classmates ko, feeling ko clumsy ako.",LOW,PERSONAL
+"Tanong ko lang po, natatakot po ako mag-present sa klase, baka sabihin nila ako ang bobo.",MEDIUM,PERSONAL
+"Good morning po, Ma'am, gusto ko lang po sana malaman kung paano ko matatanggal ‘yung feelings na ‘to.",MEDIUM,PERSONAL
+"Gusto ko lang po sana mag-usap tungkol sa insecurities ko, feeling ko ang hirap po kasi mahiyain.",MEDIUM,PERSONAL
+"Sir, sobrang stressed na po ako sa group project, medyo kinakabahan po ako sa feedback.",MEDIUM,ACADEMIC
+"Ma'am, tulong naman po, feeling ko ‘di ako kaya sa mga classmates ko, wala na po akong gana.",MEDIUM,PERSONAL
+"Di ko na po maintindihan yung pressure, parang gusto ko na lang mag-flee, feeling ko bobo talaga.",MEDIUM,PERSONAL
+Okay lang po ba na magtanong ako tungkol sa self-esteem? Medyo kinakabahan po ako kasi may activity tayo.,MEDIUM,PERSONAL
+"Hays, feeling ko ang bobo talaga, gusto ko po sana magpa-advice tungkol dito.",MEDIUM,PERSONAL
+"Ma'am, natatakot po ako pumasok sa klase, sobrang nahihiya po ako sa lahat.",MEDIUM,PERSONAL
+"Gusto ko lang po sana mag-share ng feelings ko, feeling ko ‘di ako maging sapat, so stressful!",MEDIUM,PERSONAL
+"Okay po, gusto ko lang pong malaman kung mayroon pong resources para sa mga feeling insecure.",LOW,ACADEMIC
+"Sir, gusto ko po sana mag-talk about my anxieties, feeling ko bobo talaga ako, grabe!",MEDIUM,PERSONAL
+"Di ko na po kaya 'to, sobrang stressed na po ako sa academic pressure, wala na po akong gana.",HIGH,ACADEMIC
+"Ma'am, tulong po, feeling ko kailangan ko ng support, sobrang nahihiya ako sa kanila.",MEDIUM,PERSONAL
+"Hays, feeling ko ‘di ako mag-adjust sa new group, sobrang kinakabahan po ako, wala na po akong gana.",MEDIUM,PERSONAL
+"Okay po, gusto ko po sana magpa-advice, feeling ko bobo talaga ako, nakakababa ng self-esteem.",MEDIUM,ACADEMIC
+"Ma’am, sobrang stressed na po ako, parang hindi ko na po kaya, wala na po akong gana.",HIGH,PERSONAL
+"Tanong ko lang po, paano po ba maging confident sa harap ng mga classmates, so stressful!",MEDIUM,ACADEMIC
+"Okay po, gusto ko lang po sana mag-open up, feeling ko bobo talaga, natatakot po ako pumasok.",HIGH,PERSONAL
+"Hi po, wala na po akong gana sa lahat, parang ayoko na pumasok.",HIGH,PERSONAL
+"Ma'am, medyo kinakabahan po ako, feeling ko gusto ko nang mag-drop out.",HIGH,ACADEMIC
+"Tanong ko lang po, sobrang stressed na po ako sa lahat ng assignments, wala na akong lakas.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana, wala na po akong gana, parang pagod na pagod na talaga.",HIGH,PERSONAL
+"Sir, natatakot po ako pumasok, feeling ko hindi ako makakayanan ang pressure.",MEDIUM,ACADEMIC
+"Uy, wala na po akong gana, wala na po akong gana sa klase, parang wala na akong saysay.",MEDIUM,PERSONAL
+"Paano po, wala na po akong gana sa lahat, parang gusto ko nang sumuko.",MEDIUM,PERSONAL
+"Ma'am, tulong naman po, sobrang overwhelmed na po ako, hindi ko na po kaya.",HIGH,ACADEMIC
+"Okay lang po ba, wala na po akong gana, parang gusto ko nang magpahinga, please?",LOW,PERSONAL
+"Gusto ko lang po sana malaman kung paano ako makakapag-cope, wala na po akong gana sa lahat.",MEDIUM,PERSONAL
+"Di ko na po maintindihan kung bakit wala na po akong gana, parang gusto ko nang umuwi na lang.",MEDIUM,PERSONAL
+"Parang wala na po akong gana, wala na po akong gana sa school, feeling ko hindi ako magtatagumpay.",MEDIUM,ACADEMIC
+"Ma'am, please, sobrang stressed na po ako, wala na po akong gana sa lahat, tulungan niyo po ako.",HIGH,ACADEMIC
+"Wala na po akong gana, so sad, feeling ko walang future, wala na po akong gana.",HIGH,PERSONAL
+"Okay po, wala na po akong gana sa lahat, parang gusto ko na lang mag-isa, please, ma'am.",HIGH,PERSONAL
+"Parang wala na po akong gana, feeling ko sumasakit na po yung ulo ko, sobrang stressed na po.",MEDIUM,ACADEMIC
+"Uy, wala na po akong gana, wala na po akong gana sa lahat, parang gusto ko na lang mag-cancel ng lahat.",HIGH,PERSONAL
+"Hindi ko na po kaya, wala na po akong gana sa lahat, parang gusto ko nang magpakamatay, please help!",CRITICAL,PERSONAL
+"Sana po may makatulong, wala na po akong gana, wala na po akong gana, parang wala na akong pag-asa.",HIGH,PERSONAL
+"Ma'am, wala na po akong gana sa lahat, feeling ko wala na akong pwedeng gawin, please help me.",MEDIUM,PERSONAL
+"Hi po, medyo kinakabahan po ako, may mga panahon na nag-iisip ako ng masama.",LOW,PERSONAL
+"Tanong ko lang po, minsan may suicidal thoughts po ako, hindi ko alam kung paano ito iwasan.",CRITICAL,HEALTH
+"Ma’am, gusto ko lang po sana malaman kung mayroon kayong pwedeng i-offer, feeling ko kasi, wala na po akong pag-asa.",HIGH,ACADEMIC
+"Sir, natatakot po ako pumasok, kasi minsan may ganung iniisip.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana, pwede po bang pag-usapan natin to, sobrang stress na po ako ngayon.",MEDIUM,PERSONAL
+"Uy, Ma’am, medyo sad ako, hindi ko na po maintindihan yung feelings ko.",LOW,PERSONAL
+"Paano po ito, minsan parang wala na po akong saysay, so stressful!",MEDIUM,PERSONAL
+"Hi, Sir, hindi ko po alam kung kanino lalapit, feeling ko kasi, wala na akong pag-asa.",HIGH,ACADEMIC
+"Ma’am, tulong naman po, sobrang overwhelmed na po ako sa mga iniisip ko.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan yung feelings ko, parang gusto ko na lang mawala, please help.",CRITICAL,HEALTH
+"Okay lang po ba kung pag-usapan natin 'to, medyo kinakabahan ako pag-isipan ko.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, pwede ba akong magpaliwanag, may suicidal thoughts po ako minsan.",CRITICAL,HEALTH
+"Sir, sana po may makatulong, wala na po akong gana sa buhay ngayon.",CRITICAL,PERSONAL
+"Ma’am, natatakot po ako, hindi ko po kaya 'to mag-isa, please.",CRITICAL,PERSONAL
+"Uy, feeling ko kasi, wala na akong pag-asa, kaya kailangan ko po ng tulong.",CRITICAL,PERSONAL
+"Paano po ito, sobrang stressed na po ako, hindi ko na po kayang mag-isa.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan, parang wala na po akong saysay, please help me.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, pwede po bang maging confidante kayo, sobrang kinakabahan po ako.",MEDIUM,PERSONAL
+"Ma'am, sana po may ma-offer kayong paraan, feeling ko kasi, wala na po akong pag-asa.",HIGH,ACADEMIC
+"Okay lang po ba kung pag-usapan natin, sobrang sad ako, wala na po akong gana.",HIGH,PERSONAL
+"Hi po, may tanong lang po tungkol sa extension sa prof, may family emergency po kasi.",MEDIUM,FAMILY
+"Ma'am, medyo kinakabahan po ako, paano po ba dapat mag-approach sa prof about the extension?",MEDIUM,ACADEMIC
+Gusto ko lang po sana malaman kung may option pa para sa family emergency ko.,MEDIUM,FAMILY
+"Tanong ko lang po, pwede po ba humingi ng extension dahil sa emergency?",MEDIUM,ACADEMIC
+"Sir, sobrang stressed na po ako, kailangan ko po ng tulong sa extension request.",HIGH,ACADEMIC
+"Di ko na po maintindihan kung paano mag-explain ng family emergency sa prof, tulong po.",MEDIUM,PERSONAL
+"Wala na po akong gana, busy na talaga po ako sa family emergency, kaya extension po.",MEDIUM,PERSONAL
+"Natatakot po ako pumasok kung hindi ako makakuha ng extension, please help po.",MEDIUM,PERSONAL
+"Paano po ba ba, sir, sobrang kailangan ko po ng extension dahil sa family situation.",MEDIUM,PERSONAL
+"Ma’am, sana po ma-consider yung family emergency ko, pwede po ba extension?",MEDIUM,PERSONAL
+"Hindi ko na po kaya, sobrang dami na po akong pinagkakaguluhan, extension po please!",MEDIUM,PERSONAL
+Di ako makapag-concentrate sa studies kung family emergency pa rin yung iniisip ko.,MEDIUM,ACADEMIC
+"Gusto ko lang po sana magpaalam sa prof tungkol sa emergency, kailangan ko po ng extension.",MEDIUM,PERSONAL
+Okay lang po ba kung mag-request ako ng extension dahil sa unexpected family situation?,MEDIUM,FAMILY
+"Paano po mag-explain ng sitwasyon sa prof, kailangan ko po ng extension para makapagpahinga.",MEDIUM,ACADEMIC
+"Ang hirap po talaga, sobrang overwhelmed ako sa lahat, sana makatulong po yung extension.",MEDIUM,ACADEMIC
+"Ma’am, pwede po ba tulungan niyo ako, medyo hopeless na po ako sa grades kung hindi ako makakuha ng extension.",MEDIUM,ACADEMIC
+"Kailangan ko po ng extension dahil sa family emergency, please po, hindi ko na po kayang abutin yung deadline.",HIGH,FAMILY
+"Di ako makatulog, natatakot po ako sa future kung hindi ako makakuha ng extension, please po.",HIGH,PERSONAL
+"Hi po, medyo kinakabahan po ako, hindi po ako makatulog at hindi ako lumalabas ng bahay.",MEDIUM,PERSONAL
+"Tanong ko lang po, parang wala na po akong gana sa lahat, hindi na ako motivated.",LOW,PERSONAL
+"Ma'am, gusto ko lang po sana malaman kung may tulong po ba para sa akin, feeling ko kasi depressed na ako.",HIGH,HEALTH
+"Sir, sobrang stressed na po ako, hindi ko po alam kung ano ang gagawin ko.",MEDIUM,PERSONAL
+"Gusto ko lang po sana pag-usapan natin 'to, hindi ko po alam kung paano i-handle 'to.",MEDIUM,PERSONAL
+Okay lang po ba na magtanong? Natatakot po ako pumasok sa klase kung ganito ang feeling ko.,MEDIUM,ACADEMIC
+"Ma'am, tulong po! Hindi po ako makagalaw, wala na po akong pag-asa.",CRITICAL,HEALTH
+"Di ko na po maintindihan yung mga bagay-bagay, parang nawawala na po yung focus ko.",MEDIUM,ACADEMIC
+"Okay, gusto ko lang po sabihin na hindi ko na po kaya, sobrang down na po ako.",HIGH,PERSONAL
+"Gusto ko lang po sana magpaalala na kailangan ko po ng tulong, ‘di ba?",MEDIUM,PERSONAL
+"Sir, wala na po akong gana sa pagkain, sobrang hirap po ng buhay.",HIGH,PERSONAL
+"Ma'am, medyo sad na po ako, parang wala na rin akong saysay.",HIGH,PERSONAL
+"Okay, paano po ba ito i-address? Feeling ko kasi parang wala na akong pwedeng gawin.",MEDIUM,ACADEMIC
+"Tanong ko lang po, natatakot po ako na baka bumagsak ako sa klase.",MEDIUM,ACADEMIC
+"Hindi ko po alam kung paano ito pagalingin, parang wala na po akong pag-asa.",HIGH,PERSONAL
+"Okay, sobrang stressed na po ako, kailangan ko po ng guidance.",MEDIUM,PERSONAL
+"Ma'am, sana po magawan niyo ako ng paraan, parang gusto ko nang sumuko.",HIGH,PERSONAL
+Gusto ko lang po sana ipaalam na hindi ko po kayang i-face 'to alone.,HIGH,PERSONAL
+"Sir, okay lang po ba na sabihin ko na wala na po akong gana sa buhay?",HIGH,PERSONAL
+"Paalala lang po, sobrang kinakabahan po ako, kailangan ko po ng support.",MEDIUM,PERSONAL
+"Hi po, gusto ko lang po sana malaman kung may pwede kayong gawin sa pressure ng parents ko.",MEDIUM,PERSONAL
+"Tanong ko lang po, medyo kinakabahan po ako sa grades, sobrang demanding kasi sila.",MEDIUM,ACADEMIC
+"Ma'am, tulong naman po, feeling ko hindi ko na kaya yung pressure nila.",HIGH,PERSONAL
+"Good morning, sobrang stressed na po ako with the grades, parang gusto ko nang mag-quit.",HIGH,ACADEMIC
+"Sir, please, nakaka-pressure na talaga yung expectations nila, wala na po akong gana.",HIGH,PERSONAL
+"Di ko na po maintindihan yung bigat ng expectations nila, so stressful!",MEDIUM,ACADEMIC
+"Gusto ko lang po sana kausapin kayo tungkol sa pressure ng parents ko, please?",MEDIUM,PERSONAL
+"Ma'am, natatakot po ako pumasok dahil sa grades, feeling ko hindi ako makakasabay.",MEDIUM,ACADEMIC
+Okay lang po ba kung magpapaalala ako tungkol sa pressure nila? Medyo overwhelmed na po ako.,MEDIUM,PERSONAL
+"Sir, pwede po bang pag-usapan natin yung grades ko, sobrang stressed na po ako talaga.",MEDIUM,ACADEMIC
+"Di ko na po kaya yung pressure, feeling ko bumababa yung grades ko, what to do?",MEDIUM,ACADEMIC
+"Wala na po akong gana, sobrang pressure po talaga ng parents ko, please help me.",MEDIUM,PERSONAL
+"Hi po, kinakabahan po ako sa grades, baka magkapit sa akin sila, please!",MEDIUM,ACADEMIC
+"Ma’am, tulong po, feeling ko hindi ako makahabol sa expectations nila, so sad.",MEDIUM,PERSONAL
+"Sir, medyo panic na po ako sa grades, baka masabihan pa ako ng mga parents ko.",MEDIUM,ACADEMIC
+"Di ko na po alam kung paano ko po sila mapapagaan, sobrang pressure na po.",MEDIUM,ACADEMIC
+Okay lang po ba kung magtanong ako tungkol sa grades ko at sa pressure nila?,LOW,ACADEMIC
+"Ma'am, please, feeling ko hindi ko na po kayang mag-aral, sobrang stress na po ako.",HIGH,ACADEMIC
+"Sir, natatakot po ako sa grades, baka masira pa yung relasyon namin, please advise.",MEDIUM,PERSONAL
+"Gusto ko lang po sana sabihin na hindi ko na kaya, sobrang pressure na po talaga.",HIGH,ACADEMIC
+"Hi po, may problema po ako, natatakot po ako sa mga chat messages.",MEDIUM,PERSONAL
+"Ma’am, medyo kinakabahan po ako, may nagpapadala ng masama.",MEDIUM,PERSONAL
+"Tanong ko lang po, parang takot na takot ako sa mga sinasabi nila.",MEDIUM,PERSONAL
+Gusto ko lang po sana malaman kung paano ako makaka-relate sa ganito.,LOW,ACADEMIC
+"Sir, sobrang natatakot po ako, baka may mangyari.",HIGH,PERSONAL
+Paano po ba namin ito i-report? Medyo kinakabahan po ako sa proseso.,MEDIUM,ACADEMIC
+"Di ko po alam kung ano ang gagawin, natatakot po ako sa hindi inaasahan.",MEDIUM,PERSONAL
+"Ma’am, tulong naman po, parang wala na po akong lakas.",HIGH,PERSONAL
+"So, sobrang stressed na po ako dahil sa mga messages na ‘to.",MEDIUM,ACADEMIC
+"Wala na po akong gana sa mga klase, natatakot po ako sa mga sinasabi nila.",MEDIUM,ACADEMIC
+"Parang gusto ko nang umiyak, natatakot po ako na hindi na ako matanggap.",HIGH,PERSONAL
+"Hindi ko po maintindihan kung bakit ganito, natatakot po ako mag-isa.",MEDIUM,PERSONAL
+"Ma'am, paano po ito maiiwasan? Medyo kinakabahan po ako sa sitwasyon.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magpaalala tungkol sa bullying, natatakot po ako para sa mga kaibigan ko.",MEDIUM,PERSONAL
+"Hindi ko na po kaya, sobrang stressed na po ako at natatakot.",HIGH,PERSONAL
+"Parang gusto ko nang umuwi, natatakot po ako sa mundo.",HIGH,PERSONAL
+"Di ko na po maintindihan ang mga sinasabi nila, so sobrang kinakabahan po ako.",MEDIUM,ACADEMIC
+Paano po ba mag-block? Medyo natatakot po ako na hindi nila ako matigil.,MEDIUM,PERSONAL
+"Wala na po akong pag-asa, natatakot po ako sa future.",HIGH,PERSONAL
+"Sir, pwede po bang magpaliwanag tungkol sa safety protocols, natatakot po ako sa internet.",MEDIUM,ACADEMIC
+"Hi po, gusto ko lang po magtanong tungkol sa counseling services, first time ko po.",LOW,PERSONAL
+"Ma'am, medyo kinakabahan po ako, baka pwede akong magpa-counseling?",MEDIUM,PERSONAL
+"Tanong ko lang po, may mga available ba na counseling sessions this week?",LOW,PERSONAL
+"Sir, gusto ko lang po malaman kung paano ako mag-sign up para sa counseling, salamat po.",LOW,PERSONAL
+"Good morning, wala na po akong gana, kailangan ko po ng tulong.",HIGH,PERSONAL
+"Di ko po alam kung paano magsimula, natatakot po ako pumasok sa counseling.",MEDIUM,PERSONAL
+"Ma'am, sobrang stressed na po ako sa exams, sana makatulong kayo.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magpa-check up, feeling ko kailangan ko ng guidance.",MEDIUM,HEALTH
+Okay lang po ba na magtanong ako tungkol sa mental health resources?,MEDIUM,HEALTH
+"Sir, tulungan niyo po ako, wala na po akong idea kung ano ang gagawin.",HIGH,PERSONAL
+"Pa-help po, medyo kinakabahan po ako sa lahat ng deadlines.",MEDIUM,ACADEMIC
+"Wala na po akong pag-asa, kailangan ko po ng suporta para makabangon.",CRITICAL,PERSONAL
+"Hindi ko po kaya, sobrang overwhelming na po ng lahat.",HIGH,PERSONAL
+"Ma'am, tulong naman po, ang hirap po ng buhay!",HIGH,PERSONAL
+"Di ko po alam kung paano mag-cope, pwede po ba akong magpa-counseling?",MEDIUM,PERSONAL
+Okay lang po sana kung pwede niyo po akong i-refer sa tamang guidance counselor.,MEDIUM,ACADEMIC
+"Sir, gusto ko lang po magpa-alam na kailangan ko ng tulong, please.",MEDIUM,PERSONAL
+"Parang wala na po akong pag katawan, sobrang stressed na po talaga.",HIGH,MENTAL HEALTH
+"Tanong ko lang po, may mga schedule ba ng counseling na available ngayong semester?",LOW,ACADEMIC
+"Hi po, gusto ko lang po sana tanong tungkol sa time management ko. Lagi na po kasi akong late sa assignments, medyo kinakabahan po ako.",MEDIUM,ACADEMIC
+"Ma'am, sobrang hirap po talaga, lagi na po akong late, wala na po akong magagawa.",HIGH,ACADEMIC
+"Tanong ko lang po, parang hindi ko po alam kung paano mag-manage ng oras, stress na po ako.",MEDIUM,PERSONAL
+"Good morning po, Ma'am, tulong po sana, lagi po akong late, parang wala na pong pag-asa.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana malaman kung may pwede po akong gawin, natatakot po ako sa grades ko.",MEDIUM,ACADEMIC
+"Sir, hirap po talaga, hindi ko po maintindihan kung paano mag-schedule, so stressful na po.",MEDIUM,ACADEMIC
+"Hi po, ang hirap po talaga mag-manage ng oras, wala na po akong gana sa pag-aaral.",MEDIUM,PERSONAL
+"Ma'am, medyo kinakabahan po ako, lagi na po akong late, baka bumagsak na po ako.",MEDIUM,ACADEMIC
+"Okay lang po ba kung magtanong ako tungkol sa time management, sobrang stressed na po ako ngayon.",MEDIUM,PERSONAL
+"Sir, tulong po, lagi na po akong late, parang wala na pong magawa, hindi ko na po kaya.",MEDIUM,ACADEMIC
+"Hi, parang hindi ko na po alam kung paano mag-balance, natatakot po ako kung ano ang mangyayari.",MEDIUM,PERSONAL
+"Ma'am, gusto ko lang po sana magpaalala tungkol sa deadlines, sobrang hirap po talaga.",MEDIUM,ACADEMIC
+"Tanong ko lang po, kailangan ko po ng tulong sa time management, wala na po akong pag-asa.",MEDIUM,ACADEMIC
+"Good morning, Ma'am, hindi ko po alam kung paano mag-manage ng oras, parang wala na po akong magagawa.",MEDIUM,ACADEMIC
+"Sir, sobrang stressed na po ako, lagi na po akong late, baka mawala na po ang grades ko.",HIGH,ACADEMIC
+"Hi, sana po may ma-suggest kayo kung paano mag-manage ng oras, wala na po akong gana.",MEDIUM,ACADEMIC
+"Ma'am, tulong po, parang wala na pong pag-asa, sobrang late na po ako, hindi ko na po kaya.",HIGH,ACADEMIC
+"Okay lang po ba kung magtanong ako tungkol sa time management, kinakabahan po ako.",LOW,ACADEMIC
+"Sir, hirap po talaga, sobrang stressed na po ako, lagi na po akong late, wala na po akong magagawa.",HIGH,ACADEMIC
+"Hi po, medyo nahihirapan po ako mag-concentrate since namatay yung Lola ko.",MEDIUM,PERSONAL
+"Tanong ko lang po, wala na po akong gana mag-aral ngayon.",MEDIUM,ACADEMIC
+"Ma'am, sobrang lungkot po kasi, hindi ko na po kayang mag-concentrate sa klase.",MEDIUM,PERSONAL
+"Gusto ko lang po sana ipaalam, medyo kinakabahan po ako dahil sa nangyari.",MEDIUM,PERSONAL
+"Sir, tulong po, hindi ko po kayang mag-focus, sobrang sakit po sa puso.",CRITICAL,HEALTH
+"Paano po ba ako makapag-adjust, wala na po akong gana sa kahit ano.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan yung mga lessons, sobrang stressed na po ako.",MEDIUM,ACADEMIC
+"Ma'am, natatakot po ako pumasok sa school, hindi ko na po kayang tiisin.",MEDIUM,PERSONAL
+"Okay lang po ba na mag-skip muna ako, wala na po akong gana mag-aral ngayon.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magpaalam, parang wala na po akong lakas.",MEDIUM,PERSONAL
+"Hindi ko po kaya, sobrang hirap po, gusto ko lang po magpahinga.",MEDIUM,ACADEMIC
+"Tanong ko lang po, kung may pwedeng gawin para makatulong, wala na po akong gana.",MEDIUM,ACADEMIC
+"Ma'am, medyo kinakabahan po ako sa lahat, hindi ko po kayang mag-concentrate.",MEDIUM,PERSONAL
+"Sir, tulong po, hindi ko po alam kung paano mag-move on, sobrang stressed na po ako.",HIGH,PERSONAL
+"Di ko na po maintindihan yung mga assignments, wala na po akong gana mag-aral.",MEDIUM,ACADEMIC
+"Paano po ba mag-cope down, sobrang lungkot po kasi.",MEDIUM,PERSONAL
+"Okay lang po ba na magpabasa ng oras, wala na po akong gana sa mga ito.",MEDIUM,PERSONAL
+"Ma'am, natatakot po ako pumasok sa klase, sobrang sakit po sa puso.",HIGH,HEALTH
+"Gusto ko lang po sana ipaalam, hindi ko na po kaya ang pressure.",MEDIUM,ACADEMIC
+"Sir, hindi ko po maintindihan, sobrang stressed na po ako, wala na po akong gana.",HIGH,ACADEMIC
+"Hi po, may problema po talaga kami ng boyfriend ko, LDR na kami.",MEDIUM,PERSONAL
+"Tanong ko lang po, medyo kinakabahan po ako sa relasyon namin.",MEDIUM,PERSONAL
+"Ma'am, gusto ko lang po sana i-check kung may pwedeng gawin sa LDR namin?",MEDIUM,PERSONAL
+"Gusto ko lang po sana makipag-usap tungkol sa relasyon namin, parang drained na talaga ako.",MEDIUM,PERSONAL
+"Sir, yung LDR namin, sobrang stressful na po, hindi ko na po kaya.",MEDIUM,PERSONAL
+"Ma’am, tulong po, parang wala na pong gana sa relasyon namin, natatakot po ako.",MEDIUM,PERSONAL
+"Di ko na po maintindihan yung situation namin, sobrang drained na po talaga.",MEDIUM,PERSONAL
+"Good morning, gusto ko lang po sana malaman kung may guidance po kayo sa LDRs.",LOW,ACADEMIC
+"Parang wala na po akong pag-asa sa relasyon namin, sobrang sad na po.",MEDIUM,PERSONAL
+"Ma’am, medyo kinakabahan po ako kung paano po ito i-handle, please?",LOW,PERSONAL
+"Hindi ko na po kaya yung pressure ng LDR, sobrang stressed na po talaga ako.",MEDIUM,PERSONAL
+"Gusto ko lang po sana magpaalala po tungkol sa relasyon namin, please guide me.",LOW,PERSONAL
+"Tanong ko lang po, parang wala na pong saysay yung relasyon namin, so sad.",MEDIUM,PERSONAL
+"Sir, natatakot po ako pumasok sa school knowing this is happening, please.",HIGH,ACADEMIC
+"Di ko na po maintindihan kung paano po ito paglaanan, so overwhelmed na po ako.",MEDIUM,FINANCIAL
+"Ma’am, sobrang drained na po talaga ako sa relasyon namin, wala na po akong gana.",MEDIUM,PERSONAL
+"Parang wala na pong pag-asa sa relasyon namin, so sad po talaga.",MEDIUM,PERSONAL
+"Gusto ko lang po sana malaman kung may pwedeng gawin, please help me.",MEDIUM,PERSONAL
+"Sir, hindi ko na po kaya, sobrang stressed na po ako sa LDR namin, please!",HIGH,PERSONAL
+"Hi po, gusto ko lang po mag-usap, feeling ko lonely na talaga ngayon.",LOW,PERSONAL
+"Tanong ko lang po, medyo kinakabahan po ako, wala akong mapag-usapan.",MEDIUM,PERSONAL
+"Ma'am, kailangan ko po ng guidance, sobrang stress na po ako sa exams.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana mag-ventilate, wala na po akong gana sa mga friends ko.",MEDIUM,PERSONAL
+"Sir, natatakot po ako pumasok, walang nag-uusap sa akin, baka mas lalo pa lumala.",MEDIUM,PERSONAL
+"Okay lang po ba na magpausap? Feeling ko kasi wasak na ako, wala akong mai-share.",MEDIUM,PERSONAL
+"Wala na po akong masabihan, sobrang sad na po, parang gusto ko nang mag-quit.",HIGH,PERSONAL
+"Paano po ba 'to, ma'am? Medyo kinakabahan po ako, gusto ko lang po magpaliwanag.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana makipag-usap, parang wala na po akong pag-asa.",MEDIUM,PERSONAL
+"Hindi ko na po kaya, sobrang stressed na po ako, please help me, ma'am.",HIGH,PERSONAL
+"Ma'am, gusto ko po sana mag-open up, feeling ko kasi lost na ako.",MEDIUM,PERSONAL
+"Paano po 'yan, Sir? Natatakot po ako kasi walang nagtitiwala sa akin.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan, wala na akong mapag-usapan, sobrang stressed na po.",HIGH,PERSONAL
+"Okay lang po ba na magtanong? Parang wala na pong magawa, sobrang sad.",MEDIUM,PERSONAL
+"Gusto ko lang po sana mag-express, medyo kinakabahan pa rin po ako sa situation.",LOW,PERSONAL
+"Hindi ko po alam kung paano, pero sobrang overwhelmed na po ako.",HIGH,PERSONAL
+"Paano po ito, ma'am? Wala na po akong maiintindihan sa buhay ko.",HIGH,PERSONAL
+"Wala na po akong gana, sobrang disappointed na po ako, please talk to me.",HIGH,PERSONAL
+"Gusto ko po sana makipag-usap, parang wala na pong pag-asa na gumaganda.",HIGH,PERSONAL
+"Ma’am, kinakabahan po ako, gusto ko lang po mag-share ng feelings ko.",MEDIUM,PERSONAL
+"Hi po, pwede po bang magpa-excuse letter dahil family reunion kami?",LOW,FAMILY
+"Tanong ko lang po, paano mag-excuse letter for absent kasi family event?",LOW,ACADEMIC
+"Ma'am, gusto ko lang po sana magpa-excuse letter dahil sa family reunion, pwede ba?",LOW,FAMILY
+"Good morning, pwede bang tulungan niyo po ako magpa-excuse letter?",LOW,ACADEMIC
+"Sir, medyo kinakabahan po ako, paano magpa-excuse letter for family reunion?",MEDIUM,PERSONAL
+"Gusto ko lang po sana magpa-excuse letter dahil family gathering kami, salamat po!",LOW,PERSONAL
+"Hi, pwede bang magpa-excuse letter because of a family reunion?",LOW,PERSONAL
+"Ma'am, wala na po akong gana mag-aral, kailangan ko po ng excuse letter for the reunion.",MEDIUM,ACADEMIC
+"Sir, sobrang stressed na po ako, paano po magpa-excuse letter for family reunion?",MEDIUM,ACADEMIC
+"Pwede po bang magpa-excuse letter dahil sa family reunion, please po?",LOW,PERSONAL
+"Tanong ko lang po sana, paano ba magpa-excuse letter for absences?",LOW,ACADEMIC
+Natatakot po ako pumasok kung walang excuse letter for the family reunion.,MEDIUM,PERSONAL
+"Hindi ko na po kaya, kailangan ko po ng excuse letter para makapag-attend sa family reunion.",MEDIUM,PERSONAL
+"Di ko na po maintindihan, pwede po bang magpa-excuse letter for family event?",MEDIUM,PERSONAL
+"Gusto ko lang po sana magpa-excuse letter para sa family reunion, sana po matulungan niyo ako.",MEDIUM,PERSONAL
+"Ma'am, tulong naman po, sobrang overwhelmed na po ako sa assignments at kailangan ko ng excuse letter.",MEDIUM,ACADEMIC
+"Pwede po bang magpa-excuse letter dahil family reunion kami, promise po magpapasa ng assignments.",MEDIUM,PERSONAL
+"Sir, paano po magpa-excuse letter para sa family reunion, kailangan ko po ng tulong.",MEDIUM,PERSONAL
+"Wala na po akong gana, kailangan ko na ng excuse letter para makapagpahinga at makapag-attend sa reunion.",MEDIUM,PERSONAL
+"Sa totoo lang, medyo kinakabahan po ako, paano magpa-excuse letter for family reunion, please po?",MEDIUM,PERSONAL
+"Hi po, medyo lost na rin po ako sa career ko, ano po ba masasabi niyo?",LOW,CAREER GUIDANCE
+"Tanong ko lang po, feeling ko hindi ko alam kung ano ang dapat kong gawin.",MEDIUM,ACADEMIC
+"Good morning po, Sir, kinakabahan po ako sa pagpili ng course, tulungan niyo po ako.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magtanong, parang hindi ako connected sa course ko ngayon, huh?",MEDIUM,ACADEMIC
+"Ma'am, sobrang confused po ako, dapat ba talaga ako mag-shift?",MEDIUM,ACADEMIC
+"Di ko na po maintindihan kung ano ang tama at mali, seriously, tulong po.",HIGH,ACADEMIC
+"Pakiramdam ko wala na po akong idea, nakakakaba po talaga.",MEDIUM,ACADEMIC
+"Sir, natatakot po ako pumasok sa klase, feeling ko hindi ako magtatagumpay.",MEDIUM,ACADEMIC
+"Ma’am, wala na po akong gana, hindi ko alam kung bakit.",MEDIUM,PERSONAL
+Gusto ko po sana linawin kung tama ba ang iniisip ko tungkol sa pagbabago ng course.,MEDIUM,ACADEMIC
+"Hindi ko na po kaya, sobrang stressed na po ako sa lahat ng choices.",HIGH,PERSONAL
+"Di ako sigurado, parang walang flow yung course ko, ano po?",MEDIUM,ACADEMIC
+"Pakitignan niyo po, medyo kinakabahan po ako sa future ko, please?",MEDIUM,PERSONAL
+"Sir, feeling ko nawawala na po ako sa track, tulong po.",HIGH,ACADEMIC
+"Ang hirap po, parang wala na po akong pag-asa, please help.",CRITICAL,PERSONAL
+"Ma’am, sobrang lost na po ako, hindi ko alam kung saan ako pupunta.",HIGH,ACADEMIC
+"Gusto ko lang po sana mag-check kung tama ba yung napili ko, please?",MEDIUM,ACADEMIC
+"Pakisuyo po, kinakabahan po ako sa lahat ng options, tulong po.",MEDIUM,PERSONAL
+"Hindi ko po alam kung ano ang gagawin ko, so frustrated po ako, please advise.",MEDIUM,ACADEMIC
+"Parang wala na po akong future, sobrang sad na po ako, please help me.",HIGH,PERSONAL
+"Hi po, medyo kinakabahan po ako tuwing may recitation, parang gusto ko nang tumakbo.",MEDIUM,ACADEMIC
+"Ma'am, sobrang nervous ako sa recitation, parang di ako makahinga.",HIGH,ACADEMIC
+"Tanong ko lang po, parang nanginginig talaga ako pag may recitation, gusto ko po ng tulong.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana, feeling ko sobrang pressured ako sa recitation, please help.",MEDIUM,ACADEMIC
+"Sir, natatakot po ako pumasok sa recitation, parang atakihin ako.",HIGH,ACADEMIC
+"Uy, parang walang gana na ako sa recitation, sobra akong stressed.",MEDIUM,ACADEMIC
+"Ma'am,  wala na po akong gana pag may recitation, feeling ko talagang babagsak ako.",MEDIUM,ACADEMIC
+"Di ko na po kaya yung recitation, sobrang anxiety ko, please tulong!",HIGH,ACADEMIC
+"Parang nanginginig na talaga ako, baka mag-collapse ako sa recitation.",HIGH,HEALTH
+"Gusto ko lang po sana sabihin, medyo kinakabahan na ako, sana po makatulong kayo.",LOW,ACADEMIC
+"Sir, sobrang stressed ako sa recitation, hindi ko kaya yung pressure.",MEDIUM,ACADEMIC
+"Uy, please, natatakot ako pumasok sa recitation, sana naman okay lang.",LOW,ACADEMIC
+"Parang wala na akong pag-asa sa recitation, sobrang anxiety ko talaga.",MEDIUM,ACADEMIC
+"Ma'am, hindi ko na po kayang harapin yung recitation, please, help me!",HIGH,ACADEMIC
+"Di ko na po maintindihan yung mga tanong, sobrang kinakabahan ako.",MEDIUM,ACADEMIC
+"Parang susuko na ako sa recitation, wala na po akong gana, please!",MEDIUM,ACADEMIC
+"Gusto ko lang po sana sabihin, feeling ko naguguluhan na ako, baka bumagsak.",MEDIUM,ACADEMIC
+"Sir, sobrang stressed na po ako sa lahat ng recitation, kailangan ko po ng tulong.",MEDIUM,ACADEMIC
+"Uy, natatakot po ako pumasok, sobrang kinakabahan na po ako sa lahat ng exams.",MEDIUM,ACADEMIC
+"Hi po, gusto ko lang po sana malaman kung paano ko sasabihin sa parents ko na gusto ko IT, hindi Nursing.",MEDIUM,CAREER GUIDANCE
+"Ma'am, medyo kinakabahan po ako, hindi ko alam kung paano haharapin yung usapan.",MEDIUM,PERSONAL
+"Tanong ko lang po, parang hindi sila naiintindihan yung passion ko sa IT, 'di ba?",MEDIUM,ACADEMIC
+"Sir, sobrang stressed na po ako, gustong gusto ko IT pero sila, Nursing.",HIGH,PERSONAL
+"Gusto ko lang po sana makakuha ng advice, paano ko sila papakumbaba?",MEDIUM,ACADEMIC
+Okay lang po ba kung mag-usap ako tungkol sa IT career paths sa kanila?,MEDIUM,ACADEMIC
+"Di ko na po maintindihan yung priorities nila, parang walang sense yung Nursing para sa akin.",MEDIUM,PERSONAL
+"Natatakot po ako pumasok sa klase kung hindi sila sang-ayon, baka magalit.",MEDIUM,PERSONAL
+"Ma'am, wala na po akong gana, ang hirap kasi pag-isipan yung Nursing.",HIGH,PERSONAL
+"“Excuse me po”, sana may ma-suggest kayo kung paano ko i-presenta yung IT interest ko.",MEDIUM,ACADEMIC
+"Sabi ko na po sa kanila, pero hindi naman nila ako pinapakinggan, grabe!",MEDIUM,PERSONAL
+"Parang hopeless na po yung situation, gusto ko IT pero sila, Nursing pa.",MEDIUM,ACADEMIC
+"Hindi ko na po kaya, sobrang bigat ng pressure, gusto ko sana mag-aral ng IT.",MEDIUM,ACADEMIC
+"“Uy, Ma’am,” tulungan niyo naman po ako, pakiramdam ko hindi ako naiintindihan.",MEDIUM,PERSONAL
+"Ang hirap po talaga pag-usapan 'to, parang wala akong choice, kailangan ko silang kumbinsihin.",MEDIUM,PERSONAL
+"Di ako makatulog po, kinakabahan ako sa pag-uusap sa parents ko tungkol sa IT.",MEDIUM,PERSONAL
+"“Excuse me po,” sana may tips kayo kung paano mag-compromise?",LOW,ACADEMIC
+"Wala na po akong gana, parang naghihingi lang ako ng tulong na walang katapusan.",MEDIUM,PERSONAL
+"“Ma’am, please,” hindi ko alam kung paano ko pa papatunayan na gusto ko IT.",MEDIUM,ACADEMIC
+"Hi po, may tanong lang po tungkol sa classmate ko na laging nangopya.",MEDIUM,ACADEMIC
+"Medyo kinakabahan po ako, hindi ko alam kung paano siya sasabihin.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, may advice po ba kayo kung paano mag-assert ng sarili?",MEDIUM,PERSONAL
+"Ma'am, nakaka-stress na po yung nangopya siya, kailangan ko ng tulong.",HIGH,ACADEMIC
+"Uy, classmate ko talaga, laging nangopya, parang wala na 'ung effort ko.",MEDIUM,ACADEMIC
+"Tanong ko lang po, ano po ba best way para sabihin na hindi pwede yung pagkopya?",MEDIUM,ACADEMIC
+"Sir, natatakot po ako mag-approach sa kanya, baka lumala pa.",MEDIUM,PERSONAL
+"Wala na po akong gana, sobrang frustrated ako kasi palagi siyang nangopya.",MEDIUM,ACADEMIC
+"Di ko alam po kung paano i-handle yung sitwasyon na 'to, please help.",MEDIUM,PERSONAL
+"Ma'am, seriously, this is stressing me out, tulong naman po!",HIGH,ACADEMIC
+"Okay, so yung classmate ko, laging nangopya, parang hindi fair diba?",MEDIUM,ACADEMIC
+"Gusto ko lang po sana mag-request ng guidance, kasi feeling ko hindi ako makapaniwala.",MEDIUM,PERSONAL
+"Hindi ko na po kaya, sobrang hirap na, please help me, Ma’am.",HIGH,PERSONAL
+"Uy, parang wala na akong pag-asa, lagi na lang siya nangopya.",MEDIUM,ACADEMIC
+"Sana po may ma-suggest kayo kung paano i-address 'to, kailangan ko po ng solution.",MEDIUM,ACADEMIC
+"“Ma’am, please, kinakabahan po ako, hindi ko alam kung paano mag-react.”",MEDIUM,PERSONAL
+"Di ko maintindihan po, sobrang overwhelmed na po ako sa situation na 'to.",MEDIUM,ACADEMIC
+"“Sir, natatakot po ako kung ano ang mangyayari pag nag-react ako.”",MEDIUM,PERSONAL
+"Okay, please, seriously, sobrang stressed na po ako, kailangan ko ng advice.",HIGH,PERSONAL
+"“Wala na po akong pag-asa, parang walang nagbabago pa rin.”",MEDIUM,PERSONAL
+"Hi po, medyo kinakabahan po ako kasi lagi akong mag-isa sa canteen.",LOW,PERSONAL
+"Tanong ko lang po, parang walang nakikipag-usap sa’kin, baka naman may tips?",LOW,ACADEMIC
+"Ma'am, gusto ko lang po sana malaman kung paano ako makipagkaibigan.",LOW,SOCIAL
+"Sir, feeling ko kasi lonely talaga ako, sobra!",MEDIUM,PERSONAL
+"Good morning, parang wala akong kakilala dito sa PUP, ano po ba?",MEDIUM,PERSONAL
+"Gusto ko lang po sana, sana may ma-meet akong mga friends.",MEDIUM,PERSONAL
+"Ma'am, tulungan niyo naman po ako, lagi akong nag-iisa sa canteen.",MEDIUM,PERSONAL
+"Sir, natatakot po ako pumasok kasi walang kasama, baka mas lalo akong magmukhang mataray.",MEDIUM,PERSONAL
+"Di ko na po maintindihan kung paano makipag-social, sobrang stressed na po ako.",MEDIUM,ACADEMIC
+Okay lang po ba na magtanong tungkol sa mga activities para makipagkilala?,LOW,ACADEMIC
+"Ma'am, wala na po akong gana mag-canteen kasi lagi akong nag-iisa.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, parang wala na akong kaibigan, huhu.",MEDIUM,PERSONAL
+"Sir, feeling ko kasi bumababa yung self-esteem ko, baka naman may suggestions?",MEDIUM,ACADEMIC
+"Okay po, pero medyo kinakabahan pa rin po ako sa pag-approach ng mga tao.",MEDIUM,PERSONAL
+"Ma’am, hindi ko na po kaya, sobrang lonely na po kasi ako dito.",HIGH,PERSONAL
+"Tanong ko lang po, baka may group activities para makipag-bond?",LOW,ACADEMIC
+"Di ko na po maintindihan kung bakit walang nakikipagkaibigan sa akin, so stressful!",MEDIUM,PERSONAL
+"Parang wala na po akong pag-asa makagawa ng friends, natatakot po ako.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, sobrang hirap na po kasi, walang kasama sa canteen.",MEDIUM,PERSONAL
+"Ma’am, feeling ko kasi gusto ko nang umuwi, walang kalaro, wala na po akong gana.",HIGH,PERSONAL
+"Hi po, medyo nahihirapan ako sa online setup, hindi ko talaga gets yung modules.",MEDIUM,ACADEMIC
+"Tanong ko lang po, sobrang confusing yung mga assignments, wala akong ideya.",MEDIUM,ACADEMIC
+"Ma'am, gusto ko lang po sana malaman kung may pwede bang tulong sa akin?",MEDIUM,ACADEMIC
+"Sir, natatakot po ako pumasok dahil hindi ko maintindihan yung online classes.",HIGH,ACADEMIC
+Okay lang po ba na magtanong tungkol sa online setup? Wala akong maintindihan talaga.,MEDIUM,ACADEMIC
+"Gusto ko lang po sana magpaalala, sobrang stressful na po yung lahat ng ito.",HIGH,PERSONAL
+"Ma’am, pwede po bang magpa-explain tungkol sa online modules? Parang wala na akong pag-asa.",HIGH,ACADEMIC
+"Di ko na po maintindihan yung mga instructions, so sobrang stressed na po ako.",MEDIUM,ACADEMIC
+"Okay, sana may makatulong sa akin sa online setup, wala na akong maintindihan.",MEDIUM,ACADEMIC
+"Hi, medyo kinakabahan po ako sa online classes, hindi ko alam kung paano.",MEDIUM,ACADEMIC
+"Sir, tulong naman po, sobrang hirap po talaga ng online setup, wala na po akong gana.",MEDIUM,ACADEMIC
+"Ma'am, pwede po bang magtanong tungkol sa mga modules? Parang wala na pong pag-asa.",MEDIUM,ACADEMIC
+"Hindi ko po kaya yung pressure, sobrang hirap po talaga ng online setup.",MEDIUM,ACADEMIC
+Gusto ko lang po sana magpaalam na hindi ko maintindihan yung lahat.,LOW,ACADEMIC
+"Okay lang po ba na magtanong tungkol sa online setup, please? Parang wala na po akong magagawa.",MEDIUM,ACADEMIC
+"Sir, natatakot po ako kung baka bumagsak ako dahil hindi ko maintindihan.",MEDIUM,ACADEMIC
+"Ma'am, pwede po bang magpa-check up? Sobrang overwhelmed na po ako sa modules.",MEDIUM,ACADEMIC
+"Okay, sana may makatulong, wala na pong maintindihan sa online.",MEDIUM,ACADEMIC
+"Di ko na po kayang mag-handle nito, sobrang hirap na po talaga, wala na po akong gana.",HIGH,PERSONAL
+"Hi po, medyo kinakabahan po ako sa kaibigan ko, lagi siyang umiiyak.",MEDIUM,PERSONAL
+"Ma'am, tulungan niyo po ako, palagi siyang umiiyak at walang gana kumain.",HIGH,PERSONAL
+"Tanong ko lang po, ano po dapat gawin sa friend ko, sobrang affected siya.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, nag-aalala ako sa kaibigan ko, hindi siya okay.",MEDIUM,PERSONAL
+"Sir, nakakabahala po yung friend ko, parang wala na siyang saysay.",MEDIUM,PERSONAL
+Okay lang po ba kung magtanong ako tungkol sa friend ko? Palagi siyang umiiyak!,MEDIUM,PERSONAL
+"Paano po ba 'pag may kaibigan na ganito, sobrang stressed na ako.",MEDIUM,PERSONAL
+"Ma'am, natatakot po ako sa kaibigan ko, feeling ko hindi na siya magiging okay.",MEDIUM,PERSONAL
+"Di ko na po maintindihan yung sitwasyon ng kaibigan ko, please help!",MEDIUM,PERSONAL
+"Gusto ko lang po sana, wala na po akong magawa sa kaibigan ko.",MEDIUM,PERSONAL
+"Sir, medyo sad na rin po ako sa kaibigan ko, ang hirap naman.",MEDIUM,PERSONAL
+Okay po ba kung magpa-advice ako tungkol sa friend ko? Umiiyak siya lagi.,MEDIUM,PERSONAL
+"Paano po 'pag ang kaibigan mo, wala na po siyang gana sa kahit ano?",MEDIUM,PERSONAL
+"Ma'am, sobrang stressed na po ako sa kaibigan ko, feeling ko hindi na ako makatulog.",MEDIUM,PERSONAL
+"Hindi ko po alam kung ano ang gagawin, friend ko palagi na lang umiiyak.",MEDIUM,PERSONAL
+"Di ko na po kaya, ang hirap talaga pag ganito, please help!",HIGH,PERSONAL
+"Okay lang po ba kung magtanong ako tungkol sa friend ko, wala na siyang gana.",LOW,PERSONAL
+"Sir, ang lungkot ko na rin po sa kaibigan ko, wala na siyang saysay.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, tulungan niyo po ako sa friend ko, palagi siyang umiiyak.",LOW,PERSONAL
+"Ma'am, natatakot po ako, parang wala na siyang pag-asa yung friend ko.",MEDIUM,PERSONAL
+"Hi po, medyo kinakabahan po ako, may stalker ako sa campus, sumusunod siya talaga.",CRITICAL,PERSONAL
+"Ma'am, natatakot po ako pumasok, may sumusunod siya palagi.",CRITICAL,PERSONAL
+"Tanong ko lang po, sobrang worried ako, may stalker sa campus, seriously!",HIGH,PERSONAL
+"Gusto ko lang po sana malaman kung ano ang gagawin ko, sumusunod siya talaga.",HIGH,PERSONAL
+"Sir,  wala na po akong gana, feeling ko hindi na safe, may stalker.",HIGH,PERSONAL
+"Di ko na po maintindihan, parang hindi ako mapalagay, sumusunod siya sa akin.",MEDIUM,PERSONAL
+"Ma’am,  sobrang stressed na po ako, sumusunod siya sa campus.",MEDIUM,PERSONAL
+"Okay lang po ba kung magpapaalala ako tungkol sa stalker, sumusunod siya talaga?",LOW,PERSONAL
+"Hindi ko na po kaya, nakakatakot po, sumusunod siya palagi sa akin.",CRITICAL,PERSONAL
+"Gusto ko lang po sana magpaalala tungkol dito, medyo kinakabahan ako.",MEDIUM,ACADEMIC
+"Parang gusto ko nang umuwi, natatakot ako, sumusunod siya talaga.",CRITICAL,PERSONAL
+"Ma’am, tulong po, sobrang worried ako, may stalker na sumusunod.",CRITICAL,CAREER GUIDANCE
+"Di ko po alam kung ano ang gagawin,  wala na po akong gana sa pag-aaral.",MEDIUM,ACADEMIC
+"Sir,  please, may problema po ako, may stalker sa campus, sumusunod siya.",CRITICAL,CAREER GUIDANCE
+"Okay lang ba kung magpapaalala ako tungkol sa situation na 'to, feeling ko unstable na.",MEDIUM,PERSONAL
+"Ma’am, sobrang stressed na po ako, kaya hindi ako makatulog.",HIGH,HEALTH
+"Hindi ko po alam kung paano ito harapin, natatakot na ako pumasok, please.",HIGH,PERSONAL
+"Gusto ko lang po sana malaman kung mayroon bang dapat kong gawin, sumusunod siya talaga.",MEDIUM,ACADEMIC
+"Ma’am, please,  parang wala na po akong pag-asa, sumusunod siya sa akin.",HIGH,PERSONAL
+"Di ko na po kayang magpatuloy, sobrang stressed na po ako sa lahat.",HIGH,PERSONAL
+"Hi po, pwede ba magpa-counseling anonymously? Nahihiya po kasi ako.",MEDIUM,PERSONAL
+"Ma’am, gusto ko lang po sana magpa-counseling, medyo kinakabahan po ako.",MEDIUM,PERSONAL
+"Tanong ko lang po, pwede ba walang pangalan pag nagpa-counseling? Sobrang nahihiya talaga ako!",MEDIUM,PERSONAL
+"Sir, pwede ba? Nahihiya po ako, gusto ko lang po mag-usap.",MEDIUM,PERSONAL
+"Good morning po, pwede po magpa-counseling anonymously? Wala na po akong lakas ng loob.",MEDIUM,PERSONAL
+"Gusto ko lang po sana magpa-counseling, parang wala na pong ibang gagawin.",MEDIUM,PERSONAL
+"Pa-counseling po ba, pwede kahit hindi ko sabihin ang pangalan ko? Natatakot po ako.",MEDIUM,PERSONAL
+"Ma’am, pwede ba magpa-counseling without revealing my name?  Sobra akong nahihiya.",MEDIUM,PERSONAL
+"Di ko na po kaya, pwede po magpa-counseling anonymously?  Kailangan ko po ng tulong.",HIGH,PERSONAL
+"Pwede po ba magpa-counseling, kahit hindi ako magbigay ng pangalan? Wala na po akong gana.",MEDIUM,PERSONAL
+"Sir, pwede po ba magpa-counseling, medyo stressed na po ako. Nahihiya pa rin po ako.",MEDIUM,PERSONAL
+"Gusto ko lang po sana magpa-counseling, sana po maintindihan niyo ako.  Sobrang kinakabahan.",MEDIUM,PERSONAL
+"Pa-counseling po, pwede ba kahit hindi ako magbigay ng pangalan?  Natatakot po ako na husgahan.",MEDIUM,PERSONAL
+"Ma’am, pwede po magpa-counseling anonymously?  Wala na po akong pag-asa.",HIGH,PERSONAL
+"Di ko po alam kung paano, pwede po ba magpa-counseling? Nahihiya po kasi ako magtanong.",MEDIUM,PERSONAL
+"Gusto ko lang po sana magpa-counseling, please po, tulungan niyo po ako. Sobrang stressed na po ako.",HIGH,PERSONAL
+"Pa-counseling po, pwede ba kahit hindi ko sabihin ang pangalan ko?  Hindi ko na po kaya ang pressure.",MEDIUM,PERSONAL
+"Sir, pwede po ba magpa-counseling, kailangan ko po ng guidance.  Naiiyak na po ako.",HIGH,PERSONAL
+"Ma’am, pwede po magpa-counseling anonymously?  Wala na po akong pag-asa, please.",HIGH,PERSONAL
+"Gusto ko lang po sana magpa-counseling, pwede ba kahit hindi ko sabihin ang pangalan ko?  So brad, I'm really nervous.",MEDIUM,PERSONAL
+"Hi po, gusto ko lang po sana magtanong tungkol sa part-time jobs, may alam po ba kayo?",MEDIUM,FINANCIAL
+"Ma'am, medyo kinakabahan po ako sa tuition, may pwedeng i-refer sa akin?",MEDIUM,FINANCIAL
+"Tanong ko lang po, may mga student organizations ba na may funding para sa projects?",LOW,ACADEMIC
+Gusto ko lang po sana malaman kung may scholarship opportunities din na pwede ko i-apply.,MEDIUM,FINANCIAL
+"Sir, sobrang stressed na po ako sa bills, may suggestion po ba kayo para sa dagdag income?",HIGH,FINANCIAL
+"Wala na po akong gana, kailangan ko ng tulong sa financial assistance, please.",CRITICAL,FINANCIAL
+"Di ko na po maintindihan kung paano mag-budget, sana may ma-recommend kayo.",MEDIUM,ACADEMIC
+Natatakot po ako pumasok kasi hindi ko alam kung paano ako makakahabol sa mga assignments.,MEDIUM,ACADEMIC
+"Ma'am, tulong naman po sa financial problem ko, wala na po akong pwedeng ipanghiram.",HIGH,FINANCIAL
+"Ang hirap po ng sitwasyon, sana may mairerefer kayong student loan programs.",MEDIUM,FINANCIAL
+"Gusto ko lang po sana magpaalam na may problema po ako sa pera, please help.",MEDIUM,FINANCIAL
+"So brang stressed na po ako sa expenses, kailangan ko ng stable income.",HIGH,FINANCIAL
+"Paalam po, may mga online jobs ba na pwede i-try para kumita?",MEDIUM,FINANCIAL
+"Di ko na po kaya, kailangan ko ng urgent na tulong sa financial needs, please.",CRITICAL,FINANCIAL
+"Ma'am, sana may ma-refer kayo na mga estudyanteng naghahanap din ng trabaho.",MEDIUM,FINANCIAL
+"Wala na po akong pag-asa, feeling ko hopeless na ako sa finances, please tulungan niyo po ako.",HIGH,FINANCIAL
+"Ang hirap po talaga, parang susuko na ako sa pag-aaral dahil dito.",MEDIUM,ACADEMIC
+"Tanong ko lang po, may mga grants ba para sa mga estudyante na financially challenged?",MEDIUM,FINANCIAL
+Gusto ko lang po sana mag-check kung may mga programs pa rin para sa financial assistance.,MEDIUM,FINANCIAL
+"Hi po, medyo overwhelmed na po ako sa dami ng requirements, especially as a freshman.",MEDIUM,ACADEMIC
+"Tanong ko lang po, sobrang dami na ng assignments, hindi ko na po kaya.",MEDIUM,ACADEMIC
+"Ma’am, gusto ko lang po sana malaman kung may guidance po para sa mga bagong students?",LOW,PERSONAL
+"Sir, natatakot po ako pumasok dahil sa dami ng requirements, baka mag-overload na ako.",MEDIUM,ACADEMIC
+"Good morning, ang dami po kasi ng deadlines, so stressed na po ako.",MEDIUM,ACADEMIC
+Gusto ko lang po sana magtanong kung may option po ba para ma-extend ang mga deadlines?,MEDIUM,ACADEMIC
+"Ma’am, medyo kinakabahan po ako sa lahat ng ito, sobrang dami!",MEDIUM,ACADEMIC
+"Di ko na po maintindihan kung saan ako magsisimula, parang wala na po akong lakas.",MEDIUM,ACADEMIC
+"Sir, wala na po akong gana ngayon, feeling ko hindi ko kaya, sobrang dami.",MEDIUM,PERSONAL
+Okay lang po ba kung magpapa-schedule ako ng meeting para sa guidance?,LOW,ACADEMIC
+"Pa-tulong po, sobrang stressed na po ako and I don't know how to manage everything.",HIGH,PERSONAL
+"Ma’am, natatakot po ako pumasok sa class, feeling ko hindi ako makakasabay.",MEDIUM,ACADEMIC
+"Hindi ko na po kaya, parang hindi ko na kayang mag-handle ng lahat ng ito, so stressed!",HIGH,PERSONAL
+Gusto ko lang po sana magpaalala kung may available na study group para sa mga freshmen.,LOW,ACADEMIC
+"Sir, wala na po akong pag-asa, feeling ko babagsak na po ako, sobrang dami na ng requirements.",MEDIUM,ACADEMIC
+"Ang hirap po ng sitwasyon, parang gusto ko nang sumuko, feeling overwhelmed.",MEDIUM,ACADEMIC
+"Ma’am, sana po may ma-recommend kayo para ma-manage ko nang maayos ang lahat.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan kung paano mag-prioritize, parang naguguluhan na po ako.",MEDIUM,ACADEMIC
+Okay lang po ba kung magpapa-schedule ako para pag-usapan natin yung mga requirements?,LOW,ACADEMIC
+"Gusto ko lang po sana mag-express ng concern ko, sobrang overwhelmed na po ako.",MEDIUM,ACADEMIC
+"Hi po, may problema po ako sa prof ko, feeling ko binabagsak niya ako kahit pasado naman exams ko.",MEDIUM,ACADEMIC
+"Tanong ko lang po, parang hindi niya ako pinapansin, baka may problema sa performance ko?",MEDIUM,ACADEMIC
+"Ma'am, medyo kinakabahan po ako, feeling ko hindi niya ako tinutulungan.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana, binabagsak daw siya yung prof ko, di ko maintindihan.",MEDIUM,ACADEMIC
+"Sir, sana po matulungan niyo ako, sobrang stressed na po ako sa kanya.",HIGH,ACADEMIC
+Okay lang po ba kung magpapaalala ako tungkol sa grade ko sa prof ko?,LOW,ACADEMIC
+"Di ko po alam kung ano ang gagawin, natatakot po ako pumasok sa klase niya.",HIGH,ACADEMIC
+"Wala na po akong gana, feeling ko wala na akong pag-asa sa prof ko.",MEDIUM,ACADEMIC
+"Puwede po ba akong magpausap sa inyo tungkol sa problemang ito, please?",MEDIUM,ACADEMIC
+"Ang hirap po kasi, sobrang stressed na po ako sa feedback niya.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magtanong kung paano ko siya matuturuan, feeling ko hindi niya ako naiintindihan.",MEDIUM,ACADEMIC
+"Ma'am, kailangan ko po ng guidance, parang wala na akong magawa sa sitwasyon ko.",MEDIUM,ACADEMIC
+"Hindi ko na po kaya, feeling ko sasabog na ako sa dami ng problema sa kanya.",HIGH,PERSONAL
+"Sana po makatulong kayo, di ko po alam kung ano ang gagawin ko.",MEDIUM,ACADEMIC
+"Wala na po akong pag-asa, wala na akong gana sa klase niya.",MEDIUM,ACADEMIC
+"Parang gusto ko nang bumitaw, natatakot po ako sa kanyang paghatol.",MEDIUM,PERSONAL
+"Di ko po maintindihan, feeling ko hindi ako pinapahalagahan sa kanya.",MEDIUM,ACADEMIC
+"Ma’am, please, sobrang stressed na po ako, kailangan ko ng tulong.",MEDIUM,PERSONAL
+"Kailangan ko po ng tulong, sobra akong kinakabahan sa kanyang pagtingin.",MEDIUM,PERSONAL
+"Gusto ko po sana magpaalala tungkol sa grade ko, baka may mali sa computation.",MEDIUM,ACADEMIC
+"Hi po, may tanong lang po tungkol sa gender identity ko.  Parang wala na po akong lugar dito, sobrang stressful.",MEDIUM,PERSONAL
+"Tanong ko lang po, may safe space ba talaga sa PUP para sa mga katulad ko? Medyo kinakabahan po ako kung paano ako kakausap.",MEDIUM,PERSONAL
+"Good morning po, Ma’am, mayroon po ba kayong alam na support group?  Wala na po akong gana sa mga klase dahil dito.",MEDIUM,PERSONAL
+"Gusto ko lang po sana malaman kung mayroon bang resources para sa mga LGBTQ+ students.  So brang stressed na po ako, kailangan ko ng tulong.",MEDIUM,PERSONAL
+"Ma’am, please, may safe space ba para sa mga trans students? Natatakot po ako pumasok sa campus dahil sa mga nangyayari.",HIGH,PERSONAL
+"Sir, tulong po!  Hindi ko na po kaya, feeling ko hindi ako naiintindihan.  Parang wala na po akong pag-asa.",HIGH,PERSONAL
+"Hi, mayroon po ba kayong alam na guidance counselor na may experience sa gender identity issues?  Di ko na po maintindihan yung mga rules, parang hindi ako welcome.",MEDIUM,PERSONAL
+"Tanong ko lang po, sana mayroon kayong pwedeng i-refer sa akin.  Ang hirap po, feeling ko walang papansin sa akin.",MEDIUM,PERSONAL
+"Ma’am, pwede po bang magpaliwanag kung paano ako makakakuha ng support?  Sobrang stressed na po ako at hindi ko alam kung paano mag-proceed.",HIGH,ACADEMIC
+"Gusto ko lang po sana malaman kung mayroon bang initiatives para sa inclusivity.  Wala na po akong gana sa school, parang walang saysay.",MEDIUM,PERSONAL
+"Sir, kailangan ko po ng guidance, feeling ko lost ako.  Parang hindi ako magtatagumpay dito dahil sa discrimination.",HIGH,PERSONAL
+"Ma’am, mayroon po ba kayong mapag-usap na confidential?  Natatakot po ako magsalita sa harap ng lahat.",MEDIUM,PERSONAL
+"Tulungan niyo po ako, feeling ko nasasakal ako.  Di ko na po kayang harapin ito alone, kailangan ko ng support.",HIGH,PERSONAL
+"Hi, sana po mayroon kayong ma-offer para sa akin.  Wala na po akong pag-asa na mag-graduate pa ako kung ganito pa.",HIGH,PERSONAL
+"Tanong ko lang po, mayroon bang policies na laban sa discrimination?  Sobrang stressed na po ako at gusto ko lang maging normal.",MEDIUM,PERSONAL
+"Ma’am, please, kailangan ko ng tulong, feeling ko hindi ako magtagumpay.  Parang wala na po akong lugar dito, walang nagmamalasakit.",HIGH,PERSONAL
+"Gusto ko lang po sana malaman kung paano ako makakapag-report ng insidente.  Wala na po akong gana sa buhay, parang wala na akong future.",CRITICAL,PERSONAL
+"Sir, kailangan ko po ng guidance, feeling ko walang pag-asa.  Natatakot po ako na mag-isa lang ako dito.",MEDIUM,PERSONAL
+"Ma'am, pwede po bang mag-request ng meeting para pag-usapan ito?  Sobrang stressed na po ako at kailangan ko ng comfort.",MEDIUM,PERSONAL
+"Gusto ko lang po sana malaman kung mayroon bang mga alumni na katulad ng sitwasyon ko.  Wala na po akong gana, parang hindi na ako makabangon.",MEDIUM,PERSONAL
+"Hi po, may gusto lang po sana sabihin sa’yo tungkol sa health ko.",MEDIUM,HEALTH
+"Ma’am, medyo kinakabahan po ako, hindi ko alam kung paano mag-start.",MEDIUM,PERSONAL
+"Sir, gusto ko lang po na pag-usapan natin yung eating disorder ko, kailangan ko ng tulong.",HIGH,HEALTH
+"Tanong ko lang po, wala na po akong gana, parang gusto ko nang sumuko.",MEDIUM,PERSONAL
+"Gusto ko lang po sana ipaalam sa’yo na may problema ako, sobrang stressed na po ako ngayon.",HIGH,PERSONAL
+"Di ko na po maintindihan yung sarili ko, natatakot po ako pumasok sa klase.",HIGH,ACADEMIC
+"Ma’am, tulong naman po, sobrang overwhelmed na po ako sa lahat.",HIGH,PERSONAL
+"Okay lang po ba na pag-usapan natin ‘to, kailangan ko po ng guidance.",LOW,PERSONAL
+"Sir, parang wala na po akong pag-asa, grabe po yung anxiety ko.",HIGH,HEALTH
+"Gusto ko lang po sabihin na mayroon akong eating disorder, sana po matulungan niyo ako.",CRITICAL,HEALTH
+"Di ko na po kaya, sobrang hirap po talaga, parang gusto ko nang lumabas ng bansa.",HIGH,CAREER GUIDANCE
+"Wala na po akong gana, parang wala na pong saysay ang lahat.",HIGH,PERSONAL
+"Ma’am, medyo kinakabahan po ako, sana po maunawaan niyo ako.",MEDIUM,PERSONAL
+"Sir, gusto ko lang po sabihin na may problema ako, please help me.",MEDIUM,PERSONAL
+"Tanong ko lang po, natatakot po ako, parang wala na pong pagbabago.",MEDIUM,PERSONAL
+"Okay lang po ba na pag-usapan natin ito, kailangan ko ng support.",MEDIUM,PERSONAL
+Gusto ko lang po na pag-usapan natin kung paano ako mag-manage ng stress ko.,MEDIUM,ACADEMIC
+"Sir, sobrang stressed na po ako, please, kailangan ko ng guidance.",MEDIUM,PERSONAL
+"Di ko na po maintindihan yung sarili ko, wala na pong pag-asa, please help.",HIGH,PERSONAL
+"Hi po, kinakabahan po talaga ako sa OJT interview next week, may tips ba kayo?",MEDIUM,CAREER GUIDANCE
+"Ma'am, medyo kinakabahan po ako, may tips ba para sa interview next week?",MEDIUM,CAREER GUIDANCE
+"Gusto ko lang po sana magtanong tungkol sa OJT, kinakabahan po ako sa interview.",MEDIUM,CAREER GUIDANCE
+"Tanong ko lang po, natatakot po ako pumasok sa OJT interview next week.",MEDIUM,CAREER GUIDANCE
+"Sir, sobrang kinakabahan po ako sa interview, paki-tulong naman po.",HIGH,CAREER GUIDANCE
+"Di ko na po maintindihan, kinakabahan po ako sa OJT, may advice po ba kayo?",MEDIUM,CAREER GUIDANCE
+"Okay lang po ba kung magtanong tungkol sa OJT, kinakabahan po ako.",MEDIUM,ACADEMIC
+"Ma'am, wala na po akong gana, kinakabahan po ako sa interview next week.",MEDIUM,CAREER GUIDANCE
+"Pakiusap po, may tips po ba para sa OJT interview, kinakabahan na po ako.",MEDIUM,CAREER GUIDANCE
+"Gusto ko lang po sana magpaalala tungkol sa interview, kinakabahan po talaga ako.",MEDIUM,CAREER GUIDANCE
+"Hindi ko na po kaya, kinakabahan po ako sa OJT, please help po.",HIGH,CAREER GUIDANCE
+"""Ma’am, sana po may magabong ako, kinakabahan po ako sa interview.”",MEDIUM,CAREER GUIDANCE
+"""Tulong po, sobrang kinakabahan na po ako sa OJT, please?""",HIGH,CAREER GUIDANCE
+"“Di ako makatulog, kinakabahan po ako sa OJT next week, po.”",MEDIUM,ACADEMIC
+"“Okay lang ba kung magtanong tungkol sa OJT interview, kinakabahan na po ako.”",MEDIUM,ACADEMIC
+"“Ma’am, please, sana po may makatulong sa akin, kinakabahan po talaga ako sa interview.”",MEDIUM,ACADEMIC
+"""Nakakatakot po, kinakabahan ako sa OJT, sana may advice po.""",MEDIUM,ACADEMIC
+"""Sana po may tips po para sa OJT interview, kinakabahan na po ako, po.""",MEDIUM,ACADEMIC
+"“Wala na po akong gana, kinakabahan po ako sa OJT, please help po.”",MEDIUM,ACADEMIC
+"“Ma’am, tulong po, kinakabahan na po ako sa interview, sobrang stressed na po.”",MEDIUM,ACADEMIC
+"Hi po, medyo lungkot lang po kasi, feeling ko sobrang layo sa’kin yung mga parents ko.",LOW,PERSONAL
+"Tanong ko lang po, parang wala na po akong kasama minsan, so sad.",LOW,PERSONAL
+"Good morning, Ma’am, natatakot po ako pumasok, feeling alone talaga.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, sobrang hirap po mag-isa, walang kasama pag nag-aaral.",MEDIUM,PERSONAL
+"Ma’am, tulong naman po, yung lungkot po talaga, grabe.",MEDIUM,PERSONAL
+"Sir, medyo kinakabahan po ako, kasi alone ako sa PUP, nakaka-stress.",MEDIUM,PERSONAL
+"Di ko na po maintindihan yung feelings ko, parang wala na po akong gana.",MEDIUM,PERSONAL
+"Uy, parang wala na po akong kasama sa pagkain, so sad, parang gusto ko lang matulog.",LOW,PERSONAL
+"Please po, sobrang stressed na po ako, feeling alone, feeling lost.",HIGH,PERSONAL
+"Wala na po akong gana sa mga subjects, kailangan ko po ng support.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana, yung lungkot po talaga, sobra po.",MEDIUM,PERSONAL
+"Ma’am, natatakot po ako pumasok, feeling ko hindi ako kayang suportahan.",MEDIUM,CAREER GUIDANCE
+"Parang wala na po akong kausap, sobrang lungkot po, please help.",MEDIUM,PERSONAL
+"Hindi ko na po kaya, so stressful, feeling alone, gusto ko lang magpahinga.",MEDIUM,PERSONAL
+"Uy, feeling ko tuloy di ako makapag-concentrate, so sad, parang gusto ko lang sumuko.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan yung feelings ko, so sad, parang wala na po akong lakas.",MEDIUM,PERSONAL
+"Sir, tulong po, sobrang lungkot po talaga, feeling ko di ako makabangon.",MEDIUM,PERSONAL
+"Please po, so overwhelming, feeling alone, medyo panic na po ako.",MEDIUM,CAREER GUIDANCE
+"Gusto ko lang po sana,  feeling ko wala na po akong pag-asa, so sad.",HIGH,PERSONAL
+"Ma’am, natatakot po ako pumasok, feeling ko sobrang hirap na ng buhay ko.",HIGH,PERSONAL
+"Hi po, gusto ko lang po sana sabihin na may friend na nag-aaya mag-cutting, pero ayoko po talaga.",MEDIUM,PERSONAL
+"Tanong ko lang po, medyo kinakabahan po ako sa peer pressure na 'to.",MEDIUM,PERSONAL
+"Ma’am, tulungan niyo po ako, kasi sobrang hirap po pagbigay ng “oo” kahit ayoko.",HIGH,PERSONAL
+"Good morning, di ko po alam kung paano ko po sasabihin pero please, huwag po sana ako ma-pressure.",MEDIUM,PERSONAL
+"Gusto ko lang po sana magpaalala, importante po yung attendance, kahit ano pa.",LOW,ACADEMIC
+"Sir, parang wala na po akong magawa, ang lakas po ng peer pressure na 'to.",HIGH,PERSONAL
+"Hey Ma'am, natatakot po ako pumasok kung gagawa ako ng paraan para hindi ako makinig.",MEDIUM,PERSONAL
+"Wala na po akong gana, nakaka-stress po talaga yung pressure, please help me.",HIGH,ACADEMIC
+"Di ko po talaga kaya, sobrang stressed na po ako sa mga kaibigan ko.",HIGH,PERSONAL
+"Ma’am, please, kailangan ko po ng guidance sa sitwasyong 'to, feeling ko overwhelmed na ako.",MEDIUM,ACADEMIC
+"Okay lang po ba kung magtanong ako tungkol sa peer pressure, medyo worried ako.",LOW,PERSONAL
+"Hindi ko na po kaya, parang gusto ko nang sumuko sa pressure na 'to.",HIGH,PERSONAL
+"Gusto ko lang po sana mag-express ng concern, hindi ko po alam kung paano ko po iwasan.",LOW,PERSONAL
+"Parang wala na po akong choice, sobrang lakas po ng influence ng mga kaibigan ko.",HIGH,PERSONAL
+"Sir, please, need ko po ng advice, feeling ko babagsak na ako sa pressure na 'to.",MEDIUM,ACADEMIC
+"Di ko po alam kung paano po ito ihandle, sobrang kinakabahan ako sa sitwasyon.",MEDIUM,ACADEMIC
+"Wala na po akong pag-asa, overwhelmed na po ako, please help me, sana.",HIGH,ACADEMIC
+Okay lang po ba kung magpapaalala ako na importante ang pag-aaral kahit ano pa mangyari?,LOW,ACADEMIC
+"Ma’am, sobrang stressed na po ako, tulungan niyo po ako, please, please!",MEDIUM,ACADEMIC
+"Hi po, medyo nahihirapan po kasi ako mag-focus sa readings, parang hindi ko kaya.",MEDIUM,ACADEMIC
+"Tanong ko lang po, sa tingin niyo ba ADHD yun?",LOW,HEALTH
+"Ma'am, sobrang hirap po mag-concentrate, feeling ko unstable talaga ang brain ko.",MEDIUM,HEALTH
+"Gusto ko lang po sana pag-usapan natin, parang hindi ko na talaga masundan yung mga binabasa ko.",MEDIUM,ACADEMIC
+"Sir, natatakot po ako pumasok kung ganito pa, baka mas malala pa.",HIGH,ACADEMIC
+"Uy, medyo kinakabahan po ako, baka may tests na kailangan mag-focus, hindi ko alam kung paano.",MEDIUM,ACADEMIC
+"Okay lang po ba na pag-usapan natin, parang feeling ko sobrang busy yung utak ko.",MEDIUM,ACADEMIC
+"Ma'am, wala na po akong gana, sobrang hirap po mag-focus, parang walang sense.",HIGH,ACADEMIC
+"Di ko na po maintindihan yung mga readings, feeling ko may problema sa brain ko.",HIGH,ACADEMIC
+"Gusto ko lang po sana, parang pag-usapan natin kung may pwede akong gawin, sobrang stress na po.",HIGH,PERSONAL
+"Sir, feeling ko talagang ADHD yun, parang hindi ako kayang mag-concentrate.",HIGH,HEALTH
+"Okay po, pero kailangan ko po ng tulong, sobrang stressed na po ako ngayon.",MEDIUM,PERSONAL
+"Ma'am, parang wala na po akong pag-asa, sobrang hirap po mag-focus, parang hindi na ako makakabasa.",HIGH,ACADEMIC
+"Uy, tulong naman po, parang hindi ko na kaya, sobrang hirap na po mag-concentrate.",MEDIUM,ACADEMIC
+"Tanong ko lang po, baka may suggestion po kayo kung paano mag-focus, parang nawawala na po ako.",LOW,ACADEMIC
+"Sir, natatakot po ako, baka bumagsak ako sa klase, sobrang hirap na po mag-focus.",HIGH,ACADEMIC
+"Okay lang po ba na pag-usapan natin, parang feeling ko sobrang overwhelmed na ako sa readings.",MEDIUM,PERSONAL
+"Di ko na po maintindihan, parang sobrang loloob ko, feeling ko hindi ko na kayang gawin ito.",HIGH,ACADEMIC
+"Gusto ko lang po sana, parang pag-usapan natin, sobrang stressed na po ako ngayon, kaya kailangan ko ng tulong.",MEDIUM,PERSONAL
+"Ma'am, sobrang hirap po, wala na po akong gana, parang feeling ko hindi ako magtatagumpay.",HIGH,PERSONAL
+"Hi po, medyo lungkot lang po kasi break kami, hirap na hirap mag-focus sa pag-aaral.",MEDIUM,ACADEMIC
+"Tanong ko lang po, parang wala na po akong gana mag-aral ngayon.",MEDIUM,ACADEMIC
+"Ma'am, ang sakit po talaga ng break, sobrang kinakabahan na rin ako.",HIGH,PERSONAL
+"Gusto ko lang po sana, bigat na bigat na po ang pakiramdam ko ngayon.",MEDIUM,PERSONAL
+"Sir, tulong po, di ako makapag-concentrate, parang wala na po akong pag-asa.",HIGH,ACADEMIC
+"Okay lang po ba kung magpapa-schedule ako ng meeting, medyo overwhelmed na po ako.",MEDIUM,ACADEMIC
+"Wala na po akong gana sa buhay, sobrang sakit talaga ng breakup na ‘to.",HIGH,PERSONAL
+"Natatakot po ako pumasok sa klase, parang hindi ako makayanan.",MEDIUM,PERSONAL
+"Di ko na po kaya, sobrang stress na po talaga, tumutulo pa yung mata ko.",HIGH,PERSONAL
+"Ma’am, kailangan ko po ng tulong, ang hirap po talaga pagkatapos ng ganito.",MEDIUM,ACADEMIC
+"Parang wala na po akong pag-asa, sobrang lungkot na po, di ako makatulog.",HIGH,PERSONAL
+"Okay lang po ba na magpa-usap ako, medyo kinakabahan na rin po ako sa lahat.",LOW,PERSONAL
+"Hindi ko po maintindihan kung paano ako magpatuloy, wala na po akong lakas.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana, sana po may makatulong sa akin, sobrang sakit talaga.",HIGH,PERSONAL
+"Parang wala na po akong gana sa pag-aaral, pwede po bang magpa-break ako?",LOW,ACADEMIC
+"Sir, please po, kailangan ko po ng guidance, sobrang stress na po talaga.",MEDIUM,PERSONAL
+"Di ko na po alam kung saan ako magsisimula, wala na po akong pag-asa.",HIGH,ACADEMIC
+"Wala na po akong gana sa kahit ano, pwede po ba kaming mag-usap?",HIGH,PERSONAL
+"Okay lang po kung magpapa-schedule ako, medyo heartbroken na po ako ngayon.",LOW,PERSONAL
+"Ang hirap po talaga pagkatapos ng ganito, pwede po bang magpa-pray kayo?",LOW,PERSONAL
+"Hi po, medyo pagod na po ako, sobrang dami na po kasi ng ginagawa.",LOW,PERSONAL
+"Tanong ko lang po, parang wala na po akong lakas, busy sa anak at sa school.",MEDIUM,FAMILY
+"Ma'am, gusto ko lang po sana malaman kung may pwede po akong gawin, pagod na talaga po ako.",MEDIUM,PERSONAL
+"Sir, tulong po, sobrang stressed na po ako, single mom pa po ako!",HIGH,PERSONAL
+"Gusto ko lang po sana sabihin na wala na po akong gana, physically at emotionally drained na po ako.",MEDIUM,PERSONAL
+"Okay lang po ba na magpa-break muna ako, napapagod na po talaga ako.",MEDIUM,ACADEMIC
+"Ma’am, natatakot po ako pumasok, hindi ko po alam kung paano ko po magawa lahat.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan, sobrang dami na po ng responsibilidad, parang wala na akong magawa.",MEDIUM,ACADEMIC
+"Pagod na pagod na po ako, sana may matulungan po ako, please po?",MEDIUM,PERSONAL
+"Okay, gusto ko lang po sabihin na sobrang stressed na po ako, wala na po akong kaya.",HIGH,PERSONAL
+"Ma’am, tulong po, medyo kinakabahan po ako, single mom na po ako at estudyante pa.",MEDIUM,PERSONAL
+"Sir, pwede po bang pag-usapan natin, wala na po akong gana sa pag-aaral, sobrang pagod na po ako.",MEDIUM,PERSONAL
+"Hindi ko na po kaya, sobrang dami na po ng pinagdadaanan ko, please po tumulong.",HIGH,PERSONAL
+"Pagod na pagod na po ako, sana may ma-recommend po kayo, tulong na po.",MEDIUM,PERSONAL
+"Okay lang po ba na magpahinga muna ako, wala na po akong energy, sobrang pagod na po ako.",MEDIUM,PERSONAL
+"Ma’am, sana po may ma-suggest kayo, overwhelmed na po ako, single mom ako.",HIGH,PERSONAL
+"Di ko po alam kung paano, sobrang stressed na po ako, please po tulong.",HIGH,PERSONAL
+"Okay po, wala na po akong gana, sobrang pagod na po ako physically at emotionally.",HIGH,PERSONAL
+"Pagod na pagod na po ako, sana may mapag-usapan po ako, please po ma’am.",MEDIUM,PERSONAL
+"Sir, natatakot po ako pumasok sa klase, sobrang pagod na po ako, wala na po akong magawa.",MEDIUM,PERSONAL
+"Hi po, may alam po ba kayo tungkol sa scholarship para sa mga may kapansanan?  I have a hearing impairment din po.",MEDIUM,FINANCIAL
+"Tanong ko lang po, may scholarship ba for students with disabilities, especially kung may hearing issue ako?",MEDIUM,FINANCIAL
+"Ma'am, gusto ko lang po malaman kung may scholarship para sa students with disabilities, kasi may hearing impairment ako.",MEDIUM,FINANCIAL
+"Good morning, Sir, may scholarship ba na pwede sa amin, especially since may hearing impairment ako?",MEDIUM,FINANCIAL
+"Gusto ko lang po sana malaman kung may scholarship para sa mga student na may kapansanan, dahil ako may hearing impairment.",MEDIUM,FINANCIAL
+"Excuse me po, may scholarship ba para sa students with disabilities? I’m hearing impaired po.",MEDIUM,FINANCIAL
+"Sir, medyo kinakabahan po ako, may scholarship ba para sa mga may kapansanan, lalo na kung may hearing impairment ako?",MEDIUM,PERSONAL
+"Ma’am, tulong po, may scholarship ba para sa mga students with disabilities with hearing impairment?",MEDIUM,ACADEMIC
+"Di ko po maintindihan, may scholarship ba para sa mga may kapansanan, especially kung may hearing issue ako?",MEDIUM,ACADEMIC
+"Parang wala na po akong pag-asa, may scholarship ba para sa students with disabilities, kasi may hearing impairment ako?",MEDIUM,ACADEMIC
+"Gusto ko lang po sana malaman kung may scholarship for students with disabilities, I’m hearing impaired po.",MEDIUM,ACADEMIC
+"Okay lang po ba kung magtanong tungkol sa scholarship para sa students with disabilities, kasi may hearing impairment ako?",MEDIUM,ACADEMIC
+"Natatakot po ako pumasok, may scholarship ba para sa students with disabilities? I have a hearing impairment po.",MEDIUM,ACADEMIC
+"Hindi ko na po kaya, may scholarship ba para sa students with disabilities? I'm hearing impaired.",MEDIUM,ACADEMIC
+"Ma'am, sobrang stressed na po ako, may scholarship ba para sa students with disabilities, lalo na kung may hearing impairment ako?",MEDIUM,ACADEMIC
+"Wala na po akong gana, may scholarship ba para sa students with disabilities, I'm hearing impaired po?",MEDIUM,FINANCIAL
+"Di ko na po alam kung ano gagawin, may scholarship ba para sa students with disabilities, kasi may hearing impairment ako?",MEDIUM,FINANCIAL
+"Puwede po bang magtanong tungkol sa scholarship para sa students with disabilities, may hearing impairment ako?",MEDIUM,FINANCIAL
+"Okay lang po sana kung may scholarship para sa mga students with disabilities, I'm hearing impaired po.",MEDIUM,FINANCIAL
+"Sana may scholarship po para sa mga may kapansanan, I have a hearing impairment po.",MEDIUM,FINANCIAL
+"Hi po, medyo kinakabahan po ako sa grades ko, especially sa Math.",MEDIUM,ACADEMIC
+"Tanong ko lang po, ano po ba ang pwede kong gawin after failing?",MEDIUM,ACADEMIC
+"Ma'am, sobrang stressed na po ako sa exam, feeling ko hindi ako magtatagumpay.",HIGH,ACADEMIC
+Gusto ko lang po sana malaman kung may options ba kung paano mag-appeal.,MEDIUM,ACADEMIC
+"Sir, wala na po akong gana, parang gusto ko nang bumigay pagkatapos ng failure na 'to.",HIGH,PERSONAL
+"Di ko na po maintindihan yung sitwasyon, natatakot po ako pumasok sa klase.",MEDIUM,ACADEMIC
+Okay lang po ba na magpa-appointment para pag-usapan natin ‘to?,LOW,ACADEMIC
+"Sana po may guidance kayo, feeling ko tuluyang nasayang yung effort ko.",HIGH,ACADEMIC
+"Ma’am, so sorry po, but I feel like a total failure after failing that big exam.",HIGH,ACADEMIC
+"Gusto ko lang po sana i-check kung pwede pa akong mag-retake, please?",MEDIUM,ACADEMIC
+"Hindi ko na po kaya, sobrang overwhelmed na po ako sa lahat ng requirements.",HIGH,PERSONAL
+"Parang gusto ko nang mag-drop out, ano po ba advice niyo?",MEDIUM,PERSONAL
+"Di ko po alam kung paano magpatuloy, feeling ko wala na akong pag-asa.",HIGH,ACADEMIC
+"Tanong ko lang po, may suggestion ba kayo kung paano mag-bounce back after this?",MEDIUM,ACADEMIC
+"So brang stressed na po ako, please help me, Ma'am.",HIGH,PERSONAL
+"Sana po may tulong kayo, feeling ko wala na akong lakas.",HIGH,PERSONAL
+"Wala na po akong gana, parang wala na rin akong motivation.",MEDIUM,PERSONAL
+"Okay lang po ba na magtanong tungkol sa scholarship options, please?",LOW,ACADEMIC
+"Ma’am, natatakot po ako kung ano na ang mangyayari kung hindi ko pa ma-improve ang grades ko.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana makapag-usap tungkol sa future plans ko, please?",MEDIUM,PERSONAL
+"Hi po, may problema po ako, yung mga chismis tungkol sa akin.",MEDIUM,PERSONAL
+"Tanong ko lang po, medyo kinakabahan po ako sa nangyari sa block.",MEDIUM,ACADEMIC
+"Ma'am, parang sira na ang reputation ko, sobrang hirap naman.",HIGH,ACADEMIC
+"Gusto ko lang po sana, may maitutulong po ba kayo tungkol sa mga chismis?",MEDIUM,PERSONAL
+"Sir, narinig ko po yung mga usapan, grabe po yung damage.",HIGH,PERSONAL
+"Okay lang po ba ‘yan, yung mga taong nagsasabi ng malisyosong bagay?",MEDIUM,PERSONAL
+"Napaka-stress po nito, lalo na’t nasira ang image ko sa PUP.",HIGH,ACADEMIC
+"Wala na po akong gana, nakakaawa po yung nangyari.",HIGH,PERSONAL
+"Paano po ba natin ito aayusin, Ma’am?",MEDIUM,ACADEMIC
+"Natatakot po ako pumasok, baka may target na sila sa akin.",HIGH,PERSONAL
+Di ko na po maintindihan kung paano ko ito haharapin.,MEDIUM,ACADEMIC
+"Sana po may ma-action kayo, sobrang nag-aalala po ako.",HIGH,PERSONAL
+"Parang wala na po akong magagawa, nasira na lahat.",HIGH,PERSONAL
+"Kailangan ko po ng tulong, hindi ko na po kaya ito mag-isa.",HIGH,PERSONAL
+"Ma’am, please, sana po may ma-recommend kayo para sa reputation ko.",MEDIUM,CAREER GUIDANCE
+"So brang stressed na po ako, hindi ako makatulog.",MEDIUM,PERSONAL
+"Grabe po yung damage sa akin, baka hindi na ako makapag-aral.",HIGH,ACADEMIC
+"Hindi ko na po alam kung paano na magpapatuloy, walang pag-asa.",HIGH,PERSONAL
+"Please po, tulungan niyo po ako, yung mga chismis na ito ay nakakasakit.",MEDIUM,PERSONAL
+"Sana po maayos na ito, para makapag-focus na ako sa pag-aaral.",LOW,ACADEMIC
+"Hi po, salamat ulit sa lahat, napakalaking tulong talaga niyo!",LOW,PERSONAL
+"Tanong ko lang po, salamat talaga sa guidance office, sobrang grateful ako.",LOW,ACADEMIC
+"Ma'am, gusto ko lang po sabihin na thank you, helpful kayo sa amin.",LOW,PERSONAL
+"Gusto ko lang po sana magpasalamat sa tulong niyo, kayo ang pinakamagaling!",LOW,PERSONAL
+"Sir, salamat po talaga, naging daan kayo sa amin, truly appreciated.",LOW,PERSONAL
+"Di ako makasalamat sa guidance office, kayo ang best!",LOW,PERSONAL
+"Medyo kinakabahan po ako pero salamat sa tulong niyo, thank you so much!",MEDIUM,PERSONAL
+"Salamat po talaga sa guidance office, nagpapasalamat ako sa inyo.",LOW,PERSONAL
+"Ma’am, salamat po sa lahat, you’re the best guidance counselor ever!",LOW,PERSONAL
+"Kaya po namin ito, salamat sa tulong niyo, thank you!",LOW,PERSONAL
+"Hindi ko na po alam kung paano magpasalamat, salamat po sa guidance office.",LOW,PERSONAL
+"Wala na po akong gana pero salamat sa tulong niyo, thank you, appreciate it.",MEDIUM,PERSONAL
+"Natatakot po ako pumasok pero salamat sa guidance office, thank you!",MEDIUM,PERSONAL
+"So brang stressed na po ako pero salamat sa tulong niyo, please help.",HIGH,PERSONAL
+"Di ko na po kaya pero salamat sa guidance office, sana may maawa.",HIGH,PERSONAL
+"Gusto ko lang po sana magpasalamat sa lahat ng tulong niyo, truly grateful.",LOW,PERSONAL
+"Ma’am, thank you po talaga, kayo ang nag-aangat ng loob ko.",LOW,PERSONAL
+"Salamat po sa guidance office, naging mas maganda ang buhay ko dahil sa inyo.",LOW,PERSONAL
+"Kailangan ko po ng tulong, salamat po sa guidance office, please help me.",MEDIUM,PERSONAL
+"Hindi ko na po maintindihan kung paano magpasalamat, sobrang thankful ako.",LOW,PERSONAL
+"Hi po, medyo kinakabahan po ako, pwede bang tulungan niyo ako sa schedule ko?",MEDIUM,ACADEMIC
+"Tanong ko lang po, may problema ba sa registration ko this sem?",MEDIUM,ACADEMIC
+"Good morning, Sir, sobrang stressed na po ako sa exams, tulong po!",HIGH,ACADEMIC
+"Ma'am, gusto ko lang po sana malaman kung may options ba para sa mga failing grades ko.",MEDIUM,ACADEMIC
+"Uy, natatakot po ako pumasok, feeling ko hindi ako makaka-attend sa lahat ng classes.",MEDIUM,PERSONAL
+Gusto ko lang po sana magpaalam na hindi ako makakasama sa group project dahil sa personal issues.,MEDIUM,PERSONAL
+"Ma'am, wala na po akong gana, feeling ko hindi ako makakabalanse ng school at family.",MEDIUM,PERSONAL
+"Di ko na po maintindihan yung mga requirements, sobrang overwhelmed na po ako.",MEDIUM,ACADEMIC
+"Hey, pwede bang magpa-schedule ulit ng meeting? Kailangan ko po ng guidance.",MEDIUM,ACADEMIC
+"Sir, medyo kinakabahan po ako sa mga deadlines, baka may makalimutan pa ako.",MEDIUM,ACADEMIC
+"Ma'am, tulong naman po, feeling ko hindi ko na po kaya yung pressure, sobra!",HIGH,ACADEMIC
+"Uy, sobrang stressed na po ako with all the assignments, please help!",HIGH,ACADEMIC
+Gusto ko lang po sana magtanong kung may scholarships ba para sa students na mahina ang grades?,LOW,FINANCIAL
+"Di ko po alam kung paano i-adjust ang schedule ko, tulong po!",MEDIUM,ACADEMIC
+"Ma’am, wala na po akong gana sa pag-aaral, feeling ko wala na akong future.",HIGH,PERSONAL
+"Natatakot po ako na bumagsak ako sa lahat ng subjects, please!",MEDIUM,ACADEMIC
+"Sir, sobrang stressed na po ako, need ko po ng advice, please.",MEDIUM,PERSONAL
+"Uy, hindi ko na po kaya ang pressure, please help me, I’m so overwhelmed.",MEDIUM,PERSONAL
+Gusto ko lang po sana sabihin na hindi ako makakasama sa extracurricular activities this year.,MEDIUM,CAREER GUIDANCE
+"Hi po, may emergency po, pwede bang magpa-schedule?",HIGH,PERSONAL
+"Tanong ko lang po, may problema ba ako sa attendance?",LOW,ACADEMIC
+"Ma'am, sobrang stressed na po ako, may emergency po ba?",MEDIUM,PERSONAL
+"Gusto ko lang po sana, may ma-tulong ba kayo sa emergency?",MEDIUM,PERSONAL
+"Sir, medyo kinakabahan po ako, may emergency ba to?",HIGH,PERSONAL
+"Okay lang po ba sa inyo na may emergency ako, please?",HIGH,PERSONAL
+"Pa-tulong po, emergency po ito, hindi ko na po kaya.",CRITICAL,PERSONAL
+"Wala na po akong gana, emergency po, please help!",CRITICAL,PERSONAL
+"Natatakot po ako pumasok, may emergency ba po?",HIGH,PERSONAL
+"Di ko na po maintindihan, emergency po, kailangan ko po ng tulong.",HIGH,ACADEMIC
+"Ma’am, so sad ako, may emergency po, please help me.",MEDIUM,PERSONAL
+"Gusto ko lang po sana magpaalam na may emergency ako, salamat po.",LOW,PERSONAL
+"Ang hirap po, emergency po ito, feeling ko sumusuko na ako.",CRITICAL,PERSONAL
+Okay po ba kung magtanong ako tungkol sa emergency na to?,MEDIUM,PERSONAL
+"Hindi ko na po kayang i-handle ito, emergency po talaga, please!",CRITICAL,PERSONAL
+"Medyo panic na po ako, may emergency ba po, please guide me.",MEDIUM,PERSONAL
+"Wala na po akong pag-asa, emergency po, kailangan ko po ng tulong agad.",CRITICAL,PERSONAL
+Pwede po bang i-reschedule lahat dahil may emergency po ako?,MEDIUM,ACADEMIC
+"Hi po, kailangan ko po sana ng advice tungkol sa grades ko, medyo kinakabahan po ako.",MEDIUM,ACADEMIC
+"Ma'am, gusto ko lang po sana malaman kung paano ko po mapapabuti yung performance ko sa mga quizzes.",LOW,ACADEMIC
+"Tanong ko lang po, may suggestion po ba kayo kung paano mag-aral ng mas epektibo?",LOW,ACADEMIC
+"Sir, sobrang stressed na po ako with all the assignments, tulong po sana.",MEDIUM,ACADEMIC
+"Wala na po akong gana, medyo malungkot lang po talaga ngayon, pasensya na po.",MEDIUM,PERSONAL
+"Di ko na po maintindihan yung readings, parang nawawala na po ako sa topic.",MEDIUM,ACADEMIC
+Gusto ko lang po sana mag-check kung may available na tutoring sessions para sa amin.,LOW,ACADEMIC
+"Natatakot po ako pumasok, feeling ko hindi ako makakasabay sa mga classmates.",MEDIUM,ACADEMIC
+"Ma'am, tulong naman po, sobrang overwhelmed na po ako sa sched ng mga subjects ko.",MEDIUM,ACADEMIC
+Okay lang po ba kung magpapa-schedule ako ng meeting para pag-usapan to?,LOW,ACADEMIC
+"Sana po may makatulong sa akin, parang wala na po akong pag-asa.",HIGH,PERSONAL
+"Hindi ko na po kaya, sobrang dami na po ng pressure, pakiramdam ko sasabog na ako.",HIGH,PERSONAL
+"Ang hirap po ng life, feeling ko sumusuko na ako sa lahat.",MEDIUM,PERSONAL
+"Ma’am, kailangan ko po sana ng guidance, feeling ko lost na ako sa academics ko.",MEDIUM,ACADEMIC
+"Di ko po alam kung paano mag-manage ng time, parang lahat ay nagiging problema.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana i-update ka, wala na po akong gana mag-aral.",MEDIUM,ACADEMIC
+"Sir, medyo kinakabahan po ako sa upcoming exam, please help me.",MEDIUM,ACADEMIC
+Okay lang ba kung magtanong ako tungkol sa mga scholarship opportunities?,LOW,CAREER GUIDANCE
+"Hindi ko po kayang ipagpatuloy, sobrang stressed na po ako sa lahat, pakiramdam ko wala na akong lakas.",HIGH,PERSONAL
+"Hi po, di ko na kaya, sobrang stressed na po ako sa lahat ng assignments.",MEDIUM,ACADEMIC
+"Tanong ko lang po, wala na po akong gana, kailangan ko po ng tulong.",MEDIUM,PERSONAL
+"Ma’am, medyo kinakabahan po ako, di ko na kaya yung pressure, please.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana, di ko na kaya, feeling ko sasabog na ako.",MEDIUM,PERSONAL
+"Sir, tulong naman po, di ko na kaya yung mga exams, sobrang dami!",HIGH,ACADEMIC
+"Okay lang po ba, di ko na kaya, pakiramdam ko talagang bumabaligtad na buhay ko.",HIGH,PERSONAL
+"Hi, di ko na kaya, wala na po akong lakas, please help me.",HIGH,PERSONAL
+"Ma’am, natatakot po ako pumasok, di ko na kaya yung mga tao, sana po.",MEDIUM,PERSONAL
+"Gusto ko lang po sana magtanong, di ko na kaya, feeling ko maguguba na ako.",HIGH,PERSONAL
+"Sir, sobrang stressed na po ako, di ko na kaya yung mga deadlines, please advise.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan, di ko na kaya, wala na po akong pag-asa, sana po.",CRITICAL,PERSONAL
+"Okay, medyo kinakabahan po ako, di ko na kaya yung pressure ng grades, please.",MEDIUM,ACADEMIC
+"Hi, wala na po akong gana, di ko na kaya, feeling ko sumusuko na ako.",HIGH,PERSONAL
+"Ma’am, tulong naman po, di ko na kaya yung situation, pakiramdam ko babagsak ako.",HIGH,PERSONAL
+"Gusto ko lang po sana magpaalam, di ko na kaya, kailangan ko na po ng tulong.",MEDIUM,PERSONAL
+"Sir, feeling ko babagsak na po ako, di ko na kaya, pakiramdam ko sumusuko na ako.",HIGH,PERSONAL
+"Okay, di ko na kaya, sobrang stressed na po ako, kailangan ko ng guidance, please.",HIGH,PERSONAL
+"Hi, natatakot po ako, di ko na kaya, pakiramdam ko wala na akong pag-asa, sana po.",CRITICAL,PERSONAL
+"Hi po, gusto ko lang po sana sabihin na di na ko excited sa classes, feeling ko wala na akong gana.",MEDIUM,ACADEMIC
+"Tanong ko lang po, medyo kinakabahan po ako, hindi ko na alam kung bakit ayokong pumunta.",MEDIUM,ACADEMIC
+"Ma'am, sobrang stressed na po ako, feeling ko hindi ko na kaya pang mag-aral.",HIGH,ACADEMIC
+"Gusto ko lang po sana ipaalam na wala na po akong gana, parang everything is too much.",HIGH,ACADEMIC
+"Sir, natatakot po ako pumasok, feeling ko babagsak na naman ako sa lahat.",HIGH,ACADEMIC
+"Di ko na po maintindihan yung lahat, wala na po akong pag-asa, ayoko na.",CRITICAL,PERSONAL
+"“Uy Ma’am,” feeling ko wala na po akong saysay, sobrang down na po talaga.",HIGH,PERSONAL
+"Ma’am, tulong naman po, wala na po akong pakialam sa grades, ayoko na.",MEDIUM,ACADEMIC
+"“Excuse me po,” medyo kinakabahan po ako sa lahat, parang gusto ko nang umuwi.",MEDIUM,PERSONAL
+"Gusto ko lang po sana sabihin na kaya ko na, pero wala na po talaga, ayoko na.",MEDIUM,PERSONAL
+"Sir, sobrang stressed na po ako, parang gusto ko nang magpahinga, ayoko na.",MEDIUM,ACADEMIC
+"“Hi Sir,”  wala na po akong gana, parang ang hirap na hirap na po talaga.",MEDIUM,ACADEMIC
+"Di ko na po kayang bumalik, natatakot po ako sa future, ayoko na.",HIGH,CAREER GUIDANCE
+"“Ma’am, please,” feeling ko hindi na ako magtatagumpay, ayoko na.",MEDIUM,PERSONAL
+"“Uy, Ma’am,” parang gusto ko nang sumuko, wala na po akong lakas, ayoko na.",MEDIUM,PERSONAL
+"Gusto ko lang po sana sabihin na feeling ko wala na, so sad po talaga.",MEDIUM,PERSONAL
+"“Sir, please,” sobrang overwhelmed na po ako, parang hindi na ko makatulog, ayoko na.",MEDIUM,ACADEMIC
+"Ma'am, sana po maintindihan niyo, wala na po akong pag-asa, ayoko na.",MEDIUM,PERSONAL
+"“Guys,”  feeling ko hindi na ko makasabay, so stressful na po talaga, ayoko na.",MEDIUM,ACADEMIC
+"“Ma’am,” natatakot po ako, sana may makatulong pa, ayoko na.",HIGH,PERSONAL
+"Hi po, gusto ko lang po sana itanong, feeling ko talaga, sobrang sawa na po ako sa school ngayon.",MEDIUM,ACADEMIC
+"Tanong ko lang po, medyo kinakabahan po ako, parang gusto ko nang tumigil.",MEDIUM,ACADEMIC
+"Ma'am, sobrang stressed na po ako, hindi ko na alam kung paano mag-focus.",HIGH,ACADEMIC
+"Good morning, wala na po akong gana, feeling ko gusto ko nang umuwi na lang.",HIGH,PERSONAL
+"Sir, natatakot po ako pumasok, sobrang takot ko po.",HIGH,PERSONAL
+"Gusto ko lang po sana sabihin na hindi ko na po kaya, talagang nasasawa na ako.",HIGH,PERSONAL
+"Di ko na po maintindihan yung mga lessons, parang wala na akong pag-asa.",MEDIUM,ACADEMIC
+"Ma'am, tulong naman po, feeling ko talagang susuko na ako sa lahat.",HIGH,ACADEMIC
+"Okay lang po ba, kasi sobrang hina din po ata yung effort ko ngayon.",MEDIUM,ACADEMIC
+"Parang gusto ko nang mag-quit, sobrang hirap na po talaga.",CRITICAL,PERSONAL
+"Hindi ko po alam kung ano ang gagawin, parang wala na po akong lakas.",CRITICAL,PERSONAL
+"Suko na po ako, feeling ko hindi na ako magtatagumpay.",CRITICAL,PERSONAL
+"Wala na po akong pag-asa, parang bumigay na po ako.",CRITICAL,PERSONAL
+"Ma’am, medyo kinakabahan po ako sa exams, baka bumagsak ako.",MEDIUM,ACADEMIC
+"Di ko na po kayang abutin ‘to, sobrang dami na po talaga.",CRITICAL,PERSONAL
+"Okay lang po sana, para ma-adjust na lang ako sa sitwasyon.",LOW,PERSONAL
+"Parang gusto ko nang magpahinga, para makapag-recover ako.",LOW,PERSONAL
+"Sobra pong stressed, parang gusto ko nang umiyak.",MEDIUM,PERSONAL
+"Hindi ko po kayang ituloy, sobrang hirap na po talaga.",HIGH,ACADEMIC
+"Hi po, may tanong lang po ako tungkol sa schedule ko.",LOW,ACADEMIC
+"Ma'am, medyo kinakabahan po ako, kailangan ko po ng guidance.",MEDIUM,ACADEMIC
+"Good morning, Sir, pwede po bang magpa-explain tungkol sa requirements?",LOW,ACADEMIC
+Gusto ko lang po sana magpaalam na hindi ko po alam kung paano mag-adjust ng course.,MEDIUM,ACADEMIC
+"Tanong ko lang po, may pwedeng gawin ba para sa mga failing grades ko?",MEDIUM,ACADEMIC
+"Sir, sobrang stressed na po ako sa dami ng assignments, tulungan niyo naman po ako.",HIGH,ACADEMIC
+"Wala na po akong gana, parang wala na rin akong pag-asa, Ma'am.",HIGH,PERSONAL
+"Natatakot po ako pumasok sa klase, baka may mas mataas pa na grade ang mga kaklase ko.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan yung mga instructions, parang confusing masyado.",MEDIUM,ACADEMIC
+"Ma’am, hindi ko na po kaya, sobrang dami na po talaga!",CRITICAL,PERSONAL
+Pwede po bang mag-schedule ng meeting para pag-usapan natin yung mga problema ko?,LOW,ACADEMIC
+Gusto ko lang po sana magpaalam na medyo lost ako sa mga requirements.,LOW,ACADEMIC
+"Sir, tulungan niyo naman po ako, parang wala na akong pag-asa sa courses ko.",HIGH,ACADEMIC
+"Ang hirap po ng lahat, feeling ko hindi ako makakayanan.",MEDIUM,PERSONAL
+"Tanong ko lang po, may pwedeng gawin para mabawasan yung stress ko?",MEDIUM,PERSONAL
+"Di ko po alam kung paano mag-focus, so br brain drained na po ako.",MEDIUM,ACADEMIC
+"Ma'am, parang wala na po akong pag-asa, please help me.",HIGH,PERSONAL
+Sana po may ma-recommend kayo na mas madaling course para sa akin.,MEDIUM,ACADEMIC
+Gusto ko lang po sana magpaalam na sobrang affected ako sa nangyari.,MEDIUM,PERSONAL
+"Hi po, medyo kinakabahan po ako, kailangan ko po sana ng tulong.",MEDIUM,PERSONAL
+"Tanong ko lang po, feeling ko hindi ako makakasabay sa mga assignments, sobra stressed na po ako.",HIGH,ACADEMIC
+"Good morning, Ma'am, gusto ko lang po sana malaman kung may available na schedule para sa guidance counseling.",LOW,CAREER GUIDANCE
+"Gusto ko lang po sana magpa-schedule, parang hindi ko alam kung saan ako magsisimula.",MEDIUM,ACADEMIC
+"Sir, natatakot po ako pumasok kasi hindi ko alam kung paano ko haharapin ang lahat.",HIGH,PERSONAL
+"Ma'am, wala na po akong gana, kailangan ko po ng support, please?",HIGH,PERSONAL
+"Di ko na po maintindihan ang mga requirements, sobrang overwhelmed na po ako ngayon.",MEDIUM,ACADEMIC
+"Hey, parang hindi ako makapag-concentrate sa studies, kailangan ko po ng guidance.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana mag-usap, feeling ko lost ako at hindi ko alam ang gagawin.",MEDIUM,PERSONAL
+"Ma'am, tulong naman po, halos sumuko na po ako sa pag-aaral.",HIGH,ACADEMIC
+Okay lang po ba na magpa-schedule ako? Medyo kinakabahan po ako sa mga deadlines.,LOW,ACADEMIC
+"Sir, sobrang stressed na po ako sa lahat ng dapat kong gawin, please help me.",MEDIUM,PERSONAL
+"Parang wala na po akong pag-asa, gusto ko lang po sana magpaliwanag.",HIGH,ACADEMIC
+"Di ko na po kaya, kailangan ko po ng guidance para hindi ako masiraan ng loob.",HIGH,PERSONAL
+"Ma'am, please, natatakot po ako mag-fail sa mga exams, sobrang kinakabahan po ako.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magpaalam na hindi ako makakadalo sa meeting, sorry po.",LOW,PERSONAL
+Okay lang po ba kung magpa-schedule ako para makausap kayo?  Parang naguguluhan na po ako.,MEDIUM,ACADEMIC
+"Sir, sobrang sad po kasi hindi ko maabot ang mga goals ko, wala na po akong gana.",MEDIUM,PERSONAL
+"Di ko na po alam kung paano, kailangan ko po ng tulong para mag-manage ng stress ko.",MEDIUM,PERSONAL
+"Ma'am, please, hindi ko po alam kung ano ang gagawin, sobrang worried na po ako.",HIGH,PERSONAL
+"Hi po, may emergency po talaga ako, need ko po ng tulong.",CRITICAL,PERSONAL
+"Tanong ko lang po, may pwede bang gawin pag may emergency?",LOW,ACADEMIC
+"Ma'am, medyo kinakabahan po ako, may problema po kasi.",MEDIUM,PERSONAL
+Gusto ko lang po sana malaman kung may guidance po kayo sa ganitong sitwasyon.,MEDIUM,ACADEMIC
+"Sir, sobrang stressed na po ako, may emergency po, please help.",HIGH,PERSONAL
+"Di ko na po maintindihan, natatakot po ako pumasok sa klase.",HIGH,ACADEMIC
+"Wala na po akong gana, may emergency po, feeling ko wala na akong pag-asa.",CRITICAL,PERSONAL
+"Puwede po bang magpa-schedule ng meeting, may emergency po ako?",MEDIUM,PERSONAL
+"Ma’am, hindi ko na po kaya, sobrang overwhelmed na po ako.",HIGH,ACADEMIC
+Okay lang po ba na magtanong tungkol sa emergency na to?,LOW,PERSONAL
+"Ang hirap po, natatakot po ako sa future, may emergency po.",HIGH,CAREER GUIDANCE
+Gusto ko lang po sana i-check kung may option para sa emergency na ‘to.,MEDIUM,PERSONAL
+"Hindi ko na po alam kung ano ang gagawin, sobrang kinakabahan po ako.",HIGH,PERSONAL
+"Ma’am, tulong po, may emergency po, kailangan ko po ng guidance.",HIGH,PERSONAL
+"Parang wala na po akong pag-asa, may emergency po, walang magawa.",HIGH,PERSONAL
+"Di ko na po pwedeng ipagpatuloy, sobrang stressed na po ako, please!",HIGH,PERSONAL
+"Okay lang po ba na pag-usapan natin ang emergency na ‘to, please?",MEDIUM,PERSONAL
+"May emergency po talaga, natatakot po ako na baka bumagsak ako.",HIGH,ACADEMIC
+"Wala na po akong lakas ng loob, sobrang kinakabahan po ako sa emergency.",HIGH,PERSONAL
+"Gusto ko lang po magpaalam na may emergency po ako, sana po maintindihan niyo.",MEDIUM,PERSONAL
+"Hi po, gusto ko lang po sana malaman kung paano ako makakapag-cope sa feelings ko ngayon.",MEDIUM,PERSONAL
+"Ma’am, medyo kinakabahan po ako, parang gusto ko na lang mawala.",MEDIUM,PERSONAL
+"Tanong ko lang po, parang wala na po akong pag-asa sa ngayon.",HIGH,ACADEMIC
+"Gusto ko lang po sana pag-usapan natin ‘to, sobrang stressed na po ako.",MEDIUM,PERSONAL
+"Sir, wala na po akong gana, gusto ko na lang mawala.",HIGH,PERSONAL
+"Di ko na po maintindihan kung ano ang gagawin ko, natatakot po ako pumasok.",HIGH,ACADEMIC
+"Ma’am, tulong naman po, parang hindi ko na po kaya.",HIGH,PERSONAL
+Okay lang po ba kung magpapausap ako? Parang gusto ko na lang mawala.,MEDIUM,PERSONAL
+"Gusto ko lang po sana sabihin sa inyo, wala na po akong pag-asa.",HIGH,PERSONAL
+"Sir, sobrang overwhelmed na po ako, gusto ko na lang mawala.",MEDIUM,PERSONAL
+"Parang gusto ko na lang mawala, wala na po akong lakas.",HIGH,PERSONAL
+"Ma’am, medyo sad ako, gusto ko lang po sana mag-share ng feelings ko.",MEDIUM,PERSONAL
+"Di ko na po alam kung paano, parang gusto ko na lang mawala.",HIGH,PERSONAL
+Okay lang po ba kung magtanong ako? Parang wala na po akong pag-asa.,HIGH,PERSONAL
+Gusto ko lang po sana sabihin na hindi ko na kayang magpatuloy.,HIGH,PERSONAL
+"Sir, natatakot po ako, gusto ko na lang mawala.",HIGH,PERSONAL
+"Ma’am, tulong po, parang gusto ko na lang mawala, sobrang hirap.",HIGH,PERSONAL
+"Parang gusto ko na lang mawala, wala na po akong pag-asa sa buhay.",HIGH,PERSONAL
+"Gusto ko lang po sana ipaalam na hindi ako okay ngayon, gusto ko na lang mawala.",HIGH,PERSONAL
+"Okay lang po ba na pag-usapan natin 'to? Parang gusto ko na lang mawala, wala na po akong gana.",HIGH,PERSONAL
+"Hi po, gusto ko lang po sana sabihin na gusto ko na lang mawala.",HIGH,PERSONAL
+"Ma’am, medyo kinakabahan po ako, parang gusto ko lang maglaho.",MEDIUM,PERSONAL
+"Sir, wala na po akong gana, feeling ko gusto ko na lang sumuko.",MEDIUM,PERSONAL
+"Tanong ko lang po, feeling ko gusto ko na lang magtago.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, sobrang stressed na po ako, gusto ko na lang mawala.",HIGH,PERSONAL
+"Di ko na po maintindihan yung feelings ko, natatakot po ako pumasok.",MEDIUM,PERSONAL
+"Ma’am, tulong naman po, wala na po akong pag-asa, gusto ko na lang maglaho.",HIGH,PERSONAL
+Okay lang po ba kung sabihin ko na gusto ko na lang magbakasakaling mawala?,HIGH,PERSONAL
+"Sir, sobrang overwhelmed na po ako, hindi ko na po kaya.",HIGH,ACADEMIC
+"Pagbigyan niyo po ako, gusto ko na lang maglaho, parang wala na po akong saysay.",HIGH,PERSONAL
+"Gusto ko lang po sana, feeling ko gusto ko na lang magpakita ng wala.",HIGH,PERSONAL
+"Di ko na po kayang harapin ang mga bagay-bagay, natatakot po ako pumasok.",HIGH,PERSONAL
+"Ma'am, tulong po, parang gusto ko na lang magpabaya, wala na po akong lakas.",HIGH,PERSONAL
+"Ang hirap po, gusto ko na lang maglaho, walang saysay ang lahat.",HIGH,PERSONAL
+"Okay, sana maintindihan niyo, medyo kinakabahan po ako at gusto ko lang mawala.",MEDIUM,PERSONAL
+"Sir, wala na po akong pag-asa, hindi ko na po kaya ang lahat ng ito.",HIGH,PERSONAL
+"Gusto ko na lang po na maglaho na lang ako, wala na po akong gana.",HIGH,PERSONAL
+"Ma’am, natatakot po ako, gusto ko na lang magtago ng sarili ko.",HIGH,PERSONAL
+"Okay, kaya ko na lang po, pero gusto ko na lang maglaho, sobrang stressed na po ako.",MEDIUM,PERSONAL
+"Di ko na po alam kung paano, gusto ko na lang maglaho, parang wala na po akong saysay.",MEDIUM,PERSONAL
+"Hi po, wala na po akong gana, feeling ko biglang nawala lahat ng pag-asa.",MEDIUM,PERSONAL
+"Tanong ko lang po, sobrang stressed na po ako, wala na po akong saysay.",MEDIUM,ACADEMIC
+"Ma'am, medyo kinakabahan po ako, parang wala na rin po talaga.",MEDIUM,PERSONAL
+"Gusto ko lang po sana sabihin na wala na, feeling ko hindi na ako makabangon.",HIGH,PERSONAL
+"Sir, tulungan niyo po ako, wala na po akong saysay sa college.",HIGH,ACADEMIC
+"Uy, wala na po akong saysay, parang nawala na lahat ng pangarap ko.",HIGH,PERSONAL
+"Okay lang po ba yan, wala na po akong saysay sa lahat?",HIGH,PERSONAL
+"Paano po ito, wala na po akong saysay, sobrang down na po ako.",HIGH,PERSONAL
+"Ma'am, natatakot po ako pumasok, wala na po akong saysay.",HIGH,PERSONAL
+"Hindi ko na po kaya, wala na po akong saysay, bigla na lang po.",HIGH,PERSONAL
+"Gusto ko lang po sana malaman, wala na po akong saysay sa academics.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan, wala na po akong saysay, feeling lost na po ako.",CRITICAL,PERSONAL
+"Uy, sobrang stressed na po ako, wala na po akong saysay sa buhay.",HIGH,PERSONAL
+"Parang wala na pong pag-asa, wala na po akong saysay, please help me.",HIGH,PERSONAL
+"Ma'am, tulungan niyo po ako, wala na po akong saysay, feeling hopeless.",HIGH,PERSONAL
+"Okay lang ba po?  Wala na po akong saysay,  hindi ko na alam kung ano ang gagawin.",MEDIUM,PERSONAL
+"Sir, parang wala na po talaga, wala na po akong saysay sa lahat ng pinaghirapan ko.",HIGH,PERSONAL
+"Wala na po akong saysay,  sobrang lungkot na po ako, feeling like giving up.",HIGH,PERSONAL
+"Di ko na po kaya, wala na po akong saysay,  please, any advice po?",CRITICAL,PERSONAL
+"Hi po, medyo kinakabahan po ako, feeling ko gusto ko lang lumayo.",MEDIUM,PERSONAL
+"Tanong ko lang po, parang wala na po akong pag-asa, sobrang sad na po.",HIGH,ACADEMIC
+"Good morning, Ma'am, natatakot po ako pumasok, gusto ko po magpahinga.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, sobrang stressed na po ako, hindi ko na po kayang mag-concentrate.",HIGH,ACADEMIC
+"Excuse me, Sir, wala na po akong gana, parang gusto ko lang matulog at hindi na magising.",MEDIUM,PERSONAL
+"Hey, parang gusto ko po mag-quit, feeling ko walang saysay.",HIGH,CAREER GUIDANCE
+"Ma’am, tulong po, sobrang overwhelmed na po ako, hindi ko po alam kung paano.",HIGH,ACADEMIC
+"Di ko na po maintindihan, parang gusto ko lang mawala, please help.",CRITICAL,PERSONAL
+"Gusto ko po sana, so sad na po ako, hindi na ako makatulog.",HIGH,PERSONAL
+"Sir, medyo kinakabahan po ako, feeling ko gusto kong sumuko.",MEDIUM,ACADEMIC
+"Hi, natatakot po ako pumasok, baka mas malala pa, please.",CRITICAL,PERSONAL
+"Ma’am, tulong po, sobrang stressed na po ako, hindi ko na po kayang mag-handle.",HIGH,ACADEMIC
+"Excuse me, parang gusto ko lang lumayo, wala na po akong pag-asa.",MEDIUM,PERSONAL
+"Di ko na po kaya, sobrang sad na po ako, gusto ko lang maging alone.",HIGH,PERSONAL
+"Gusto ko lang po sana, natatakot po ako pumasok, please, please.",MEDIUM,PERSONAL
+"Hey, parang gusto ko lang mag-quit, feeling ko walang saysay, please help me.",MEDIUM,CAREER GUIDANCE
+"Sir, so sad na po ako, wala na po akong gana, please po.",HIGH,PERSONAL
+"Ma’am, tulong po, sobrang overwhelmed na po ako, hindi ko na po kayang mag-focus.",HIGH,ACADEMIC
+"Hi po, hindi ko na po kaya, feeling ko gusto ko lang lumayo, please, please.",HIGH,PERSONAL
+"Hi po, gusto ko lang po sana malaman kung may pwede akong gawin.",MEDIUM,ACADEMIC
+"Tanong ko lang po, feeling ko talaga lost na ako, wala na po akong idea.",MEDIUM,ACADEMIC
+"Ma'am, medyo kinakabahan po ako, hindi ko alam kung paano mag-focus.",MEDIUM,ACADEMIC
+"Sir, sobrang stressed na po ako sa lahat ng deadlines, hindi ko na po alam kung saan magsimula.",HIGH,ACADEMIC
+"Gusto ko lang po sana magpaalam na wala na po akong gana, parang wala na pong saysay.",HIGH,PERSONAL
+"Okay lang po ba kung magtanong ako? Natatakot po ako pumasok, hindi ko na po kaya.",HIGH,PERSONAL
+"Di ko na po maintindihan kung paano mag-navigate sa buhay, feeling ko grabe na po yung pressure.",MEDIUM,CAREER GUIDANCE
+"Ma'am, tulong naman po, sobra akong confused, wala na po akong mapagtatanungan.",MEDIUM,ACADEMIC
+"Okay, so, hindi ko na po alam gagawin ko, parang naguguluhan na po ako.",MEDIUM,PERSONAL
+Gusto ko lang po sana sabihin na hindi ko na po kayang mag-handle ng ganito.,HIGH,PERSONAL
+"Sir, feeling ko po tuloy babagsak ako, hindi ko na po alam kung paano mag-aral.",MEDIUM,ACADEMIC
+"Hindi ko na po alam gagawin ko, parang wala na po akong pag-asa.",HIGH,PERSONAL
+"Ma'am, please, sobrang dami na po ng exams, wala na po akong lakas ng loob.",MEDIUM,ACADEMIC
+Okay lang po ba kung mag-uupdate ako? Medyo kinakabahan pa rin po ako sa mga nangyayari.,MEDIUM,PERSONAL
+"Di ko na po maintindihan kung ano ang gusto ko sa buhay, wala na po akong direksyon.",MEDIUM,CAREER GUIDANCE
+Gusto ko lang po sana malaman kung mayroon bang pwede akong ipagbigay pansin sa guidance center.,LOW,ACADEMIC
+"Sobrang stressed na po ako, feeling ko hindi ako makatulog, hindi ko na po kayang magpanggap.",HIGH,PERSONAL
+"Okay, so, hindi ko na po alam gagawin ko, parang wala na po akong magagawa.",HIGH,PERSONAL
+"Ma'am, tulong po, wala na po akong pag-asa, ganito na lang po ba talaga?",CRITICAL,PERSONAL
+"Hindi ko na po kaya, sobrang overwhelmed na po ako, feeling ko bumabagsak na po ako.",HIGH,ACADEMIC
+"Hi po, medyo kinakabahan po ako, feeling ko biglang bumigay yung loob ko.",MEDIUM,PERSONAL
+"Tanong ko lang po, parang wala na po akong lakas ng loob ngayon.",MEDIUM,PERSONAL
+"Ma'am, sobrang stressed na po ako, hindi ko na po alam kung paano mag-focus.",HIGH,ACADEMIC
+"Gusto ko lang po sana, pag-usapan natin ‘to, feeling ko hindi na ako makayanang mag-aral.",MEDIUM,ACADEMIC
+"Sir, natatakot po ako pumasok, parang everything is too much para sa akin.",HIGH,PERSONAL
+"Okay lang po ba na magpa-usap ako? Feeling ko talaga, wala na po akong gana.",HIGH,PERSONAL
+"Di ko na po maintindihan, parang sobrang lungkot na po, gusto ko lang magpahinga.",MEDIUM,PERSONAL
+"Ma’am, sobrang overwhelmed na po ako, hindi ko na po kayang harapin ang lahat.",HIGH,ACADEMIC
+"Gusto ko lang po sana, tulungan niyo po ako, feeling ko sumusuko na ako sa lahat.",HIGH,PERSONAL
+"Okay, so, kinakabahan po ako, baka mag-crash din ako sa exams.",MEDIUM,ACADEMIC
+"Parang wala na po akong pag-asa, sobrang sad na po, gusto ko lang umiyak.",HIGH,PERSONAL
+"Hindi ko na po kaya, parang gusto ko nang mag-quit, feeling ko wala na akong pagpipilian.",HIGH,CAREER GUIDANCE
+"Ma’am, tulong naman po, feeling ko binabaliw na po ako sa pressure.",HIGH,ACADEMIC
+"Di ko po alam kung ano ang gagawin, parang wala na po akong mapagtatanungan.",MEDIUM,PERSONAL
+Okay lang po na mag-vent out? Feeling ko sobrang sakit na po sa ulo.,MEDIUM,PERSONAL
+"Parang gusto ko na lang lumabas ng bansa, sobrang stressed na po talaga.",MEDIUM,PERSONAL
+"Natatakot po ako, baka mas malala pa, parang gusto ko na maging silent.",MEDIUM,PERSONAL
+"Sobrang heartbroken po ako, feeling ko hindi na ako magiging okay ulit.",HIGH,PERSONAL
+"Gusto ko lang po sana, pag-usapan natin kung paano ako makakayanan.",MEDIUM,PERSONAL
+"Hi po, medyo kinakabahan po ako, gusto ko lang po i-check kung may pwedeng pag-usapan.",MEDIUM,PERSONAL
+"Tanong ko lang po, feeling ko wala na po akong pag-asa sa buhay.",HIGH,PERSONAL
+"Ma'am, sobrang stressed na po ako lately, parang gusto ko lang magpahinga.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, pakiramdam ko parang gusto kong mawala.",HIGH,PERSONAL
+"Sir, natatakot po ako pumasok, parang hindi ko na kaya.",HIGH,PERSONAL
+"Okay lang po ba kung magpapa-usap tayo, feeling ko kasi parang wala na akong laban.",HIGH,PERSONAL
+"Wala na po akong gana, parang ang sakit sakit ng loob.",HIGH,PERSONAL
+"Di ko na po maintindihan, parang gusto ko lang lumayo sa lahat.",HIGH,PERSONAL
+"Ma'am, please help me, feeling ko naguguluhan na po talaga ako.",HIGH,ACADEMIC
+"Gusto ko lang po sana i-share, feeling ko kasi sobrang bigat ng mundo.",MEDIUM,PERSONAL
+"Parang gusto kong sumuko na po, wala na po akong pagtitiwala.",HIGH,PERSONAL
+"Okay, kailangan ko lang po mag-ventilate, feeling ko kasi parang sasabog na ako.",HIGH,PERSONAL
+"Hindi ko na po kaya, sobrang dami na po ng problema.",CRITICAL,PERSONAL
+"Sir, medyo kinakabahan po ako sa future, feeling ko walang option.",MEDIUM,CAREER GUIDANCE
+"Wala na po akong pag-asa, parang gusto ko na lang maglaho.",CRITICAL,PERSONAL
+"Pakiramdam ko po, wala na pong saysay ng kahit ano.",CRITICAL,PERSONAL
+"Di ko po alam kung paano na dapat, parang gusto ko na lang mawala.",CRITICAL,PERSONAL
+"Gusto ko lang po sana magpaalala, na nandito po kayo para sa akin.",MEDIUM,PERSONAL
+"Okay, pwede po ba tayo magkausap tungkol dito, feeling ko sobrang alone ako.",MEDIUM,PERSONAL
+"Hi po, medyo kinakabahan po ako, parang gusto ko lang magpahinga.",LOW,PERSONAL
+"Tanong ko lang po, feeling ko kasi wala na akong pag-asa sa buhay.",MEDIUM,ACADEMIC
+"Ma'am, sobrang stressed na po ako lately, di ko na alam kung paano mag-focus.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana malaman kung mayroon bang pwedeng gawin, parang wala na po akong gana.",MEDIUM,PERSONAL
+"Sir, natatakot po ako pumasok, sobrang lungkot na po talaga.",HIGH,PERSONAL
+Okay lang po ba kung magpapausap ako? Parang gusto ko lang po magbaha ng nararamdaman.,MEDIUM,PERSONAL
+"Di ko na po kaya, parang gusto ko lang mawala, so sad.",HIGH,PERSONAL
+"Ma’am, tulong po, feeling ko wala na akong saysay, pakiramdam ko parang pagod na pagod.",HIGH,PERSONAL
+"Gusto ko lang po sana magkausap tayo, feeling ko kasi ako'y napapahamak.",MEDIUM,PERSONAL
+Okay lang po ba kung sasabihin ko lang po yung nararamdaman ko? Parang kailangan ko po ng kahit anong tulong.,MEDIUM,PERSONAL
+"Sir, di ko na po alam kung ano ang gagawin, so overwhelmed na po ako.",HIGH,ACADEMIC
+"Parang gusto ko lang po mag-cry, wala na po akong pag-asa.",HIGH,PERSONAL
+"Ma’am, pakiramdam ko po wala na akong lakas, parang wala na po akong pag-asa sa buhay.",HIGH,PERSONAL
+"Hindi ko na po kaya, so sobrang stress na po ako, sana may makatulong.",HIGH,PERSONAL
+"Di ko na po maintindihan kung bakit ganito, pakiramdam ko po parang nawawala na po ako.",MEDIUM,PERSONAL
+Okay lang po ba kung sasabihin ko na gusto ko lang po magpahinga? Parang kailangan ko po ng pahinga.,LOW,PERSONAL
+"Ma’am, sobrang lungkot na po talaga, wala na po akong gana sa kahit anong ginagawa.",HIGH,PERSONAL
+"Gusto ko lang po sana makipag-usap, pakiramdam ko po parang ako lang ang naghihirap.",MEDIUM,PERSONAL
+"Sir, natatakot po ako, feeling ko po wala na akong pag-asa, sana may makatulong.",HIGH,PERSONAL
+Okay lang po ba kung sasabihin ko na kailangan ko po ng tulong? Parang kailangan ko po ng kahit anong suporta.,MEDIUM,PERSONAL
+"Hi po, medyo kinakabahan po ako, kailangan ko po sana ng guidance.",MEDIUM,ACADEMIC
+"Tanong ko lang po, feeling ko kasi parang wala na akong pag-asa.",MEDIUM,PERSONAL
+"Ma'am, sobrang stressed na po ako lately, kailangan ko po ng tulong.",HIGH,PERSONAL
+"Gusto ko lang po sana mag-usap, parang gusto ko nang sumuko.",MEDIUM,PERSONAL
+"Sir, natatakot po ako pumasok, feeling ko hindi na ako makayanan.",HIGH,PERSONAL
+"Okay lang po ba, kailangan ko po ng someone to talk to, feeling lost na po ako.",MEDIUM,PERSONAL
+"Wala na po akong gana, parang wala na akong saysay, Ma'am.",HIGH,PERSONAL
+"Di ko na po kaya, sobrang overwhelming, please help me.",HIGH,PERSONAL
+"Sana po may magawa kayo, feeling ko parang sumasabog na po ako.",HIGH,PERSONAL
+"Kumusta po kayo, kailangan ko po ng support, feeling ko alone na po talaga.",HIGH,PERSONAL
+"Paano po ba, parang gusto kong magpahinga na lang forever.",MEDIUM,PERSONAL
+"Ma'am, please, hindi ko po alam kung paano na ito, so overwhelmed ako.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana i-express, feeling ko parang may bigat sa dibdib ko.",MEDIUM,PERSONAL
+"Hindi ko po alam kung ano ang gagawin, sobrang kinakabahan ako po.",HIGH,PERSONAL
+"Wala na po akong pag-asa, parang wala na akong pakialam, please help me.",CRITICAL,PERSONAL
+"Okay lang po ba, kailangan ko po ng reassurance, feeling ko mali ang lahat.",MEDIUM,PERSONAL
+"Tulungan niyo po ako, parang gusto kong magtapon ng lahat, sobrang stress.",HIGH,PERSONAL
+"Hindi ko po kaya, please, kailangan ko po ng guidance, feeling ko susuko na ako.",HIGH,ACADEMIC
+"Ma’am, please, hindi ko po alam kung paano, feeling ko wala na akong pag-asa.",HIGH,PERSONAL
+"Hi po, medyo kinakabahan po ako, kailangan ko po ng tulong tungkol sa feelings ko.",MEDIUM,PERSONAL
+"Tanong ko lang po, feeling ko wala na po akong pag-asa sa buhay.",MEDIUM,PERSONAL
+"Good morning, Sir, sobrang stressed na po ako, hindi ko alam kung paano na dapat.",HIGH,PERSONAL
+"Ma'am, gusto ko lang po sana sabihin na parang gusto ko nang bumigay, sana po may maibigay kayong advice.",MEDIUM,PERSONAL
+"Uy, di ko na po kaya, feeling ko gusto ko na lang mawala.",CRITICAL,PERSONAL
+"Hey, natatakot po ako pumasok, parang hindi na ako makayanan.",HIGH,PERSONAL
+"Sana po may makakarinig, wala na po akong gana, parang gusto ko lang magpahinga forever.",HIGH,PERSONAL
+"Gusto ko lang po sana sabihin na hindi ko na po kayang harapin ang lahat, please help.",HIGH,PERSONAL
+"Ma'am, medyo malungkot po ako, feeling ko wala na akong saysay.",MEDIUM,PERSONAL
+"Di ko po maintindihan, parang gusto ko na lang sumuko sa lahat, please.",HIGH,PERSONAL
+Okay lang po ba na mag-open ako tungkol sa feelings ko? Sobrang overwhelmed na po ako.,MEDIUM,PERSONAL
+"Uy, natatakot po ako, feeling ko hindi na ako magiging okay, tulungan niyo po ako.",HIGH,PERSONAL
+"Sana po may makatulong, wala na po akong pag-asa, feeling ko walang pagbabago.",HIGH,PERSONAL
+"Gusto ko po sana mag-usap, parang gusto ko nang mawala, please help me.",CRITICAL,PERSONAL
+"Ma'am, sobrang stressed na po ako, hindi ko na po kaya ang pressure.",MEDIUM,ACADEMIC
+"Hindi ko na po kaya, feeling ko gusto ko nang humingi ng tulong, please.",CRITICAL,PERSONAL
+"Di ko na po alam kung paano, parang gusto ko nang sumuko, kailangan ko po ng support.",MEDIUM,PERSONAL
+"Okay, parang gusto ko nang magpahinga, wala na po akong gana, kailangan ko po ng guidance.",MEDIUM,PERSONAL
+"Hey, natatakot po ako pumasok, parang gusto ko nang bumigay, tulungan niyo po ako.",CRITICAL,PERSONAL
+"Hi po, gusto ko lang po sana magpaalam tungkol sa feelings ko ngayon.",MEDIUM,PERSONAL
+"Ma'am, medyo kinakabahan po ako, parang gusto ko lang mawala.",MEDIUM,PERSONAL
+"Sir, sobrang stressed na po ako sa lahat, hindi ko na kaya.",HIGH,PERSONAL
+"Gusto ko lang po sana sabihin na wala na po akong gana, parang gusto ko lang matulog forever.",HIGH,PERSONAL
+"Tanong ko lang po, natatakot po ako pumasok, parang gusto ko lang magtago.",MEDIUM,PERSONAL
+"Di ko na po maintindihan, sobrang gulo ng iniisip ko ngayon, wala na po akong pag-asa.",HIGH,PERSONAL
+"Ma'am, tulong naman po, sobrang overwhelmed na po ako, hindi ko na po kaya.",HIGH,PERSONAL
+"Gusto ko lang po sana sabihin na gusto ko nang bumigay, parang wala na po akong lakas.",HIGH,PERSONAL
+"Okay lang po ba kung mag-usap tayo, sobrang sad na po ako ngayon?",MEDIUM,PERSONAL
+"Sir, hindi ko na po kayang harapin, gusto ko lang po sana magpahinga ng matagal.",HIGH,PERSONAL
+"Parang gusto ko lang po magwala, wala na po akong pag-asa sa buhay.",CRITICAL,PERSONAL
+"Di ko na po alam kung paano, parang gusto ko lang po magpakita ng sakit na nararamdaman ko.",HIGH,PERSONAL
+"Ma'am, please, sobrang stressed na po ako, kailangan ko ng tulong.",MEDIUM,PERSONAL
+"Gusto ko lang po sana magpaliwanag, hindi ko na po kayang magsinungaling pa.",MEDIUM,ACADEMIC
+"Parang gusto ko lang po sumuko, wala na po akong pag-asa sa kinabukasan.",CRITICAL,PERSONAL
+Okay lang po ba na mag-share ako ng feelings ko? Parang gusto ko na lang po mawala.,MEDIUM,PERSONAL
+"Sir, gusto ko lang po sabihin na walang saysay na buhay, wala na po akong gana.",CRITICAL,PERSONAL
+"Di ko na po kayang ipagpatuloy, parang gusto ko lang po maghanap ng kapayapaan.",HIGH,PERSONAL
+"Ma'am, please, hindi ko na po kaya, sobrang stress na po ako.",HIGH,PERSONAL
+"Gusto ko lang po sana magpaalam na wala na po akong pag-asa, sana maintindihan niyo po.",HIGH,PERSONAL
+"Hi po, Ma'am, kailangan ko po sana ng tulong tungkol sa sarili ko.",MEDIUM,PERSONAL
+"Tanong ko lang po, medyo kinakabahan po ako, mayroon po ba kayong pwedeng gawin?",MEDIUM,PERSONAL
+"Good morning, Sir, kailangan ko po sana iklaro yung feelings ko.",MEDIUM,PERSONAL
+"Gusto ko lang po sana sabihin na may nararamdaman ako, hirap po talaga.",HIGH,PERSONAL
+"Ma'am, parang wala na po akong pag-asa, sobrang sakit po.",HIGH,PERSONAL
+"Sir, natatakot po ako pumasok, hindi ko po alam kung paano ko ito haharapin.",HIGH,PERSONAL
+"Di ko na po maintindihan yung sarili ko, wala na po akong gana.",MEDIUM,PERSONAL
+"Okay lang po ba mag-usap tungkol dito, kailangan ko po ng comfort.",LOW,PERSONAL
+"Ma’am, sobrang stressed na po ako, hindi ko na po kayang itago.",HIGH,PERSONAL
+"Kailangan ko po ng guidance, parang naguguluhan na po ako sa sarili ko.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana sabihin na kailangan ko ng tulong, please?",MEDIUM,PERSONAL
+"Sir, parang wala na po akong pagpipilian, hindi ko na po kaya.",CRITICAL,PERSONAL
+"Di ko na po kayang itago, Sobrang hirap po talaga, please help.",HIGH,PERSONAL
+"Ma'am, parang gusto ko nang sumuko, wala na po akong lakas.",HIGH,HEALTH
+"Okay lang po bang mag-share ng feelings ko, kailangan ko po ng support?",MEDIUM,PERSONAL
+"Tanong ko lang po, medyo kinakabahan po ako, mayroon po ba kayong pwedeng gawin?",MEDIUM,PERSONAL
+"Sir, natatakot po ako, gusto ko lang po sana maging okay.",MEDIUM,PERSONAL
+"Gusto ko lang po sana sabihing kailangan ko ng tulong, please, please.",MEDIUM,PERSONAL
+"Ma’am, sobrang stressed na po ako, feeling ko hindi na ako makayanan.",HIGH,ACADEMIC
+"Di ko na po maintindihan kung ano ang gagawin ko, wala na po akong pag-asa.",HIGH,ACADEMIC
+"Hi po, may tanong lang po ako tungkol sa stress ko.",MEDIUM,ACADEMIC
+"Ma'am, medyo kinakabahan po ako, minsan kasi nagkakasugat ako kapag stressed.",MEDIUM,HEALTH
+"Sir, gusto ko lang po sana i-share na minsan, sobrang stressed, may pasaquin ako.",MEDIUM,PERSONAL
+"Good morning, pwede po ba magpausap tungkol sa paghiwa ko ng kamay?",CRITICAL,HEALTH
+"Tanong ko lang po, paano ko po ba matuturuan na hindi na ako mag-cut kapag nagagalit?",MEDIUM,ACADEMIC
+"Di ko na po maintindihan yung stress ko, parang may pagbabago sa katawan ko.",MEDIUM,HEALTH
+"Sabi ko po, sobrang stressed na po ako, kaya nagkakasugat din.",MEDIUM,HEALTH
+"Puwede po ba, Ma'am, magpaliwanag tungkol sa kung bakit ako naghiwa ng kamay?",MEDIUM,PERSONAL
+"Gusto ko lang po sana sabihin na wala na po akong gana minsan, dahil sa paghiwa ko.",MEDIUM,PERSONAL
+"Sir, natatakot po ako pumasok kung hindi ko alam kung paano ko mapapigil yung paghiwa.",HIGH,HEALTH
+"Ma'am, tulong naman po, parang wala na po akong magawa pag nagagalit ako.",MEDIUM,PERSONAL
+"Hey, gusto ko lang po ipaalam na minsan, sobrang stressed na po ako, kaya di ko na mapigilan.",MEDIUM,HEALTH
+"Okay lang po ba, Ma'am, na pag-usapan natin kung paano ko mapapagaan yung stress ko?",LOW,HEALTH
+"Di ko na po kaya, sobrang stressed na po ako, at minsan naghihiwa ako ng kamay.",CRITICAL,HEALTH
+"Puwede po bang magpaalala na minsan, medyo kinakabahan po ako kapag naghiwa ako.",LOW,HEALTH
+"Sabi ko po, wala na po akong gana, at hindi ko alam kung bakit ako naghihiwa.",MEDIUM,PERSONAL
+"Ma’am, sana po magbigay kayo ng tips kung paano ko matutunang kontrolin ang stress ko.",LOW,HEALTH
+"Sir, sobrang stressed na po ako, at feeling ko wala na akong pag-asa.",HIGH,PERSONAL
+"Di ko na po maintindihan, parang nawawala na po ako, at minsan naghihiwa pa ako.",HIGH,ACADEMIC
+"Okay po, parang ganito na po yung routine ko - stressed, paghiwa, at pagkabahala.",MEDIUM,PERSONAL
+"Hi po, medyo kinakabahan po ako, araw-araw may ganun po yung iniisip ko.",MEDIUM,PERSONAL
+"Tanong ko lang po, Sir, feeling ko kasi parang wala na po akong pag-asa.",HIGH,PERSONAL
+"Ma’am, sobrang stressed na po ako, yung mga iniisip ko, grabe po.",HIGH,PERSONAL
+"Gusto ko lang po sana, may tulong po ba kayo sa akin? Parang wala na po akong gana.",HIGH,PERSONAL
+"Okay lang po ba kung magtanong ako, Sir? Natatakot po ako pumasok, sobrang hirap po.",MEDIUM,ACADEMIC
+"Paano po ba ito, Ma'am? Parang gusto ko nang sumuko, wala na po akong lakas.",HIGH,PERSONAL
+"Di ko na po maintindihan, parang wala na po akong pagpipilian, natatakot ako.",HIGH,ACADEMIC
+"Sana po may maibigay kayong tulong, Sir, kasi sobrang overwhelmed na po ako.",MEDIUM,ACADEMIC
+"Mayroon po ba kayong pwedeng pag-usapan, Ma’am? Wala na po akong pakialam na sa lahat.",HIGH,PERSONAL
+"Gusto ko lang po sana malaman kung mayroon po bang pwede akong gawin, kasi hindi ko na po kaya.",HIGH,PERSONAL
+"Tulong po, Ma’am, feeling ko po kasi ayaw na ako ng mundo, parang wala na po akong pag-asa.",CRITICAL,PERSONAL
+"Parang wala na po akong pag-asa, Sir, sana may maibigay kayong payo, please.",HIGH,PERSONAL
+Okay lang po ba kung mag-share ako ng feelings ko? Medyo kinakabahan po ako sa mga iniisip ko.,LOW,PERSONAL
+"Di ko na po alam kung ano ang gagawin, sobrang stressed na po ako, sana po may makatulong.",HIGH,PERSONAL
+"Ma'am, feeling ko po wala na pong pag-asa, please tulungan niyo po ako.",HIGH,PERSONAL
+"Gusto ko lang po sana magpaliwanag, natatakot po ako pumasok dahil sa mga iniisip ko.",MEDIUM,ACADEMIC
+"Parang wala na po akong pakialam sa kahit ano, sobrang sad na po ako, please help.",HIGH,PERSONAL
+"Okay lang po ba kung magtanong ako, Sir? Wala na po akong gana sa kahit anong ginagawa ko.",MEDIUM,ACADEMIC
+"Hindi ko na po kaya, Ma’am, sobrang stressed na po ako, parang gusto ko nang umalis.",CRITICAL,PERSONAL
+"Di ko na po maintindihan kung ano ang gagawin, parang wala na po akong pag-asa, please help me.",HIGH,PERSONAL
+"Hi po, pwede po ba magpa-schedule? Medyo kinakabahan po ako sa mga deadlines.",LOW,ACADEMIC
+"Tanong ko lang po, pwede bang i-reschedule yung meeting? Parang busy na po kasi ako ngayon.",MEDIUM,ACADEMIC
+"Good morning po, pwede po ba magpa-schedule ng oras para pag-usapan? Salamat po!",MEDIUM,ACADEMIC
+"Ma'am, gusto ko lang po sana magpa-schedule, please?  Naku, sobrang dami ko pang kailangang tapusin.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana i-schedule yung exam, please?  Wala na po akong lakas, talaga.",MEDIUM,ACADEMIC
+"Sir, pwede po ba magpa-schedule?  Nalulungkot po kasi ako sa grades ko lately.",MEDIUM,PERSONAL
+"Ma'am, pwede po ba i-reschedule, please? Medyo stressed na po ako.",MEDIUM,PERSONAL
+"Hi, pwede po magpa-schedule?  Hindi ko na po kaya ‘to, seriously!",HIGH,PERSONAL
+"Tanong ko lang po, pwede ba magpa-schedule para sa mga requirements?  Wala na po akong gana.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magpa-schedule ng meeting, please?  Natatakot po ako pumasok sa class.",MEDIUM,PERSONAL
+"Ma'am, pwede po ba magpa-schedule?  So brad, sobrang stress na po ako.",MEDIUM,ACADEMIC
+"Sir, pwede po ba i-schedule?  Parang wala na po akong pag-asa, tama ba?",HIGH,ACADEMIC
+"Hi, pwede po magpa-schedule?  Di ko po maintindihan kung paano mag-schedule.",LOW,ACADEMIC
+"Tanong ko lang po, pwede ba magpa-schedule para sa mga projects?  Kailangan ko po talaga ng tulong.",MEDIUM,ACADEMIC
+"Good morning, pwede po ba magpa-schedule?  Sobrang kinakabahan na po ako sa exam.",MEDIUM,PERSONAL
+"Ma'am, pwede po ba magpa-schedule?  Hindi ko po alam kung saan ako magsisimula.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magpa-schedule, please?  Wala na po akong lakas ng loob.",MEDIUM,PERSONAL
+"Sir, pwede po ba magpa-schedule?  Parang hindi ko na po alam kung ano ang gagawin.",MEDIUM,ACADEMIC
+"Hi, pwede po magpa-schedule?  Nalilito na po ako, please help!",MEDIUM,ACADEMIC
+"Hi po, gusto ko lang po magpa-appointment para sa schedule ko.",LOW,ACADEMIC
+"Tanong ko lang po, pwede ba magpa-appointment para sa registration?",LOW,ACADEMIC
+"Ma'am, medyo kinakabahan po ako, kailangan ko po magpa-appointment.",MEDIUM,ACADEMIC
+Gusto ko lang po sana mag-set ng appointment para sa guidance counseling.,LOW,ACADEMIC
+"Sir, pwede po ba magpa-appointment para sa mga requirements ko?",LOW,ACADEMIC
+"Di ko na po maintindihan kung paano magpa-appointment, tulungan niyo po ako.",MEDIUM,ACADEMIC
+"Wala na po akong gana, sobrang stressed na po ako, kailangan ko po magpa-appointment.",HIGH,PERSONAL
+Natatakot po ako pumasok kung hindi ko po alam kung paano magpa-appointment.,MEDIUM,ACADEMIC
+"Ma’am, sana po pwede magpa-appointment para maayos ko yung mga files ko.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana i-schedule yung meeting natin, salamat po.",LOW,ACADEMIC
+"Di ko na po kaya, sobrang stressed na po ako, kailangan ko po magpa-appointment agad.",HIGH,PERSONAL
+Pwede po ba magpa-appointment para sa mga registration requirements ko?,MEDIUM,ACADEMIC
+"Ang hirap po magpa-appointment, parang hindi ko alam kung saan ako pupunta.",MEDIUM,ACADEMIC
+"Ma'am, tulungan niyo po ako magpa-appointment, please?",HIGH,PERSONAL
+"Hindi ko na po maintindihan kung ano ang dapat kong gawin, kailangan ko po ng appointment.",MEDIUM,PERSONAL
+"Parang wala na po akong pag-asa, wala na po akong gana, kailangan ko po magpa-appointment.",HIGH,PERSONAL
+"Di ko na po kayang maghintay, sobrang stressed na po ako, kailangan ko po magpa-appointment agad-agad!",HIGH,PERSONAL
+"Gusto ko lang po sana i-confirm yung appointment natin, salamat po ulit.",LOW,ACADEMIC
+"Ma'am, sana po pwede magpa-appointment para sa mga academic concerns ko.",MEDIUM,ACADEMIC
+"Parang susuko na ako, sobrang kinakabahan po ako, kailangan ko po magpa-appointment, please!",HIGH,PERSONAL
+"Hi po, gusto ko lang po magtanong tungkol sa counseling services.",LOW,CAREER GUIDANCE
+"Ma'am, medyo kinakabahan po ako, interested ako magpa-counseling.",MEDIUM,PERSONAL
+"Tanong ko lang po, may available ba kayong slots for counseling this week?",MEDIUM,ACADEMIC
+Gusto ko lang po sana malaman kung paano ako makakapag-schedule ng counseling session.,MEDIUM,ACADEMIC
+"Sir, pwede po bang magpa-counseling? Sobrang stressed na po ako lately.",HIGH,PERSONAL
+Paano po ba mag-avail ng counseling services sa PUP-Taguig?,MEDIUM,ACADEMIC
+"Wala na po akong gana, kailangan ko po sana ng guidance.",HIGH,PERSONAL
+"Natatakot po ako pumasok, baka hindi ako makayanan.",HIGH,PERSONAL
+"Ma’am, tulungan niyo po ako, kailangan ko ng support emotional.",MEDIUM,PERSONAL
+"Gusto ko po sana magpa-counseling, sana may available pa.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan yung situation ko, kaya gusto ko magpa-counseling.",MEDIUM,PERSONAL
+"So brang stressed na po ako, kailangan ko po sana ng professional help.",HIGH,PERSONAL
+"Pwede po bang magpa-counseling, please?  Nagkakaproblema po kasi ako.",MEDIUM,PERSONAL
+"Ma'am, medyo nervous po ako, baka hindi ako comfortable sa counseling.",LOW,PERSONAL
+"Hindi ko na po kaya, kailangan ko po sana ng guidance and support.",HIGH,PERSONAL
+"Gusto ko lang po sana magpa-counseling, sana maging okay lang ako.",MEDIUM,PERSONAL
+"Tulong po, sobrang overwhelmed na po ako sa lahat ng requirements.",HIGH,ACADEMIC
+Paano po ba makipag-ugnayan sa guidance counselor para sa counseling?,LOW,ACADEMIC
+"Sir, kailangan ko po ng tulong, wala na po akong lakas ng loob.",HIGH,PERSONAL
+"Ma’am, pwede po bang magpa-counseling, sana po ma-accommodate niyo ako.",MEDIUM,PERSONAL
+"Hi po, tanong ko lang po kung open yung schedule bukas?",LOW,ACADEMIC
+"Ma'am, medyo kinakabahan po ako, gusto ko lang po malaman kung may slots pa ba bukas.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana i-check kung may available pa ba bukas, salamat po.",LOW,ACADEMIC
+"Sir, tulungan niyo po ako, kasi sobrang stressed na po ako sa mga deadlines.",HIGH,ACADEMIC
+"Wala na po akong gana, sana may bukas pa po na available para makapag-enroll ako.",HIGH,PERSONAL
+"Okay lang po ba bukas, or wala na po ba?",MEDIUM,ACADEMIC
+Natatakot po ako pumasok kung walang available na slots bukas.,MEDIUM,ACADEMIC
+"Di ko na po maintindihan, sana may option pa bukas para magpa-schedule.",MEDIUM,ACADEMIC
+"Ang hirap po, medyo kinakabahan ako kung walang bukas, salamat po.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana malaman kung may available pa ba bukas, please?",MEDIUM,ACADEMIC
+"Sobrang stressed na po ako, sana may mag-open bukas.",HIGH,ACADEMIC
+"Ma'am, tulong po, wala na po akong idea kung kailan pa mag-schedule.",MEDIUM,ACADEMIC
+"Hindi ko na po kaya, sana may bukas pa, please help me.",HIGH,ACADEMIC
+"Okay lang po ba bukas, or wala na po ba?",MEDIUM,ACADEMIC
+"Wala na po akong gana, sana may bukas pa po para makapag-enroll ako.",HIGH,PERSONAL
+"Sir, parang susuko na ako, sana may bukas pa.",HIGH,ACADEMIC
+"Di ko na po maintindihan yung schedule, medyo kinakabahan ako.",MEDIUM,ACADEMIC
+"Okay lang ba bukas, or wala na po ba?",MEDIUM,ACADEMIC
+"Ma'am, tulungan niyo po ako, sobrang overwhelmed na po ako sa lahat.",HIGH,ACADEMIC
+"Hi po, tanong ko lang po, paano ba magpa-excuse letter?",LOW,ACADEMIC
+"Ma'am, kailangan ko po ng tulong, paano ba gumawa ng excuse letter?",MEDIUM,ACADEMIC
+"Gusto ko lang po sana malaman, paano po ba magpa-excuse letter, sobrang dami ko na po kailangan tapusin.",MEDIUM,ACADEMIC
+"Okay lang po ba kung magtanong ako, paano ba magpa-excuse letter, baka kasi magkaproblema.",MEDIUM,ACADEMIC
+"Sir, medyo kinakabahan po ako, paano po magpa-excuse letter, gusto ko sana maging maayos.",MEDIUM,ACADEMIC
+"Paano po ba magpa-excuse letter, wala po akong alam, tulungan niyo naman po ako.",MEDIUM,ACADEMIC
+"Wala na po akong gana, paano ba magpa-excuse letter? Kailangan ko po ng guidance.",MEDIUM,PERSONAL
+"Natatakot po ako pumasok, kailangan ko po ng excuse letter, paano po ito gagawin?",MEDIUM,ACADEMIC
+"Hindi ko na po kaya, kailangan ko po ng tulong sa excuse letter, sobrang stressed na po ako.",HIGH,PERSONAL
+"Ma'am, kailangan ko po ng tulong, paano po magpa-excuse letter, baka ma-late pa ako.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan, paano po magpa-excuse letter, tulungan niyo po ako please!",MEDIUM,ACADEMIC
+"Gusto ko lang po sana, paano ba magpa-excuse letter, para hindi ako ma-apekto.",MEDIUM,ACADEMIC
+"Okay lang po sana magtanong, paano po magpa-excuse letter, para alam ko kung ano ang gagawin.",MEDIUM,ACADEMIC
+"Sir, paano po magpa-excuse letter, medyo confused pa po ako sa requirements.",MEDIUM,ACADEMIC
+"Paano po magpa-excuse letter, baka makatulong po kung may sample kayo?",MEDIUM,ACADEMIC
+"So brang stressed na po ako, kailangan ko po ng tulong sa excuse letter, please!",HIGH,ACADEMIC
+"Wala po akong alam, paano po magpa-excuse letter, tulungan niyo po ako.",MEDIUM,ACADEMIC
+"Kailangan ko po ng guidance sa excuse letter, wala na po akong maisip.",MEDIUM,ACADEMIC
+"Paano po magpa-excuse letter, natatakot po ako bumagsak, please help.",MEDIUM,ACADEMIC
+"Hi po, gusto ko lang po magpa-book ng slot for tomorrow.",MEDIUM,ACADEMIC
+"Ma’am, pwede po ba i-schedule yung meeting ko?",MEDIUM,ACADEMIC
+"Good morning, kailangan ko po mag-book ng time slot, salamat po.",MEDIUM,ACADEMIC
+"Tanong ko lang po, pwede bang mag-book ng appointment?",MEDIUM,ACADEMIC
+"Sir, medyo kinakabahan po ako, pwedeng i-reschedule yung slot?",MEDIUM,PERSONAL
+"Pa-book po ulit, please, kailangan ko po talaga.",MEDIUM,ACADEMIC
+"Wala na po akong gana, sobrang stressed na po ako sa schedule, pwede ba i-book?",HIGH,PERSONAL
+Natatakot po ako pumasok kung hindi ko pa na-book yung slot.,MEDIUM,PERSONAL
+"Hindi ko na po kaya, kailangan ko po ng schedule, please!",MEDIUM,ACADEMIC
+Gusto ko lang po sana magpa-book ng slot para sa consultation.,MEDIUM,ACADEMIC
+"Ma’am, sana po pwede i-reschedule yung meeting ko, sobrang dami ko pang gawain.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan kung kailan yung available slot, please help.",MEDIUM,ACADEMIC
+"Pwede po ba i-book yung slot, feeling ko kasi bumabagsak na ako.",MEDIUM,ACADEMIC
+"Pa-book po, kailangan ko po ma-confirm yung schedule para sa mga readings.",MEDIUM,ACADEMIC
+"Sir, tulungan niyo po ako mag-book ng slot, please, kailangan ko talaga ngayon.",HIGH,ACADEMIC
+"Wala na po akong pag-asa, sobrang stressed na po ako sa lahat ng deadlines.",HIGH,PERSONAL
+"Kailangan ko po i-book yung slot para makapaghanda ako sa exam, please!",MEDIUM,ACADEMIC
+"Ma'am, pwede po ba i-reschedule yung meeting ko? Wala na po akong lakas ng loob.",MEDIUM,ACADEMIC
+"Di ko po alam kung paano mag-book ng slot, please guide me.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magpa-book, medyo kinakabahan na po ako sa exam.",MEDIUM,ACADEMIC
+"Hi po, pwede po ba mag-walk-in? Medyo kinakabahan po ako, sana may available.",MEDIUM,ACADEMIC
+"Tanong ko lang po, pwede ba magpa-appointment para sa walk-in?  Parang stressed na talaga ako ngayon.",MEDIUM,ACADEMIC
+"Good morning po, pwede ba mag-walk-in?  Kailangan ko po sana magpa-schedule.",MEDIUM,ACADEMIC
+"Ma’am, pwede ba magpa-walk-in? Sobrang dami ko pong assignments, talagang stressed na ako.",HIGH,ACADEMIC
+"Gusto ko lang po sana magtanong, pwede ba magpa-walk-in? Wala na po akong gana sa pag-aaral.",MEDIUM,PERSONAL
+"Sir, pwede po ba mag-walk-in? Natatakot po ako pumasok sa klase, kasi hindi ko maintindihan.",MEDIUM,ACADEMIC
+"Hi, pwede po ba magpa-walk-in?  Pakiramdam ko, hindi ko na po kaya.",MEDIUM,PERSONAL
+"Ma’am, pwede po ba magpa-walk-in para sa mga concerns ko?  Feeling ko, bumabaligtad na ang utak ko.",MEDIUM,ACADEMIC
+"Pwede po ba mag-walk-in?  So brad, medyo panic na ako sa mga requirements.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magpa-walk-in, parang nawawala na po talaga ang pag-asa ko.",MEDIUM,PERSONAL
+"Sir, pwede po ba magpa-walk-in?  Hindi ko na po alam kung saan ako magsisimula.",MEDIUM,ACADEMIC
+"Hi, pwede po ba magpa-walk-in?  Kailangan ko po sana ng tulong, sobrang stressed na po ako.",HIGH,PERSONAL
+"Ma’am, pwede po ba magpa-walk-in?  Parang wala na po akong magagawa, feeling ko.",MEDIUM,PERSONAL
+"Pwede po ba mag-walk-in?  Nalulungkot na po kasi ako, wala na akong gana.",MEDIUM,PERSONAL
+"Sir, pwede po ba magpa-walk-in?  Kailangan ko po sana ng guidance, sobrang kinakabahan na po ako.",MEDIUM,ACADEMIC
+"Hi, pwede po ba magpa-walk-in?  Please po, kailangan ko po ng tulong, brad!",MEDIUM,PERSONAL
+"Gusto ko lang po sana magpa-walk-in, pakiramdam ko, malapit na akong sumuko.",MEDIUM,PERSONAL
+"Ma’am, pwede po ba magpa-walk-in?  Pakiramdam ko, sobrang overwhelmed na po ako sa lahat.",MEDIUM,ACADEMIC
+"Pwede po ba mag-walk-in?  Parang gusto ko nang umuwi na lang, wala na po akong pag-asa.",HIGH,PERSONAL
+"Sir, pwede po ba magpa-walk-in?  Kinakabahan na po talaga ako sa mga exams!",MEDIUM,ACADEMIC
+"Hi po, may tanong lang po tungkol sa schedule ko for next sem.",MEDIUM,ACADEMIC
+"Ma'am, gusto ko lang po i-check kung may available slots pa ba?",MEDIUM,ACADEMIC
+"Tanong ko lang po, pwede ba ako mag-reschedule ng readings?",MEDIUM,ACADEMIC
+Gusto ko lang po sana malaman kung may changes sa timetable.,MEDIUM,ACADEMIC
+"Sir, medyo kinakabahan po ako, kailangan ko i-confirm ang schedule ko.",MEDIUM,ACADEMIC
+Okay lang po ba kung mag-inquire tungkol sa schedule ko?,LOW,ACADEMIC
+"Ma'am, pwede po ba i-check kung may available slots para sa Intro to Psychology?",MEDIUM,ACADEMIC
+"Di ko po maintindihan, pwede po bang i-explain kung paano i-check ang schedule?",LOW,ACADEMIC
+"So, sobrang stressed na po ako, kailangan ko po i-confirm yung schedule ko agad.",HIGH,ACADEMIC
+"Wala na po akong gana, please tulungan niyo po ako sa schedule ko.",HIGH,ACADEMIC
+Natatakot po ako pumasok kung hindi ko alam yung schedule ko.,MEDIUM,ACADEMIC
+"Hindi ko na po kaya, kailangan ko po ng confirmation ng schedule ko agad!",CRITICAL,ACADEMIC
+"Ma’am, pwede po ba i-check kung may options pa para sa major ko?",MEDIUM,ACADEMIC
+Gusto ko lang po sana malaman kung may changes sa schedule ng seminars.,MEDIUM,ACADEMIC
+Okay lang po ba kung mag-schedule ako ng meeting para sa schedule ko?,MEDIUM,ACADEMIC
+"Sir, please tulungan po ako, medyo confused ako sa schedule ko.",MEDIUM,ACADEMIC
+"Di ko po maintindihan, kailangan ko po ng explanation tungkol sa schedule.",MEDIUM,ACADEMIC
+"So, sobrang stress na po ako, baka bumagsak ako dahil sa schedule!",HIGH,ACADEMIC
+"Wala na po akong pag-asa, please tulungan niyo po ako sa schedule ko.",HIGH,ACADEMIC
+"Ma'am, natatakot po ako kung hindi ko alam yung schedule ko, please!",MEDIUM,ACADEMIC
+"Hi po, tanong ko lang po, kailan po yung office hours?",LOW,ACADEMIC
+"Ma'am, pwede po bang malaman kung kailan yung office hours para makapagtanong ako?",LOW,ACADEMIC
+"Good morning, Sir, ano po yung schedule ng office hours?",LOW,ACADEMIC
+Gusto ko lang po sana malaman kung kailan po yung office hours para masagot niyo yung mga tanong ko.,LOW,ACADEMIC
+Okay lang ba kung tanongin ko kung kailan yung office hours?,LOW,ACADEMIC
+"Parang medyo kinakabahan po ako, pwede po bang malaman kung kailan yung office hours?",MEDIUM,ACADEMIC
+"Sir, ano po yung office hours? Sobrang dami ko nang tanong, kailangan ko po ng sagot.",MEDIUM,ACADEMIC
+"Wala na po akong gana, kailangan ko po malaman kung kailan yung office hours para makapagtanong ako.",MEDIUM,ACADEMIC
+"Ma’am, paano po ba yung office hours? Kailangan ko po ‘yan para sa mga assignments ko.",LOW,ACADEMIC
+"Hindi ko na po kaya, kailangan ko po malaman kung kailan yung office hours, please!",HIGH,ACADEMIC
+"Tanong ko lang po, ano yung oras ng office hours ngayon?",LOW,ACADEMIC
+"Di ko po alam kung kailan yung office hours, tulungan niyo naman po ako.",LOW,ACADEMIC
+Parang natatakot po ako pumasok kung hindi ko alam kung kailan yung office hours.,MEDIUM,ACADEMIC
+"So, sobrang stressed na po ako, pwede po bang malaman kung kailan yung office hours?",MEDIUM,ACADEMIC
+"Gusto ko po sana mag-schedule ng meeting, ano po yung office hours?",MEDIUM,ACADEMIC
+"Ano po yung office hours? Kailangan ko po ‘yan para sa research ko, please!",MEDIUM,ACADEMIC
+Okay lang ba kung magtanong ako tungkol sa office hours? Medyo kinakabahan po ako.,MEDIUM,ACADEMIC
+"Wala na po akong pag-asa, kailangan ko po malaman kung kailan yung office hours, please help!",HIGH,ACADEMIC
+"Sir, pwede po bang i-check kung kailan yung office hours para masagot yung mga problema ko?",MEDIUM,ACADEMIC
+"Hi po, medyo kinakabahan po ako sa grades ko, baka babagsak na talaga.",MEDIUM,ACADEMIC
+"Tanong ko lang po, sir, sobrang stressed na po ako sa mga assignments.",MEDIUM,ACADEMIC
+"Ma'am, gusto ko lang po sana malaman kung may pwede akong gawin para hindi ako bumagsak.",HIGH,ACADEMIC
+"Good morning, parang wala na po akong pag-asa, babagsak na talaga ako.",HIGH,ACADEMIC
+"Sir, natatakot po ako pumasok, feeling ko babagsak na talaga ako.",HIGH,ACADEMIC
+Gusto ko lang po sana i-check kung may mga options pa ba para ma-improve ang grades ko.,MEDIUM,ACADEMIC
+"Di ko na po maintindihan ang lahat, sobrang overwhelmed na po ako.",MEDIUM,ACADEMIC
+"Ma'am, sana po may matutunan akong magawa para hindi ako bumagsak.",MEDIUM,ACADEMIC
+"Okay lang po ba na magpa-uwi ako ngayon, feeling ko hindi ko na kaya.",MEDIUM,PERSONAL
+"Hey sir, wala na po akong gana, baka babagsak na ako.",HIGH,ACADEMIC
+"Tanong ko lang po, parang hopeless na talaga, what if babagsak na ako?",HIGH,ACADEMIC
+"Gusto ko lang po sana magpaalala, sobrang stressed na po ako sa exams.",MEDIUM,ACADEMIC
+"Hi po, medyo kinakabahan po ako sa exam tomorrow, baka babagsak na.",MEDIUM,ACADEMIC
+"Sir, tulong naman po, sobrang stress na po ako, hindi ko na kayang mag-aral.",HIGH,ACADEMIC
+"Ma'am, feeling ko wala na po akong pag-asa, babagsak na talaga ako.",HIGH,ACADEMIC
+"Okay, sobrang overwhelmed na po ako, gusto ko lang po sana magpa-usap.",MEDIUM,PERSONAL
+"Di ko na po kaya, sobrang stressed na po ako, baka babagsak na ako.",HIGH,ACADEMIC
+"Gusto ko lang po sana mag-ventilate, feeling ko babagsak na talaga ako.",HIGH,PERSONAL
+"Parang wala na po akong pag-asa, sobrang sad na po ako, babagsak na talaga.",HIGH,PERSONAL
+"Hi po, may problema po ako sa Math, bagsak ako.",MEDIUM,ACADEMIC
+"Tanong ko lang po, yung Math exam ko, so sad, bagsak talaga.",MEDIUM,ACADEMIC
+"Ma'am, medyo kinakabahan po ako, bagsak ako sa Math, sana may ma-suggest kayo.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana malaman kung ano po ang pwede kong gawin, bagsak na po ako sa Math.",MEDIUM,ACADEMIC
+"Sir, sobrang stressed na po ako sa Math, bagsak ako, please tulungan niyo po ako.",HIGH,ACADEMIC
+"Wala na po akong gana, bagsak ako sa Math, feeling ko wala na akong pag-asa.",HIGH,PERSONAL
+"“Uy, Ma’am, bagsak ako! Tulong naman po, please!”",MEDIUM,ACADEMIC
+"Natatakot po ako pumasok sa Math, bagsak ako, baka ma-stress pa ako.",MEDIUM,ACADEMIC
+"Hindi ko na po kaya, bagsak ako sa Math, feeling ko babagsak na rin ang buhay ko.",HIGH,ACADEMIC
+"“Ay naku, Ma’am, bagsak ako! Ano po ba gagawin ko?”",MEDIUM,ACADEMIC
+"Di ko na po maintindihan yung Math, bagsak ako, sana may explanation kayo.",MEDIUM,ACADEMIC
+"Ang hirap po ng Math, bagsak ako, parang wala na akong pag-asa.",HIGH,ACADEMIC
+"Ma’am, tulong naman po sa Math, bagsak ako, kinakabahan na po ako.",MEDIUM,ACADEMIC
+"“Seriously, Ma’am, bagsak ako! Anong gagawin ko?”",MEDIUM,ACADEMIC
+"Sobrang stressed na po ako sa Math, bagsak ako, please mag-pray po para sa akin.",MEDIUM,ACADEMIC
+"Sana may pwedeng magawa, bagsak ako sa Math, feeling ko broken na ako.",MEDIUM,ACADEMIC
+"“Okay lang ba po, Ma’am, bagsak ako? Paano na po kami?”",MEDIUM,ACADEMIC
+"Wala na po akong pag-asa sa Math, bagsak ako, sobrang lungkot na po.",MEDIUM,ACADEMIC
+"“Please, Ma’am, bagsak ako! Tulungan niyo po ako, huh?”",MEDIUM,ACADEMIC
+"“Ay naku, bagsak na naman ako sa Math! Hindi ko na alam!”",MEDIUM,ACADEMIC
+"Hi po, gusto ko lang po sana malaman, sobrang pressure na talaga ngayon, hindi na ako makatulog.",MEDIUM,PERSONAL
+"Tanong ko lang po, medyo kinakabahan po ako sa exam, parang hindi ko na kaya.",LOW,ACADEMIC
+"Ma'am, tulungan niyo po ako, feeling ko talaga na hindi ko na kaya ang pressure.",MEDIUM,PERSONAL
+"Gusto ko lang po sana i-check kung may pwede ba akong gawin, sobrang stressed na po ako.",MEDIUM,ACADEMIC
+"Sir, wala na po akong gana ngayon, feeling ko talagang hindi ko na kaya ang pressure.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan, parang sobrang daming deadlines, natatakot po ako pumasok.",MEDIUM,ACADEMIC
+"Okay lang po ba na magtanong, medyo kinakabahan po ako sa mga requirements, hindi ko na kaya.",MEDIUM,ACADEMIC
+"Ma'am, please help, wala na po akong lakas, sobrang stressed na po ako.",MEDIUM,PERSONAL
+"Gusto ko lang po sana mag-usap, feeling ko wala na akong pag-asa, hindi na ako makapag-focus.",MEDIUM,PERSONAL
+"Sir, parang gusto ko nang bumigay, sobrang pressure na po talaga, hindi ko na kaya.",MEDIUM,PERSONAL
+"Hi po, okay lang po ba na mag-vent out? Feeling ko talaga wala na pong magagawa, so frustrated na ako.",MEDIUM,PERSONAL
+"Tanong ko lang po, medyo kinakabahan po ako sa mga future plans, hindi ko na kaya ang pressure.",MEDIUM,CAREER GUIDANCE
+"Ma’am, tulong po, kailangan ko ng guidance, sobra akong stressed, parang wala na akong pag-asa.",HIGH,PERSONAL
+"Gusto ko lang po sana mag-express ng feelings ko, wala na po akong gana, natatakot po ako pumasok.",MEDIUM,PERSONAL
+"Di ko na po alam kung paano na dapat mag-focus, parang sinusuka na ako ng pressure, hindi na ako makatulog.",HIGH,ACADEMIC
+"Okay lang po ba na maging honest, feeling ko talagang hindi na ko kayang mag-handle ng pressure, sobrang stressed na po ako.",HIGH,PERSONAL
+"Sir, please, kailangan ko ng tulong, wala na po akong pakialam, hindi na ako makagalaw.",CRITICAL,PERSONAL
+"Ma'am, wala na po akong saysay, sobrang pressured na po talaga, kailangan ko ng support.",HIGH,PERSONAL
+"Gusto ko lang po sana maging open, feeling ko wala na po akong future, hindi ko na kaya ang pressure.",MEDIUM,PERSONAL
+"Di ko na po kayang i-face ang lahat ng ito, wala na po akong gana, natatakot po ako pumasok.",HIGH,PERSONAL
+"Hi po, ang hirap talaga ng Calculus, medyo kinakabahan po ako.",LOW,ACADEMIC
+"Tanong ko lang po, sa Calculus, hindi ko po talaga gets.",LOW,ACADEMIC
+"Ma’am, sobrang dami po kasi yung assignments, naguguluhan na po ako.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magtanong, may extra time po ba sa Calculus?",LOW,ACADEMIC
+"Sir, ang hirap po ng Calculus, wala na po akong gana.",MEDIUM,ACADEMIC
+Okay lang po ba kung magpa-review po ako sa Calculus?,LOW,ACADEMIC
+"Natatakot po ako pumasok sa Calculus, sobrang dami po talaga.",MEDIUM,ACADEMIC
+"Di ko po maintindihan yung derivatives, medyo stressed na po ako.",MEDIUM,ACADEMIC
+"Ma’am, tulong naman po sa Calculus, please!",MEDIUM,ACADEMIC
+Okay lang ba kung mag-skip po ako ng isang Calculus lecture?,MEDIUM,ACADEMIC
+"So brang stressed na po ako sa Calculus, feeling ko hindi ko kaya.",HIGH,ACADEMIC
+Gusto ko lang po sana magpaalam na hirap po talaga ako sa Calculus.,MEDIUM,ACADEMIC
+"Ang hirap po ng Calculus, parang susuko na ako.",HIGH,ACADEMIC
+"Hindi ko na po kaya yung Calculus, sobrang dami na po.",HIGH,ACADEMIC
+"Ma’am, medyo kinakabahan po ako sa Calculus exam, sana matulungan niyo ako.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan yung integration, wala na po akong pag-asa.",HIGH,ACADEMIC
+"Okay lang po kung magtanong ako tungkol sa Calculus, please?",LOW,ACADEMIC
+"Ang hirap po talaga ng Calculus, feeling ko babagsak na ako.",MEDIUM,ACADEMIC
+"Sir, sobrang stressed na po ako sa Calculus, kailangan ko ng tulong.",HIGH,ACADEMIC
+"Hi po, medyo overwhelmed na po ako sa dami ng assignments, tulungan niyo po ako.",MEDIUM,ACADEMIC
+"Tanong ko lang po, parang nalulunod na talaga ako sa requirements, nakakatakot.",MEDIUM,ACADEMIC
+"Good morning, Sir, sobrang dami na po ng projects, wala na po akong oras.",HIGH,ACADEMIC
+"Ma’am, gusto ko lang po sana magpaalam na talagang overwhelmed ako, please help?",MEDIUM,ACADEMIC
+"Uy, parang naguguluhan na talaga ako sa mga requirements, tulong po!",MEDIUM,ACADEMIC
+"Gusto ko lang po sana magtanong, natatakot po ako baka bumagsak ako dahil dito.",MEDIUM,ACADEMIC
+"Sir, medyo kinakabahan po ako sa dami ng requirements, pwede po bang magpaliwanag?",MEDIUM,ACADEMIC
+"Ma’am, wala na po akong gana, parang hindi ko na kaya ang mga requirements na ‘to.",MEDIUM,PERSONAL
+"Hey, tulong naman po, sobrang stressed na po ako sa requirements, please?",MEDIUM,ACADEMIC
+"Di ko na po maintindihan yung mga deadlines, parang nalulunod na talaga ako.",MEDIUM,ACADEMIC
+Okay lang po ba na magpa-schedule ako ng meeting para sa requirements?,LOW,ACADEMIC
+"Parang wala na po akong choice, sobrang stressed na po ako, tulong po.",HIGH,PERSONAL
+"Ma’am, natatakot po ako pumasok sa klase kung hindi ko alam ang mga requirements.",MEDIUM,ACADEMIC
+"Uy, please, gusto ko lang po sana makapag-usap tungkol sa mga requirements ko.",LOW,ACADEMIC
+"Gusto ko lang po sana magtanong, wala na po akong pakialam sa mga requirements, please.",LOW,ACADEMIC
+"Sir, so sorry po, pero sobrang stressed na po ako, kailangan ko po ng tulong.",HIGH,PERSONAL
+"Parang wala na po akong pag-asa, natatakot po ako sa mga requirements na 'to.",HIGH,PERSONAL
+"Hindi ko na po kaya, parang lumalunod na talaga ako sa requirements, tulungan niyo po.",HIGH,PERSONAL
+"Ma’am, medyo hopeless na po ako, tulungan niyo po ako, please, please.",HIGH,PERSONAL
+"Di ko na po ma-handle, sobrang overwhelmed na po ako, kailangan ko po ng guidance.",MEDIUM,PERSONAL
+"Hi po, wala na akong tulog, medyo kinakabahan po ako.",MEDIUM,PERSONAL
+"Ma'am, sobrang pagod na po ako, wala na tulog.",MEDIUM,PERSONAL
+"Tanong ko lang po, wala na akong tulog, stress na talaga.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, wala na akong tulog, please help.",MEDIUM,PERSONAL
+"Sir, natatakot po ako pumasok, wala na akong tulog.",MEDIUM,PERSONAL
+"Okay lang po ba 'yan, wala na akong tulog, feeling helpless.",MEDIUM,PERSONAL
+"Wala na po akong tulog, sobrang stressed na po ako talaga.",MEDIUM,PERSONAL
+"Ma'am, tulong po, wala na akong tulog, hindi na kaya.",HIGH,PERSONAL
+"Di ko na po maintindihan, wala na akong tulog, so overwhelmed.",MEDIUM,ACADEMIC
+"Okay, wala na akong tulog, parang wala na rin akong gana.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, wala na akong tulog, please advise.",MEDIUM,PERSONAL
+"Sir, wala na akong tulog, medyo kinakabahan po ako, please.",MEDIUM,PERSONAL
+"Ma'am, parang wala na po akong tulog, feeling down.",MEDIUM,PERSONAL
+"Di ko na po kayang gawin, wala na akong tulog, sobrang stress.",HIGH,ACADEMIC
+"Okay lang ba 'to, wala na akong tulog, feeling panic.",MEDIUM,PERSONAL
+"Wala na po akong tulog, hindi ko na po kaya, please help!",CRITICAL,PERSONAL
+"Sir, natatakot po ako pumasok, wala na akong tulog, please!",CRITICAL,PERSONAL
+"Ma'am, sobrang stressed na po ako, wala na akong tulog, please.",MEDIUM,PERSONAL
+"Okay, wala na akong tulog, feeling hopeless, wala na rin akong gana.",MEDIUM,PERSONAL
+"Di ko na po maintindihan, wala na akong tulog, wala na po akong pag-asa.",MEDIUM,PERSONAL
+"Hi po, medyo kinakabahan po ako sa grades ko, parang hindi na talaga ako makapag-concentrate.",MEDIUM,ACADEMIC
+"Tanong ko lang po, Sir, sobrang dami kong failing subjects, tulungan niyo po ako.",MEDIUM,ACADEMIC
+"Ma'am, gusto ko lang po sana malaman kung may option ba para ma-improve yung grades ko, seriously.",LOW,ACADEMIC
+"Gusto ko lang po sana magtanong, parang wala na po akong pag-asa sa academics, nakaka-stress na.",MEDIUM,ACADEMIC
+"Okay lang po ba kung magpapa-schedule ako ng meeting, kasi lahat po ng subjects ko failing.",HIGH,ACADEMIC
+"Sir, natatakot po ako pumasok sa klase, feeling ko babagsak na naman ako talaga.",HIGH,ACADEMIC
+"Ma'am, sobrang stressed na po ako, hindi ko na alam kung paano ko po gagawin.",HIGH,PERSONAL
+"Di ko na po maintindihan yung mga lessons, feeling ko bumabagsak na po ako.",MEDIUM,ACADEMIC
+"Wala na po akong gana, parang wala na rin akong saysay na mag-aral, nakakalungkot.",MEDIUM,PERSONAL
+"Gusto ko po sana makipag-usap, sobrang overwhelmed na po ako sa lahat.",HIGH,PERSONAL
+"Parang hindi na ko makasabay, lahat po kasi ng subjects failing, nakaka-pressure.",HIGH,ACADEMIC
+"Ma'am, tulong po, kasi feeling ko hindi na talaga ako magtatagumpay, so sad.",HIGH,PERSONAL
+"Hindi ko na po kaya, sobrang hirap na, gusto ko na lang po huminto.",HIGH,PERSONAL
+"Okay lang po ba kung magpa-appointment para makapag-usap tayo tungkol sa grades ko, please?",MEDIUM,ACADEMIC
+"Di ko na po alam kung saan ako magsisimula, lahat po kasi failing, nakakalungkot.",MEDIUM,ACADEMIC
+"Sir, medyo kinakabahan po ako, kasi feeling ko babagsak na naman ako, please help.",MEDIUM,ACADEMIC
+"Parang wala na po akong pag-asa, sobrang stress na po ako, wala na pong saysay.",HIGH,PERSONAL
+"Okay lang po, pero kailangan ko po ng guidance, kasi feeling ko hindi na ako makabangon.",MEDIUM,PERSONAL
+"Gusto ko lang po sana magpaalam na sobrang stressed na po ako, please help me, po.",MEDIUM,PERSONAL
+"Hi po, kailangan ko po sana ng tulong sa thesis ko, sobrang overwhelmed na talaga ako.",MEDIUM,ACADEMIC
+"Tanong ko lang po, Ma'am, medyo kinakabahan po ako sa thesis, baka hindi ko kaya.",MEDIUM,ACADEMIC
+"Good morning, Sir, ang hirap po talaga ng thesis, parang gusto ko nang sumuko.",MEDIUM,ACADEMIC
+Gusto ko lang po sana malaman kung may suggestion po kayo para sa thesis ko.,LOW,ACADEMIC
+"Ma'am, tulong naman po, sobrang stressed na po ako sa thesis, wala na po akong balanse.",MEDIUM,ACADEMIC
+"Sir, di ko na po maintindihan kung paano ba mag-focus sa thesis, please help!",MEDIUM,ACADEMIC
+"Hey Ma’am, wala na po akong gana sa thesis, parang gusto ko na lang matulog.",MEDIUM,ACADEMIC
+Okay lang po ba kung magpapa-schedule ako ng meeting para sa thesis ko?,LOW,ACADEMIC
+Natatakot po ako pumasok sa labas kung hindi pa tapos yung thesis ko.,HIGH,ACADEMIC
+"Hindi ko na po kaya, sobrang dami pa pong requirements sa thesis ko, please!",HIGH,ACADEMIC
+"Ma’am, please, tulungan niyo po ako sa thesis ko, desperate na po ako.",HIGH,ACADEMIC
+"Di ko po alam kung saan ako magsisimula sa thesis ko, please guide me.",MEDIUM,ACADEMIC
+"Ang hirap po talaga ng thesis, parang gusto ko nang mag-quit na lang.",MEDIUM,ACADEMIC
+Gusto ko lang po sana sabihin na hindi ko na po kayang gawin yung thesis ko.,HIGH,ACADEMIC
+"Ma’am, sobrang overwhelmed na po ako sa thesis, wala na po akong energy.",HIGH,ACADEMIC
+"Sir, please, kailangan ko po ng guidance sa thesis ko, parang nawawala na po ako.",HIGH,ACADEMIC
+"Wala na po akong gana, so sad na po ako sa thesis ko, please help.",HIGH,ACADEMIC
+Okay lang po ba kung magpapa-schedule ako para mapag-usapan natin yung thesis ko?,MEDIUM,ACADEMIC
+"Di ko na po alam kung paano mag-manage ng time para sa thesis ko, please!",MEDIUM,ACADEMIC
+"Parang gusto ko nang magpakita ng thesis ko sa inyo, Ma’am, medyo kinakabahan ako.",MEDIUM,ACADEMIC
+"Hi po, medyo kinakabahan po ako, parang hindi ko alam kung paano ko po ito haharapin.",MEDIUM,PERSONAL
+"Tanong ko lang po, sobra po talaga, parang gusto ko nang umuwi.",MEDIUM,PERSONAL
+"Good morning, Sir, feeling ko po, sobrang stressed na po ako sa lahat ng deadlines.",HIGH,ACADEMIC
+"Ma'am, gusto ko lang po sana malaman kung may pwedeng pag-usapan, wala na po akong lakas.",HIGH,PERSONAL
+"Uy, parang wala na pong malapitan, sobrang bigat po talaga.",HIGH,PERSONAL
+"Sige po, natatakot po ako pumasok, parang hindi ako makayanan.",HIGH,PERSONAL
+"Gusto ko lang po sana magpaalam na sobrang sad na po ako, wala na po akong gana.",HIGH,PERSONAL
+"Ma'am, hindi ko na po kaya, parang baha na ang problema, sobrang overwhelmed na po ako.",CRITICAL,ACADEMIC
+"Hello po, feeling ko po, parang wala na akong pag-asa, sobrang hopeless na po.",CRITICAL,PERSONAL
+"Uy, sana po may ma-recommend kayo, kasi sobrang bigat na po ng pakiramdam ko.",MEDIUM,PERSONAL
+"Tanong ko lang po, kailangan ko po ng tulong, parang babagsak na po ako sa pressure.",MEDIUM,ACADEMIC
+"Hi po, parang gusto ko nang sumuko, sobrang stressed na po ako sa lahat.",HIGH,PERSONAL
+"Sir, medyo kinakabahan po ako sa mga requirements, parang hindi ko na kayang tapusin.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana malaman kung may guidance po kayo, parang wala na akong malapitan.",MEDIUM,PERSONAL
+"Ma'am, sobrang sad na po ako, feeling ko po, wala na akong pag-asa.",HIGH,PERSONAL
+"Uy, natatakot po ako sa future, parang wala na akong magagawa.",MEDIUM,CAREER GUIDANCE
+"Sige po, sobrang stressed na po ako, hindi ko na po kaya ang pressure.",HIGH,PERSONAL
+"Parang wala na pong magawa, sobrang bigat na po talaga, gusto ko nang umuwi.",HIGH,PERSONAL
+"Hello po, hindi ko na po kaya, sobrang overwhelmed na po ako sa lahat.",HIGH,PERSONAL
+"Ma'am, wala na po akong gana, parang wala na po akong pag-asa, tulong po.",HIGH,PERSONAL
+"Hi po, gusto ko lang po mag-usap, feeling ko kasi parang wala na akong ibang pwedeng hingan ng tulong.",MEDIUM,PERSONAL
+"Tanong ko lang po, medyo kinakabahan po ako, kailangan ko lang pong may makausap.",MEDIUM,PERSONAL
+"Ma'am, gusto ko lang po sana, feeling ko sobrang lungkot na po ako at wala akong kasama.",MEDIUM,PERSONAL
+"Sir, pwede po bang magpausap? Wala na po akong masyadong gana sa kahit anong ginagawa.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, natatakot po ako pumasok, parang hindi ko na kaya.",MEDIUM,PERSONAL
+"Good morning, Ma'am, feeling ko sobrang stressed na po ako, kailangan ko lang po ng kausap.",MEDIUM,PERSONAL
+"Di ko na po maintindihan, parang wala na rin po akong pag-asa, kailangan ko lang po ng kausap.",MEDIUM,PERSONAL
+"Pwede po ba, gusto ko lang po mag-share ng feelings ko, parang wala na po akong lakas.",MEDIUM,PERSONAL
+"Ma'am, tulong po, sobrang kinakabahan po ako, feeling ko gusto ko nang sumuko.",HIGH,PERSONAL
+"Sir, gusto ko lang po mag-usap, parang wala na pong ibang pwedeng intindihin ang sitwasyon ko.",MEDIUM,PERSONAL
+"Gusto ko lang po sana magpausap, feeling ko sobrang lungkot na po ako at wala na pong kasama.",MEDIUM,PERSONAL
+"Hindi ko na po kaya, Ma'am, kailangan ko lang po ng kausap, parang napapahamak na po ako.",CRITICAL,PERSONAL
+"Parang wala na po akong pag-asa, Ma’am, gusto ko lang po mag-usap, sobrang sad na po ako.",MEDIUM,PERSONAL
+"Di ko na po maintindihan, parang gusto ko nang umuwi, kailangan ko lang po ng kausap, please?",MEDIUM,PERSONAL
+"Gusto ko po sana magpausap, natatakot po ako, feeling ko walang nakakaunawa sa akin.",HIGH,PERSONAL
+"Ma’am, kailangan ko po ng kausap, parang sobrang kinakabahan na po ako at hindi ko na po alam kung ano ang gagawin.",HIGH,PERSONAL
+"Sir, pwede po bang magpausap? Feeling ko sobrang overwhelmed na po ako, wala na akong lakas ng loob.",MEDIUM,PERSONAL
+"Gusto ko lang po magpausap, parang wala na pong pag-asa, gusto ko na lang po matulog.",HIGH,PERSONAL
+"Ma'am, tulong po, sobrang stressed na po ako, kailangan ko na po ng kahit anong pag-usapan.",MEDIUM,PERSONAL
+"Hi po, medyo kinakabahan po ako, hindi ko alam kung saan magsimula.",LOW,ACADEMIC
+"Tanong ko lang po, parang wala na po akong lakas, hindi ko alam kung paano.",LOW,ACADEMIC
+"Good morning, Ma'am, sobrang stressed na po ako, kailangan ko po ng guidance.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, parang nawawala na po ako, wala na po akong idea.",MEDIUM,PERSONAL
+"Sir, tulungan niyo po ako, hindi ko alam saan hahanapin ng support.",HIGH,PERSONAL
+"Ma'am, pakiramdaman niyo po ako, sobrang lungkot na po ako ngayon.",HIGH,PERSONAL
+"Hey, natatakot po ako pumasok, hindi ko kaya, parang gusto ko lang sumuko.",HIGH,PERSONAL
+"Di ko na po maintindihan kung ano ang gagawin, wala na po akong pag-asa.",CRITICAL,PERSONAL
+"Parang wala na po akong gana, wala na po akong motivation, hindi ko na po kayang gawin ito.",CRITICAL,PERSONAL
+"Okay lang po ba kung magtanong ako, sobrang overwhelmed na po ako sa lahat.",MEDIUM,ACADEMIC
+"Ma’am, please, hindi ko na po kaya, sobrang dami na po ng problema.",CRITICAL,PERSONAL
+"Gusto ko lang po sana magpaliwanag, hindi ko po alam kung paano ko ipapahayag ang nararamdaman ko.",MEDIUM,PERSONAL
+"Hindi ko po alam saan magpapatulong, parang wala na po akong mapagpilian.",HIGH,PERSONAL
+"Tanong ko lang po, parang gusto ko lang mawala, pakiramdam ko wala na po akong saysay.",MEDIUM,PERSONAL
+"Di ko na po kayang harapin ang mga challenges, sobrang stress na po ako.",MEDIUM,PERSONAL
+"Ma’am, pakiramdam ko po wala na po akong pag-asa, please help me.",HIGH,PERSONAL
+"Okay, natatakot po ako kung ano ang mangyayari, hindi ko na po alam kung saan pupunta.",MEDIUM,PERSONAL
+"Gusto ko lang po sana makapag-usap, kailangan ko po ng comfort, sobrang lungkot na po.",MEDIUM,PERSONAL
+"Parang wala na po akong gustong gawin, wala na po akong pangarap, sobrang sad na po ako.",MEDIUM,PERSONAL
+"Hindi ko na po kaya, hindi ko na po kayang itago pa, kailangan ko po ng tulong, sobrang stressed na po ako.",HIGH,PERSONAL
+"Hi po, kailangan ko lang po sana magpausap tungkol sa feelings ko.",MEDIUM,PERSONAL
+"Ma'am, medyo kinakabahan po ako, feeling ko hindi ako makapag-open up.",MEDIUM,PERSONAL
+"Tanong ko lang po, parang nahihiya ako mag-share ng problema, ano po ba gagawin?",MEDIUM,PERSONAL
+"Gusto ko lang po sana, feeling ko kasi overwhelmed na talaga ako with everything.",MEDIUM,PERSONAL
+"Sir, sobrang stressed na po ako, hindi ko alam kung paano ba mag-handle ng feeling na ito.",HIGH,PERSONAL
+"Wala na po akong gana, parang gusto ko lang umiyak, it’s so embarrassing.",HIGH,PERSONAL
+"Natatakot po ako pumasok sa class, parang may makikita na hindi ko kayang i-face.",MEDIUM,PERSONAL
+"Di ko na po maintindihan yung sarili ko, sobrang confused, tulungan niyo naman po ako.",MEDIUM,ACADEMIC
+"Ma'am, kailangan ko po ng advice, feeling ko kasi I’m drowning.",HIGH,PERSONAL
+"Gusto ko lang po sana mag-ventilate, hindi ko na kayang itago pa.",HIGH,PERSONAL
+"Parang gusto ko lang umiyak, parang wala na talagang pag-asa, sobrang sad lang.",HIGH,PERSONAL
+"Hindi ko na po kaya, parang gusto ko lang sumuko, it's too much pressure.",HIGH,PERSONAL
+"Okay lang po ba kung mag-open up ako, feeling ko kailangan ko ng someone to talk to.",MEDIUM,PERSONAL
+"Sir, medyo kinakabahan po ako sa mga classmates ko, feeling ko hindi ako mag-fit in.",MEDIUM,ACADEMIC
+"Kailangan ko po ng tulong, feeling ko kasi malayo na ako sa gusto ko.",HIGH,PERSONAL
+"Di ko na po alam kung paano mag-move on, sobrang sakit lang po, parang wala na.",HIGH,PERSONAL
+"Parang gusto ko lang po umiyak, feeling ko kasi hindi na ako magiging masaya ulit.",HIGH,PERSONAL
+"Okay lang po ba kung mag-share ako ng feelings ko, feeling ko kasi kailangan ko ng comfort.",MEDIUM,PERSONAL
+"Ma’am, so brad, feeling ko kasi hindi na ako kayang i-face ang pressure na ito.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana, it’s so overwhelming, feeling ko hindi na ako magtatagal.",MEDIUM,ACADEMIC
+"Hi po, medyo kinakabahan po ako, lagi akong nanginginig, gusto ko po sana makapagpa-check up.",MEDIUM,HEALTH
+"Ma'am, feeling ko stress na talaga, palagi akong nanginginig, need ko po ng tulong.",MEDIUM,HEALTH
+"Tanong ko lang po, parang natatakot po ako pumasok, sobrang shaky kasi ako.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, wala na po akong gana, lagi akong nanginginig, nakaka-pressure.",MEDIUM,PERSONAL
+"Sir, tulungan niyo po ako, palagi akong nanginginig, hindi ko alam kung ano ang gagawin.",MEDIUM,PERSONAL
+"Okay lang po ba 'to, kasi lagi akong nanginginig, parang wala na akong saysay.",HIGH,HEALTH
+"Ma'am, sobrang stressed na po ako, palagi akong nanginginig, kailangan ko ng guidance.",HIGH,PERSONAL
+"Di ko na po maintindihan, palagi akong nanginginig, parang gusto ko nang umuwi.",MEDIUM,PERSONAL
+"Gusto ko po sana makapag-usap, sobrang kinakabahan po ako, lagi akong nanginginig.",MEDIUM,PERSONAL
+"Okay po ba, parang wala na po akong lakas, palagi akong nanginginig, natatakot ako.",HIGH,PERSONAL
+"Hi po, medyo worried ako, lagi akong nanginginig, sana matulungan niyo ako.",MEDIUM,PERSONAL
+"Sir, tulong po, sobrang stressed na po ako, palagi akong nanginginig, hindi ko na kaya.",HIGH,PERSONAL
+"Ma'am, feeling ko wala na po akong pag-asa, palagi akong nanginginig, wala na po akong gana.",HIGH,PERSONAL
+"Okay lang po ba, parang natatakot po ako pumasok, lagi akong nanginginig, kailangan ko ng support.",HIGH,HEALTH
+"Gusto ko lang po sana magpaalam, sobrang kinakabahan po ako, lagi akong nanginginig, sana maintindihan niyo.",HIGH,PERSONAL
+"Di ko na po alam kung ano ang gagawin, palagi akong nanginginig, feeling ko babagsak ako.",HIGH,ACADEMIC
+"Sir, please po, sobrang stressed na po ako, lagi akong nanginginig, kailangan ko ng advice.",MEDIUM,ACADEMIC
+"Okay po ba, parang wala na po akong saysay, palagi akong nanginginig, gusto ko na lang umuwi.",HIGH,PERSONAL
+"Ma'am, tulungan niyo po ako, sobra akong kinakabahan, palagi akong nanginginig, kailangan ko ng guidance.",MEDIUM,ACADEMIC
+"Hindi ko na po kaya, sobrang stressed na po ako, palagi akong nanginginig, kailangan ko na ng tulong agad.",CRITICAL,ACADEMIC
+"Hi po, medyo kinakabahan po ako tuwing recitation, parang gusto ko nang umalis.",LOW,ACADEMIC
+"Tanong ko lang po, natatakot po ako pumasok sa recitation kasi may panic attacks.",HIGH,HEALTH
+"Ma'am, sobrang stressed na po ako pag may recitation, hindi ko kaya.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana, pag may recitation, pwede ba magpa-break?",LOW,ACADEMIC
+"Sir, parang gusto ko nang umalis tuwing recitation, feeling ko nagpa-panic ako.",MEDIUM,ACADEMIC
+"Wala na po akong gana pag may recitation, sobrang hirap po talaga.",MEDIUM,ACADEMIC
+Okay lang po ba na magtanong kung paano ko maiiwasan yung panic attacks?,MEDIUM,HEALTH
+"Ma'am, tulong naman po, natatakot po ako kung ano mangyayari sa recitation.",HIGH,ACADEMIC
+"Di ko na po maintindihan yung mga tanong, sobrang kinakabahan na po ako.",MEDIUM,ACADEMIC
+"Parang gusto ko nang umuwi tuwing recitation, hindi ko kaya yung pressure.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, pwede bang magpa-check up para sa anxiety ko?",MEDIUM,HEALTH
+"Sir, medyo kinakabahan po ako, baka may side effects yung mga tanong niyo.",MEDIUM,ACADEMIC
+"Hindi ko na po kaya yung panic attacks, sobrang dami na po ng stress.",HIGH,HEALTH
+"Wala na po akong gana sa mga subject, dahil sa recitation.",MEDIUM,ACADEMIC
+"Ma'am, pakiusap po, kailangan ko po ng tulong sa anxiety ko.",MEDIUM,HEALTH
+"Parang gusto ko nang umalis, natatakot po ako sa mga mata ng professor.",MEDIUM,PERSONAL
+Okay lang po ba na magpa-schedule ng appointment para sa counseling?,LOW,PERSONAL
+"Sobrang stressed na po ako sa recitation, hindi ko na po mapigilan.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan yung mga sagot, natatakot po ako sa failing grade.",MEDIUM,ACADEMIC
+"Parang gusto ko nang umuwi, wala na po akong pag-asa sa recitation.",HIGH,ACADEMIC
+"Hi po, medyo kinakabahan po ako, hindi ko na kayang pumasok ngayon.",MEDIUM,PERSONAL
+"Ma'am, natatakot po ako pumasok, baka may mangyari.",MEDIUM,PERSONAL
+"Gusto ko lang po sana sabihin, sobrang natatakot ako sa PUP.",HIGH,PERSONAL
+"Tanong ko lang po, hindi ko na kaya pumasok, please help!",MEDIUM,PERSONAL
+"Sir, wala na po akong gana, natatakot po ako sa mga tao.",MEDIUM,PERSONAL
+"Okay lang po ba kung hindi ako pumasok, natatakot talaga ako?",MEDIUM,PERSONAL
+"Ma’am, tulong naman po, hindi ko na kayang pumasok, please!",HIGH,ACADEMIC
+"Di ko na po maintindihan, natatakot ako kung ano ang mangyayari.",MEDIUM,ACADEMIC
+"Okay, gusto ko lang po i-update, natatakot ako kung ano ang mangyayari.",MEDIUM,PERSONAL
+"Paalala lang po, natatakot ako pumasok, sana maging okay lang.",MEDIUM,PERSONAL
+"Sana po maunawaan niyo, natatakot ako, hindi ko na kayang pumasok.",HIGH,PERSONAL
+"Hindi ko na po kaya, natatakot ako sa mga kalokohan nila.",MEDIUM,PERSONAL
+"Ma’am, sobrang kinakabahan po ako, please help me, hindi ako pwedeng pumasok.",HIGH,PERSONAL
+"Okay, sana po maging okay lang, natatakot ako talaga pumasok.",HIGH,PERSONAL
+"Gusto ko lang po sabihin, natatakot ako, baka may mangyari.",HIGH,PERSONAL
+"Di ko po maintindihan, natatakot ako sa mga classmates ko.",MEDIUM,ACADEMIC
+"Okay lang ba na wag na ako pumasok, natatakot ako, please!",HIGH,PERSONAL
+"Ma'am, sobrang stressed na po ako, natatakot ako pumasok talaga.",HIGH,ACADEMIC
+"Hindi ko na po kayang pumasok, wala na po akong pag-asa, natatakot ako.",CRITICAL,PERSONAL
+"Okay, gusto ko lang po sabihin, natatakot ako, sana naman po.",MEDIUM,PERSONAL
+"Hi po, medyo kinakabahan po ako, gusto ko lang po malaman kung may pwedeng gawin.",MEDIUM,PERSONAL
+"Ma'am, natatakot po ako pumasok, hindi ko alam kung ano ang gagawin.",HIGH,PERSONAL
+"Tanong ko lang po, sobrang stressed na po ako lately, kailangan ko po ng tulong.",MEDIUM,ACADEMIC
+"Gusto ko lang po sana, wala na po akong gana, feeling ko broken na talaga.",HIGH,PERSONAL
+"Sir, parang gusto ko po sumuko, hindi ko po alam kung bakit ganito.",MEDIUM,ACADEMIC
+"Di ko na po maintindihan kung ano ba talaga, sobrang overwhelming na po.",MEDIUM,ACADEMIC
+"Ma'am, sana po may maibigay kayong advice, wala na po akong lakas.",HIGH,PERSONAL
+Okay lang po ba 'to? Medyo kinakabahan po ako sa mga iniisip ko.,LOW,PERSONAL
+"Hindi ko na po kaya, parang gusto ko lang po mawala, ano po ba ang gagawin?",CRITICAL,PERSONAL
+"Gusto ko lang po sana malaman kung mayroon bang counseling services, please?",MEDIUM,PERSONAL
+"Parang wala na po akong pag-asa, sobrang sad na po talaga.",HIGH,PERSONAL
+"Okay, Ma'am, natatakot po ako sa future, hindi ko po alam kung ano ang magiging takbo nito.",MEDIUM,CAREER GUIDANCE
+"Di ko na po alam kung paano, sobrang stressed na po ako sa lahat.",HIGH,PERSONAL
+"Gusto ko lang po magtanong, ano po ba ang magagawa para bumaba ang anxiety ko?",MEDIUM,HEALTH
+"Okay lang po ba, medyo kinakabahan po ako sa mga nararamdaman ko.",LOW,PERSONAL
+"Sir, wala na po akong gana, sobrang sad na po, please help me.",HIGH,PERSONAL
+"Parang gusto ko lang po magpahinga, hindi na po ako makayanan.",LOW,PERSONAL
+"Hindi ko po alam kung ano ang gagawin, sobrang stress na po talaga.",MEDIUM,PERSONAL
+"Okay, please, natatakot po ako sa mga iniisip ko, kailangan ko po ng tulong.",HIGH,PERSONAL
+"Ma'am, sobrang overwhelmed na po ako, wala na po akong alam kung paano mag-move on.",MEDIUM,ACADEMIC
+"Hi po, gusto ko lang po i-check kung may option ba para sa tuition fee pag hindi pa ako makapagbayad.",MEDIUM,FINANCIAL
+"Tanong ko lang po, wala na po akong pera para sa tuition, ano po kaya ang pwede?",MEDIUM,FINANCIAL
+"Ma'am, medyo kinakabahan po ako, wala na po akong budget sa tuition this semester.",MEDIUM,FINANCIAL
+Gusto ko lang po sana malaman kung may scholarship po ba na pwedeng ma-avail dahil sa problema sa pera.,MEDIUM,FINANCIAL
+"Sir, sobrang stressed na po ako, hindi ko po alam kung paano po ako makakabayad ng tuition.",HIGH,ACADEMIC
+"Wala na po akong gana, baka mag-drop out na lang ako dahil sa tuition.",HIGH,FINANCIAL
+"Di ko na po maintindihan, natatakot po ako pumasok kung walang pera para sa tuition.",HIGH,FINANCIAL
+"Paalam po, wala na po akong pera, sana may ma-recommend kayo na loan option.",HIGH,FINANCIAL
+Okay lang po ba kung pwede mag-defer ng registration dahil sa problema sa tuition?,MEDIUM,ACADEMIC
+"Ma'am, tulong po, wala na po akong pera, feeling ko hindi ako makakapag-aral.",HIGH,FINANCIAL
+"Gusto ko lang po sana i-explain, wala na po akong pera, sobrang hirap po.",HIGH,FINANCIAL
+"Hindi ko na po kaya, wala na po akong pera, please help me po.",CRITICAL,FINANCIAL
+"Parang wala na po akong pag-asa, wala na po akong pera para sa tuition.",HIGH,FINANCIAL
+"Sana po may ma-suggest kayo, wala na po akong pera para sa tuition.",MEDIUM,FINANCIAL
+"Tanong ko lang po, wala na po akong pera, pwede ba mag-installment plan?",MEDIUM,FINANCIAL
+"Di ko po alam kung ano ang gagawin, wala na po akong pera, please advise po.",MEDIUM,FINANCIAL
+"Ma’am, sobrang stress na po ako, hindi ko po makayanang walang tuition.",HIGH,ACADEMIC
+"Wala na po akong gana, sobrang sad na po ako, wala na akong pera.",HIGH,PERSONAL
+"Okay lang po ba kung pwede mag-talk about this, wala na po akong pera.",MEDIUM,PERSONAL
+"Gusto ko lang po sana mag-request, wala na po akong pera sa tuition, please po.",MEDIUM,FINANCIAL
+"Hi po, gutom na talaga ako, wala akong pambili ngayon.",LOW,PERSONAL
+"Tanong ko lang po, medyo kinakabahan ako sa budget ko.",MEDIUM,FINANCIAL
+"Ma'am, gusto ko lang po sana malaman kung may scholarship po para sa mga estudyante na walang pera?",MEDIUM,FINANCIAL
+"Gusto ko lang po sana, may ma-suggest po ba kayo na affordable na kainan malapit dito?",LOW,PERSONAL
+"Sir, ang hirap po, gutom na ako at wala akong pambili, sana po may tulong.",HIGH,FINANCIAL
+"Di ko na po maintindihan, sobrang stress na po ako dahil sa gutom at sa budget.",HIGH,FINANCIAL
+"Ma'am, wala na po akong gana, gutom na talaga ako, please help.",HIGH,FINANCIAL
+Okay lang po ba kung magtanong ako tungkol sa student loans? Gutom na ako kasi.,MEDIUM,FINANCIAL
+"Natatakot po ako pumasok kung gutom ako, wala akong pambili.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, may pwedeng ibigay na food assistance po ba?",MEDIUM,FINANCIAL
+"Sir, sobrang stressed na po ako, wala akong pambili ng pagkain, please!",HIGH,FINANCIAL
+"Di ko na po kaya, gutom na ako at walang pera, tulong po!",HIGH,FINANCIAL
+"Ma’am, wala na po akong gana, feeling ko hopeless na.",HIGH,PERSONAL
+Okay lang po ba kung magtanong tungkol sa feeding program? Gutom na ako po.,MEDIUM,FINANCIAL
+"Tanong ko lang po, medyo kinakabahan ako sa situation ko, gutom na ako.",MEDIUM,PERSONAL
+"Ang hirap po, sobrang stressed na po ako, wala na po akong lakas ng loob.",HIGH,PERSONAL
+"Di ko na po maintindihan, wala na po akong pag-asa, gutom na po ako.",HIGH,PERSONAL
+"Sir, please help, gutom na ako at wala akong pambili, hindi ko na po kaya.",HIGH,PERSONAL
+"Gusto ko lang po sana, sana po may ma-recommend kayong food bank malapit dito.",MEDIUM,FINANCIAL
+"Hi po, may problema po ako, yung classmate ko, inaasar ako.",MEDIUM,PERSONAL
+"Tanong ko lang po, medyo kinakabahan ako, may pwede ba kayong gawin?",MEDIUM,ACADEMIC
+"Ma’am, may problema po ako sa classmate ko, sinasabihan niya akong pangit.",HIGH,PERSONAL
+"Gusto ko lang po sana, may pwedeng gawin pag inaasar niya ako, please?",MEDIUM,PERSONAL
+"Sir, nakakairita po yung classmate ko, lagi niya akong tinutukso.",MEDIUM,PERSONAL
+"Okay lang po ba kung magpapaalala ako tungkol sa harassment, kasi medyo natatakot ako.",MEDIUM,PERSONAL
+"Di ko na po maintindihan kung paano ko sasabihin, pero inaasar niya ako araw-araw.",MEDIUM,PERSONAL
+"Ma’am, sobrang stressed na po ako sa sitwasyon, sana may tulong po kayo.",MEDIUM,PERSONAL
+"Parang wala na po akong magagawa, yung classmate ko, hindi niya ako pinapansin.",MEDIUM,PERSONAL
+Gusto ko lang po sana malaman kung may protocol po ba tayo sa ganitong sitwasyon.,LOW,ACADEMIC
+"Sir, ang hirap po pag inaasar ka ng kaklase, feeling mo nagmumukhang tanga ka.",MEDIUM,PERSONAL
+"Wala na po akong gana, kasi sa classmate ko lang naman siya nangyayari.",MEDIUM,PERSONAL
+"Hindi ko na po kaya, sobrang pinipilit ko na siyang iwasan pero hindi pa rin siya tumitigil.",MEDIUM,PERSONAL
+"Ma’am, tulong naman po, medyo panic na po ako, baka may masamang mangyari.",HIGH,PERSONAL
+"Di ko na po alam kung paano ko ito haharapin, feeling ko babagsak ako.",HIGH,PERSONAL
+Okay lang po ba kung magpapaalala ako tungkol sa school rules? Medyo kinakabahan po kasi ako.,MEDIUM,ACADEMIC
+"Parang gusto ko nang sumigaw, pero kinakabahan ako, sobrang hina-harass.",HIGH,PERSONAL
+"Hindi ko po alam kung paano po ako magrereact, natatakot po ako pumasok sa school.",CRITICAL,PERSONAL
+"Hindi ko na po kayang tiisin, sobrang stressed na po ako, please, tulungan niyo po ako.",HIGH,PERSONAL
+"Hi po, Ma'am, medyo kinakabahan po ako sa isang professor, kailangan ko po ng tulong.",MEDIUM,ACADEMIC
+"Tanong ko lang po, may pwede po ba kayong gawin tungkol sa isang professor na nananakot sakin?",HIGH,PERSONAL
+"Gusto ko lang po sana, may advice po ba kayo sa sitwasyon ko, sobrang hirap po talaga.",MEDIUM,PERSONAL
+"Ma'am, natatakot po ako pumasok sa klase dahil sa professor, please tulungan niyo po ako.",MEDIUM,ACADEMIC
+"Sir, grabe po, medyo stressed na po ako sa sitwasyon, kailangan ko po ng guidance.",MEDIUM,PERSONAL
+"Di ko na po maintindihan, ang gulo po ng nangyayari, please tulungan niyo po ako.",MEDIUM,ACADEMIC
+"Okay lang po ba kung magpapaalala ako tungkol sa problema ko sa professor, please?",LOW,ACADEMIC
+"Ma'am, wala na po akong gana mag-aral dahil sa nangyayari, sobrang stress na po talaga.",HIGH,PERSONAL
+"Gusto ko lang po sana, may pwede po ba kayong gawin para protektahan ako?",MEDIUM,PERSONAL
+"Sir, hindi ko na po kaya, sobrang kinakabahan ako sa professor, please tulungan niyo po.",HIGH,ACADEMIC
+"Tanong ko lang po, mayroon po ba kayong alam na procedure para sa ganitong sitwasyon?",LOW,ACADEMIC
+"Di ko po alam kung paano na dapat gawin, sobrang confused na po ako, please tulungan niyo po ako.",MEDIUM,ACADEMIC
+"Ma'am, ang hirap po talaga, feeling ko wala na po akong pag-asa, please tulungan niyo po.",HIGH,ACADEMIC
+"Okay, gusto ko lang po sana malaman kung ano ang pwede kong gawin tungkol sa problema ko.",LOW,ACADEMIC
+"Sir, medyo sad na po ako, parang wala na po akong lakas ng loob, please tulungan niyo po.",MEDIUM,PERSONAL
+"Di ko na po maintindihan, parang wala na pong saysay ang pag-aaral, please help me.",HIGH,ACADEMIC
+"Ma'am, natatakot po ako pumasok sa klase, sobrang kinakabahan po talaga.",MEDIUM,PERSONAL
+"Gusto ko lang po sana, may tulong po ba kayo sa sitwasyong ito, please?",LOW,ACADEMIC
+"Sir, sobrang stressed na po ako, parang gusto ko nang sumuko, please tulungan niyo po.",HIGH,ACADEMIC
+"Di ko na po kaya, parang wala na pong pag-asa, please tulungan niyo po ako, please!",HIGH,PERSONAL
