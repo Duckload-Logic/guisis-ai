@@ -18,6 +18,10 @@ def get_classifier_service():
 def get_ocr_service():
     return OCRService()
 
+@router.get("/health")
+async def health_check():
+    return {"status": "ok"}
+
 @router.post("/classify", response_model=ClassificationResponse)
 async def post_predict(
     request: ClassificationRequest,
