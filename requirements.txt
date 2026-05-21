@@ -117,7 +117,7 @@ termcolor==3.3.0
 threadpoolctl==3.6.0
 tifffile==2026.3.3
 tokenizers==0.22.2
-torch==2.6.0
+torch==2.6.0+cpu
 tqdm==4.67.3
 transformers==5.5.4
 typer==0.24.1
