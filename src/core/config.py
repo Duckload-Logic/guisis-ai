@@ -23,7 +23,7 @@ class Settings(BaseModel):
     app_port: int = int(os.getenv("APP_PORT", "8000"))
 
     # ML Model Config
-    model_path: str = str(MODEL_PATH)
+    model_path: str = str(BASE_DIR / MODEL_PATH)
     device: str = "cpu"  # Force CPU for stability
 
     # API Config
