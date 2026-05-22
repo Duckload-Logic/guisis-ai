@@ -83,7 +83,7 @@ class ModelLoader:
 
         try:
             cls._ocr = PaddleOCR(
-                use_angle_cls=True,
+                use_angle_cls=False,
                 lang="en",
                 use_gpu=False,
                 enable_mkldnn=False,

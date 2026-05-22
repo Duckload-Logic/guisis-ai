@@ -165,7 +165,7 @@ class OCRService:
         # Sort by vertical then horizontal position to reconstruct original flow
         found.sort(
             key=lambda x: (
-                min(p[1] for p in x.bounding_box),
+                min(p[1] for p in x.bounding_box) // 15,
                 min(p[0] for p in x.bounding_box)
             )
         )
@@ -220,6 +220,56 @@ class OCRService:
 
         return images
 
+    def _extract_digital_pdf_text(
+        self, content: bytes
+    ) -> Optional[List[OCRPage]]:
+        """
+        Attempts to extract text directly from a digital PDF.
+        Returns a list of OCRPages if successful, or None if scanned.
+        """
+        pages_data = []
+        try:
+            with fitz.open(stream=content, filetype="pdf") as doc:
+                scale = 300.0 / 72.0
+                for i, page in enumerate(doc):
+                    words_raw = page.get_text("words")
+                    # If any page is scanned/empty, fallback to standard OCR
+                    if len(words_raw) < 15:
+                        return None
+
+                    page_text = []
+                    words = []
+                    for w in words_raw:
+                        x0, y0, x1, y1, text = w[0], w[1], w[2], w[3], w[4]
+                        bbox = [
+                            [x0 * scale, y0 * scale],
+                            [x1 * scale, y0 * scale],
+                            [x1 * scale, y1 * scale],
+                            [x0 * scale, y1 * scale]
+                        ]
+                        page_text.append(text)
+                        words.append(
+                            OCRWord(
+                                text=text,
+                                confidence=1.0,
+                                bounding_box=bbox
+                            )
+                        )
+
+                    pages_data.append(
+                        OCRPage(
+                            page_number=i + 1,
+                            text=" ".join(page_text),
+                            words=words
+                        )
+                    )
+            return pages_data
+        except Exception as e:
+            logger.warning(
+                f"Digital PDF extraction failed, falling back: {e}"
+            )
+            return None
+
     async def process_document(self, file: UploadFile) -> OCRResponse:
         """
         Main entry point for generic document text extraction.
@@ -229,13 +279,20 @@ class OCRService:
             content = await file.read()
             pages_data = []
             is_pdf = file.filename.lower().endswith(".pdf")
+            engine_name = "PaddleOCR v2.7.3"
 
             if is_pdf:
-                imgs = self._pdf_to_images(content)
-                for i, img in enumerate(imgs):
-                    stats = self._process_image(img, i + 1)
-                    if stats:
-                        pages_data.append(stats)
+                # Try digital PDF fast extraction first!
+                digital_pages = self._extract_digital_pdf_text(content)
+                if digital_pages:
+                    pages_data = digital_pages
+                    engine_name = "PyMuPDF Fast Extraction"
+                else:
+                    imgs = self._pdf_to_images(content)
+                    for i, img in enumerate(imgs):
+                        stats = self._process_image(img, i + 1)
+                        if stats:
+                            pages_data.append(stats)
             else:
                 buf = np.frombuffer(content, np.uint8)
                 img = cv2.imdecode(buf, cv2.IMREAD_COLOR)
@@ -253,7 +310,7 @@ class OCRService:
                 pages=pages_data,
                 processing_time_ms=(time.time() - start) * 1000,
                 metadata={
-                    "engine": "PaddleOCR v2.7.3",
+                    "engine": engine_name,
                     "format": "pdf" if is_pdf else "image"
                 }
             )
