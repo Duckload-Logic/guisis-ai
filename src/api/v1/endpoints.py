@@ -68,7 +68,7 @@ async def post_ocr_validate(
     Endpoint to perform OCR on a single image or document.
     """
     try:
-        result = await service.process_document(file)
+        result = await service.validate_document(file)
         return result
     except Exception as e:
         logger.error(f"[OCR Endpoint] Processing failed: {str(e)}")

@@ -53,20 +53,17 @@ class OCRService:
             image: Original grayscale or BGR image.
 
         Returns:
-            Processed black-and-white image.
+            Processed grayscale image.
         """
         if len(image.shape) == 3:
             gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         else:
             gray = image
 
-        # Sharpening text via denoising and adaptive thresholding helps in
-        # high-contrast scenarios like faint PDF text.
-        denoised = cv2.medianBlur(gray, 3)
-        return cv2.adaptiveThreshold(
-            denoised, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
-            cv2.THRESH_BINARY, 11, 2
-        )
+        # Avoid aggressive binarization (cv2.adaptiveThreshold) which turns
+        # gradient shading and soft edges into noise and garbled characters.
+        # Grayscale alone is cleaner and preserves anti-aliased font strokes.
+        return gray
 
     def _process_image(
         self, img: np.ndarray, page_num: int
@@ -432,15 +429,49 @@ class OCRService:
 
     async def validate_document(self, file: UploadFile) -> CORValidationResponse:
         """
-        Validates the document.
+        Validates the document structure, confidence, and content.
         """
         ocr: OCRResponse = await self.process_document(file)
 
+        # Print for logging purposes
+        print(ocr)
+
+        if not ocr.pages:
+            return CORValidationResponse(
+                is_valid=False,
+                message="Document contains no readable pages."
+            )
+
         for page in ocr.pages:
-            if len(page.words) == 0:
+            # Filter words with high confidence and containing letters
+            # (ignoring lone noise characters like '!', '1', etc.)
+            valid_words = [
+                w for w in page.words
+                if w.confidence >= 0.5 and any(c.isalpha() for c in w.text)
+            ]
+
+            # A valid document must contain a minimum word count.
+            # 5 words is a very conservative threshold to allow short letters,
+            # but reject portraits or blank noise yielding 0-3 garbage words.
+            if len(valid_words) < 5:
                 return CORValidationResponse(
                     is_valid=False,
-                    message="Document is blurry or contains no text."
+                    message=(
+                        "No valid text detected. The image might be blurry, "
+                        "too dark, or not a document."
+                    )
+                )
+
+            # Check average confidence of identified valid words
+            total_conf = sum(w.confidence for w in valid_words)
+            avg_conf = total_conf / len(valid_words)
+            if avg_conf < 0.60:
+                return CORValidationResponse(
+                    is_valid=False,
+                    message=(
+                        "Text clarity is too low. Please upload a clearer "
+                        "copy."
+                    )
                 )
 
         return CORValidationResponse(
