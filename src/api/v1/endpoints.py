@@ -88,6 +88,12 @@ async def post_ocr_cor(
     try:
         result = await service.process_cor(file)
         return result
+    except ValueError as e:
+        logger.error(f"[OCR Endpoint] Processing failed: {str(e)}")
+        raise HTTPException(
+            status_code=400,
+            detail=f"Invalid data provided: {str(e)}"
+        )
     except Exception as e:
         logger.error(f"[OCR Endpoint] Processing failed: {str(e)}")
         raise HTTPException(
