@@ -196,21 +196,34 @@ class OCRService:
 
         return val
 
-    def _pdf_to_images(self, content: bytes) -> List[np.ndarray]:
+    def _pdf_to_images(
+        self,
+        content: bytes,
+        max_pages: Optional[int] = None,
+        dpi: int = 300
+    ) -> List[np.ndarray]:
         """
         High-fidelity rendering of PDF pages into image arrays.
         """
         images = []
         with fitz.open(stream=content, filetype="pdf") as doc:
-            for page in doc:
-                # 300 DPI ensures text clarity for small certificate fonts.
-                mat = fitz.Matrix(300 / 72, 300 / 72)
+            for idx, page in enumerate(doc):
+                if max_pages is not None and idx >= max_pages:
+                    break
+                # Custom DPI scale (e.g., 300 for COR, 150 for verification)
+                mat = fitz.Matrix(dpi / 72, dpi / 72)
                 pix = page.get_pixmap(matrix=mat)
 
                 # Convert buffer into standard BGR format
-                cv_mode = cv2.COLOR_RGBA2BGR if pix.alpha else cv2.COLOR_RGB2BGR
+                cv_mode = (
+                    cv2.COLOR_RGBA2BGR
+                    if pix.alpha else
+                    cv2.COLOR_RGB2BGR
+                )
 
-                img = np.frombuffer(pix.samples, dtype=np.uint8).reshape(
+                img = np.frombuffer(
+                    pix.samples, dtype=np.uint8
+                ).reshape(
                     pix.h, pix.w, 4 if pix.alpha else 3
                 )
                 images.append(cv2.cvtColor(img, cv_mode))
@@ -267,7 +280,12 @@ class OCRService:
             )
             return None
 
-    async def process_document(self, file: UploadFile) -> OCRResponse:
+    async def process_document(
+        self,
+        file: UploadFile,
+        max_pages: Optional[int] = None,
+        dpi: int = 300
+    ) -> OCRResponse:
         """
         Main entry point for generic document text extraction.
         """
@@ -282,10 +300,15 @@ class OCRService:
                 # Try digital PDF fast extraction first!
                 digital_pages = self._extract_digital_pdf_text(content)
                 if digital_pages:
-                    pages_data = digital_pages
+                    if max_pages is not None:
+                        pages_data = digital_pages[:max_pages]
+                    else:
+                        pages_data = digital_pages
                     engine_name = "PyMuPDF Fast Extraction"
                 else:
-                    imgs = self._pdf_to_images(content)
+                    imgs = self._pdf_to_images(
+                        content, max_pages=max_pages, dpi=dpi
+                    )
                     for i, img in enumerate(imgs):
                         stats = self._process_image(img, i + 1)
                         if stats:
@@ -295,6 +318,17 @@ class OCRService:
                 img = cv2.imdecode(buf, cv2.IMREAD_COLOR)
                 if img is None:
                     raise ValueError("Failed to decode uploaded image")
+
+                # Downscale high-resolution images for validation speed
+                if dpi < 300:
+                    h, w = img.shape[:2]
+                    if w > 1500 or h > 1500:
+                        scale = dpi / 300.0
+                        img = cv2.resize(
+                            img,
+                            (int(w * scale), int(h * scale)),
+                            interpolation=cv2.INTER_AREA
+                        )
 
                 stats = self._process_image(img, 1)
                 if stats:
@@ -427,11 +461,15 @@ class OCRService:
 
         return results
 
-    async def validate_document(self, file: UploadFile) -> CORValidationResponse:
+    async def validate_document(
+        self, file: UploadFile
+    ) -> CORValidationResponse:
         """
         Validates the document structure, confidence, and content.
         """
-        ocr: OCRResponse = await self.process_document(file)
+        ocr: OCRResponse = await self.process_document(
+            file, max_pages=1, dpi=150
+        )
 
         # Print for logging purposes
         print(ocr)
