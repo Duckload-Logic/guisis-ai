@@ -471,8 +471,12 @@ class OCRService:
             file, max_pages=1, dpi=150
         )
 
-        # Print for logging purposes
-        print(ocr)
+        # Log basic metadata instead of dumping the entire OCR response
+        logger.info(
+            f"Validated document '{ocr.filename}' - "
+            f"pages: {ocr.total_pages}, "
+            f"time: {ocr.processing_time_ms:.2f}ms"
+        )
 
         if not ocr.pages:
             return CORValidationResponse(

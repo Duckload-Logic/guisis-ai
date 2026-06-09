@@ -82,11 +82,14 @@ class ModelLoader:
             )
 
         try:
+            # Mute internal PaddleOCR logs
+            logging.getLogger("ppocr").setLevel(logging.WARNING)
             cls._ocr = PaddleOCR(
                 use_angle_cls=False,
                 lang="en",
                 use_gpu=False,
                 enable_mkldnn=False,
+                show_log=False,
             )
             logger.info("[Loader] OCR Engine loaded successfully")
         except Exception as e:
