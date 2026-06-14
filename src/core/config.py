@@ -23,7 +23,7 @@ class Settings(BaseModel):
     app_name: str = "GuiSIS AI Classification API"
     version: str = "1.0.0"
 
-    allowed_api_key: str = os.getenv("ALLOWED_API_KEY")
+    allowed_api_key: str | None = os.getenv("ALLOWED_API_KEY")
 
     app_host: str = os.getenv("APP_HOST", "0.0.0.0")
     app_port: int = int(os.getenv("APP_PORT", "8000"))
