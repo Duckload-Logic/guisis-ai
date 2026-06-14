@@ -9,6 +9,12 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 MODEL_PATH = os.getenv("MODEL_PATH", "ai_models/distilbert/model/outputs")
 
+# Resolve model path: absolute path if local, else use repo ID directly
+if os.path.exists(str(BASE_DIR / MODEL_PATH)):
+    RESOLVED_MODEL_PATH = str(BASE_DIR / MODEL_PATH)
+else:
+    RESOLVED_MODEL_PATH = MODEL_PATH
+
 class Settings(BaseModel):
     """
     Application settings and configuration.
@@ -23,7 +29,7 @@ class Settings(BaseModel):
     app_port: int = int(os.getenv("APP_PORT", "8000"))
 
     # ML Model Config
-    model_path: str = str(BASE_DIR / MODEL_PATH)
+    model_path: str = RESOLVED_MODEL_PATH
     device: str = "cpu"  # Force CPU for stability
 
     # API Config

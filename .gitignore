@@ -67,4 +67,6 @@ uvicorn.log
 debug.log
 
 /outputs
+**/outputs/results/
+*.safetensors
 tests

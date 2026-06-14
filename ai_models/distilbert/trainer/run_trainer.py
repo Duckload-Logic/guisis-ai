@@ -4,7 +4,15 @@ import os
 import sys
 
 # Ensure the project root is in the path so we can import ai_models
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
+try:
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.abspath(os.path.join(current_dir, "../../../"))
+except NameError:
+    # Google Colab / Jupyter notebooks
+    project_root = os.getcwd()
+
+if project_root not in sys.path:
+    sys.path.append(project_root)
 
 from ai_models.distilbert.trainer.trainer import DistilBertTrainer
 
@@ -14,6 +22,7 @@ logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
+
 
 def main():
     """
@@ -61,15 +70,45 @@ def main():
         help="Balance the dataset using oversampling before training"
     )
 
-    args = parser.parse_args()
+    # Use parse_known_args to avoid crashes in Jupyter/Colab
+    args, unknown = parser.parse_known_args()
+    if unknown:
+        logger.warning(f"[CLI] Ignored unknown arguments: {unknown}")
 
     # Initialize the trainer
     trainer = DistilBertTrainer()
 
+    # Resolve dataset path automatically
+    csv_path = args.csv
+    if not os.path.exists(csv_path):
+        alternatives = [
+            "guisis-ai/ai_models/distilbert/datasets/labeled_dataset.csv",
+            "../datasets/labeled_dataset.csv",
+            "labeled_dataset.csv",
+        ]
+        found = False
+        for alt in alternatives:
+            if os.path.exists(alt):
+                logger.info(
+                    f"[CLI] Dataset not found at '{csv_path}'. "
+                    f"Found at '{alt}'. Using that instead."
+                )
+                csv_path = alt
+                found = True
+                break
+
+        if not found:
+            logger.error(
+                f"[CLI] Dataset file not found at '{csv_path}'. "
+                "If you are on Google Colab, make sure you cloned the repo "
+                "and set the path correctly (e.g., --csv '/content/...')."
+            )
+            return
+
     # Data preparation
     try:
         tokenized_datasets = trainer.prepare_dataset(
-            csv_path=args.csv,
+            csv_path=csv_path,
             balance=args.balance
         )
     except Exception as e:
@@ -96,6 +135,7 @@ def main():
         batch_size=args.batch_size,
         learning_rate=args.lr
     )
+
 
 if __name__ == "__main__":
     main()
