@@ -1,19 +1,13 @@
 import os
 from pathlib import Path
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from dotenv import load_dotenv
 
 load_dotenv()
 
 # Constants for project roots
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
-MODEL_PATH = os.getenv("MODEL_PATH", "ai_models/distilbert/model/outputs")
 
-# Resolve model path: absolute path if local, else use repo ID directly
-if os.path.exists(str(BASE_DIR / MODEL_PATH)):
-    RESOLVED_MODEL_PATH = str(BASE_DIR / MODEL_PATH)
-else:
-    RESOLVED_MODEL_PATH = MODEL_PATH
 
 class Settings(BaseModel):
     """
@@ -28,11 +22,18 @@ class Settings(BaseModel):
     app_host: str = os.getenv("APP_HOST", "0.0.0.0")
     app_port: int = int(os.getenv("APP_PORT", "8000"))
 
-    # ML Model Config
-    model_path: str = RESOLVED_MODEL_PATH
-    device: str = "cpu"  # Force CPU for stability
-
     # API Config
     api_v1_prefix: str = "/api/v1"
 
+    # Hugging Face Settings
+    hf_token: str | None = os.getenv("HF_TOKEN")
+    hf_classify_url: str | None = os.getenv("HF_CLASSIFY_URL")
+
+    # Local Model Settings
+    model_path: str = os.getenv(
+        "MODEL_PATH", "./ai_models/distilbert/model/outputs"
+    )
+
+
 settings = Settings()
+

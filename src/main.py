@@ -1,8 +1,3 @@
-"""
-Application entry point for the Ogos AI FastAPI service.
-Initializes middleware, routing, and pre-loads machine learning models.
-"""
-
 import logging
 
 import uvicorn
@@ -12,7 +7,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from src.api.v1.endpoints import router as api_v1_router
 from src.core.config import settings
 from src.core.security import validate_api_key
-from src.infrastructure.model_loader import ModelLoader
 
 # Configure logging with a standardized format for production traceability.
 logging.basicConfig(
@@ -49,15 +43,9 @@ def create_app() -> FastAPI:
     @app.on_event("startup")
     async def startup_event():
         """
-        Warm up the system by pre-loading resource-heavy models into memory.
+        Log startup of the gateway router.
         """
-        logger.info("[Main] Starting up and pre-loading model...")
-        try:
-            ModelLoader.load_model()
-            ModelLoader.load_ocr_engine()
-            logger.info("[Main] Model pre-loaded successfully")
-        except Exception as e:
-            logger.error(f"[Main] Critical failure during startup: {e}")
+        logger.info("[Main] Starting up lightweight AI Gateway...")
 
     # Register API versioned routers.
     app.include_router(

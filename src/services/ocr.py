@@ -1,22 +1,23 @@
-"""
-Service layer for Optical Character Recognition (OCR) using PaddleOCR.
-Handles image enhancement, PDF rendering, and document-specific extraction.
-"""
-
 import logging
 import re
 import time
+import io
 import traceback
 from dataclasses import dataclass
 from typing import Any, Callable, List, Optional
 
-import cv2
 import fitz
-import numpy as np
+import pytesseract
+from PIL import Image
 from fastapi import UploadFile
 
-from src.infrastructure.model_loader import ModelLoader
-from src.schemas.ocr import CORResponse, OCRPage, OCRResponse, OCRWord, CORValidationResponse
+from src.schemas.ocr import (
+    CORResponse,
+    OCRPage,
+    OCRResponse,
+    OCRWord,
+    CORValidationResponse,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -40,86 +41,55 @@ class OCRService:
     """
 
     def __init__(self) -> None:
-        """
-        Initializes the service and retrieves the singleton OCR engine.
-        """
-        self.ocr = ModelLoader.load_ocr_engine()
-
-    def _enhance_image(self, image: np.ndarray) -> np.ndarray:
-        """
-        Standardizes the image for the OCR engine to improve accuracy.
-
-        Args:
-            image: Original grayscale or BGR image.
-
-        Returns:
-            Processed grayscale image.
-        """
-        if len(image.shape) == 3:
-            gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        else:
-            gray = image
-
-        # Avoid aggressive binarization (cv2.adaptiveThreshold) which turns
-        # gradient shading and soft edges into noise and garbled characters.
-        # Grayscale alone is cleaner and preserves anti-aliased font strokes.
-        return gray
+        pass
 
     def _process_image(
-        self, img: np.ndarray, page_num: int
+        self, img: Image.Image, page_num: int
     ) -> Optional[OCRPage]:
         """
         Internal detection and recognition logic for a single image.
-
-        Args:
-            img: The image array to process.
-            page_num: Human-readable page index.
-
-        Returns:
-            Structured page data or None if no content found.
         """
-        enhanced = self._enhance_image(img)
-        raw_result = self.ocr.ocr(enhanced)
-
-        # Normalize various PaddleOCR output formats (None, nested list, tuple)
-        if raw_result is None:
-            logger.warning(f"Page {page_num}: OCR returned None")
-            return None
-
-        if isinstance(raw_result, tuple):
-            if not raw_result:
-                return None
-            raw_result = raw_result[0]
-
-        if (
-            isinstance(raw_result, list) and
-            raw_result and
-            isinstance(raw_result[0], list)
-        ):
-            raw_result = raw_result[0]
-
-        if not isinstance(raw_result, list) or not raw_result:
+        try:
+            # Pytesseract image to data returns word boxes and confidence
+            data = pytesseract.image_to_data(
+                img, output_type=pytesseract.Output.DICT
+            )
+        except Exception as e:
+            logger.error(
+                f"Tesseract extraction failed on page {page_num}: {e}"
+            )
             return None
 
         page_text = []
         words = []
 
-        for item in raw_result:
-            if not isinstance(item, (list, tuple)) or len(item) < 2:
+        n_boxes = len(data["text"])
+        for i in range(n_boxes):
+            text = str(data["text"][i]).strip()
+            # Ignore structural blocks and negative confidence scores
+            conf_val = float(data["conf"][i])
+            if not text or conf_val < 0:
                 continue
 
-            bbox, text_conf = item[0], item[1]
+            # Scale confidence from 0-100 to 0.0-1.0
+            conf = conf_val / 100.0
 
-            # Reconstruct text and confidence safely
-            if isinstance(text_conf, (list, tuple)) and len(text_conf) >= 2:
-                text, conf = str(text_conf[0]), float(text_conf[1])
-            elif isinstance(text_conf, str):
-                text, conf = text_conf, 1.0
-            else:
-                continue
+            x = float(data["left"][i])
+            y = float(data["top"][i])
+            w = float(data["width"][i])
+            h = float(data["height"][i])
+
+            bbox = [
+                [x, y],
+                [x + w, y],
+                [x + w, y + h],
+                [x, y + h]
+            ]
 
             page_text.append(text)
-            words.append(OCRWord(text=text, confidence=conf, bounding_box=bbox))
+            words.append(
+                OCRWord(text=text, confidence=conf, bounding_box=bbox)
+            )
 
         if not words:
             return None
@@ -152,14 +122,18 @@ class OCRService:
             w_y_max = max(p[1] for p in word.bounding_box)
 
             # Check overlap using bounding box bounds
-            if (w_x_min < t_x_max and w_x_max > t_x_min and
-                    w_y_min < t_y_max and w_y_max > t_y_min):
+            if (
+                w_x_min < t_x_max
+                and w_x_max > t_x_min
+                and w_y_min < t_y_max
+                and w_y_max > t_y_min
+            ):
                 found.append(word)
 
         if not found:
             return None
 
-        # Sort by vertical then horizontal position to reconstruct original flow
+        # Sort by vertical then horizontal position
         found.sort(
             key=lambda x: (
                 min(p[1] for p in x.bounding_box) // 15,
@@ -201,32 +175,23 @@ class OCRService:
         content: bytes,
         max_pages: Optional[int] = None,
         dpi: int = 300
-    ) -> List[np.ndarray]:
+    ) -> List[Image.Image]:
         """
-        High-fidelity rendering of PDF pages into image arrays.
+        High-fidelity rendering of PDF pages into PIL Images.
         """
         images = []
         with fitz.open(stream=content, filetype="pdf") as doc:
             for idx, page in enumerate(doc):
                 if max_pages is not None and idx >= max_pages:
                     break
-                # Custom DPI scale (e.g., 300 for COR, 150 for verification)
                 mat = fitz.Matrix(dpi / 72, dpi / 72)
                 pix = page.get_pixmap(matrix=mat)
 
-                # Convert buffer into standard BGR format
-                cv_mode = (
-                    cv2.COLOR_RGBA2BGR
-                    if pix.alpha else
-                    cv2.COLOR_RGB2BGR
+                mode = "RGBA" if pix.alpha else "RGB"
+                img = Image.frombytes(
+                    mode, [pix.width, pix.height], pix.samples
                 )
-
-                img = np.frombuffer(
-                    pix.samples, dtype=np.uint8
-                ).reshape(
-                    pix.h, pix.w, 4 if pix.alpha else 3
-                )
-                images.append(cv2.cvtColor(img, cv_mode))
+                images.append(img)
 
         return images
 
@@ -235,7 +200,6 @@ class OCRService:
     ) -> Optional[List[OCRPage]]:
         """
         Attempts to extract text directly from a digital PDF.
-        Returns a list of OCRPages if successful, or None if scanned.
         """
         pages_data = []
         try:
@@ -243,7 +207,6 @@ class OCRService:
                 scale = 300.0 / 72.0
                 for i, page in enumerate(doc):
                     words_raw = page.get_text("words")
-                    # If any page is scanned/empty, fallback to standard OCR
                     if len(words_raw) < 15:
                         return None
 
@@ -292,12 +255,14 @@ class OCRService:
         start = time.time()
         try:
             content = await file.read()
+            await file.seek(0)
+
             pages_data = []
             is_pdf = file.filename.lower().endswith(".pdf")
-            engine_name = "PaddleOCR v2.7.3"
+            engine_name = "Tesseract OCR v0.3.13"
 
             if is_pdf:
-                # Try digital PDF fast extraction first!
+                # Try digital PDF fast extraction first
                 digital_pages = self._extract_digital_pdf_text(content)
                 if digital_pages:
                     if max_pages is not None:
@@ -314,20 +279,18 @@ class OCRService:
                         if stats:
                             pages_data.append(stats)
             else:
-                buf = np.frombuffer(content, np.uint8)
-                img = cv2.imdecode(buf, cv2.IMREAD_COLOR)
-                if img is None:
-                    raise ValueError("Failed to decode uploaded image")
+                try:
+                    img = Image.open(io.BytesIO(content))
+                except Exception as e:
+                    raise ValueError(f"Could not decode image: {e}")
 
-                # Downscale high-resolution images for validation speed
                 if dpi < 300:
-                    h, w = img.shape[:2]
+                    w, h = img.size
                     if w > 1500 or h > 1500:
                         scale = dpi / 300.0
-                        img = cv2.resize(
-                            img,
+                        img = img.resize(
                             (int(w * scale), int(h * scale)),
-                            interpolation=cv2.INTER_AREA
+                            Image.Resampling.LANCZOS
                         )
 
                 stats = self._process_image(img, 1)
@@ -424,12 +387,11 @@ class OCRService:
         full = ext["full_name"]
         last = full.split(",")[0].strip() if "," in full else full.split()[-1]
 
-        # Year handling for both full (2023-2024) and short (2526) formats
+        # Year handling
         ay_r = ext["academic_year"]
         if "-" in ay_r:
             s_ay, e_ay = ay_r.split("-")
         elif len(ay_r) == 4:
-            # 2526 -> 2025-2026
             s_ay, e_ay = "20" + ay_r[:2], "20" + ay_r[2:]
         else:
             s_ay, e_ay = ay_r, ay_r
@@ -471,7 +433,6 @@ class OCRService:
             file, max_pages=1, dpi=150
         )
 
-        # Log basic metadata instead of dumping the entire OCR response
         logger.info(
             f"Validated document '{ocr.filename}' - "
             f"pages: {ocr.total_pages}, "
@@ -485,16 +446,11 @@ class OCRService:
             )
 
         for page in ocr.pages:
-            # Filter words with high confidence and containing letters
-            # (ignoring lone noise characters like '!', '1', etc.)
             valid_words = [
                 w for w in page.words
                 if w.confidence >= 0.5 and any(c.isalpha() for c in w.text)
             ]
 
-            # A valid document must contain a minimum word count.
-            # 5 words is a very conservative threshold to allow short letters,
-            # but reject portraits or blank noise yielding 0-3 garbage words.
             if len(valid_words) < 5:
                 return CORValidationResponse(
                     is_valid=False,
@@ -504,7 +460,6 @@ class OCRService:
                     )
                 )
 
-            # Check average confidence of identified valid words
             total_conf = sum(w.confidence for w in valid_words)
             avg_conf = total_conf / len(valid_words)
             if avg_conf < 0.60:

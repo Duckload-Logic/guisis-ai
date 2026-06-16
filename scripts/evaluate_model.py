@@ -10,11 +10,12 @@ from transformers import (
     AutoModelForSequenceClassification
 )
 
-# Ensure project root is in path
-sys.path.append(os.getcwd())
-
 MODEL_PATH = "ai_models/distilbert/model/outputs"
 DATA_PATH = "ai_models/distilbert/datasets/labeled_dataset.csv"
+TEST_SPLIT_SIZE = 0.2
+RANDOM_STATE_SEED = 42
+INFERENCE_BATCH_SIZE = 16
+MAX_SEQUENCE_LENGTH = 256
 
 def evaluate():
     if not os.path.exists(MODEL_PATH):
@@ -34,17 +35,25 @@ def evaluate():
 
     df["label"] = df["urgency"].map(label2id)
 
-    print("[Evaluate] Splitting data (80/20 stratified split)...")
+    print(
+        "[Evaluate] Splitting data "
+        f"({int((1-TEST_SPLIT_SIZE)*100)}/"
+        f"{int(TEST_SPLIT_SIZE*100)} stratified split)...",
+    )
     _, val_df = train_test_split(
         df,
-        test_size=0.2,
-        random_state=42,
+        test_size=TEST_SPLIT_SIZE,
+        random_state=RANDOM_STATE_SEED,
         stratify=df["label"]
     )
 
     print("[Evaluate] Loading tokenizer and model...")
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
     tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
-    model = AutoModelForSequenceClassification.from_pretrained(MODEL_PATH)
+    model = AutoModelForSequenceClassification
+        .from_pretrained(MODEL_PATH)
+        .to(device)
     model.eval()
 
     texts = val_df["text"].tolist()
@@ -52,17 +61,15 @@ def evaluate():
     pred_labels = []
 
     print(f"[Evaluate] Running inference on {len(texts)} test samples...")
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model.to(device)
 
-    batch_size = 16
-    for i in range(0, len(texts), batch_size):
-        batch_texts = texts[i:i+batch_size]
+    for i in range(0, len(texts), INFERENCE_BATCH_SIZE):
+        batch_texts = texts[i:i+INFERENCE_BATCH_SIZE]
+
         inputs = tokenizer(
             batch_texts,
             truncation=True,
-            padding="max_length",
-            max_length=256,
+            padding=True,
+            max_length=MAX_SEQUENCE_LENGTH,
             return_tensors="pt"
         ).to(device)
 

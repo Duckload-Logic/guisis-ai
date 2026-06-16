@@ -1,7 +1,3 @@
-"""
-Schemas for Optical Character Recognition (OCR) results and document metadata.
-"""
-
 from typing import Dict, List, Optional
 
 from pydantic import BaseModel, Field
