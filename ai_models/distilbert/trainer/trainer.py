@@ -11,9 +11,11 @@ from transformers import (
     AutoModelForSequenceClassification,
     TrainingArguments,
     Trainer,
-    EarlyStoppingCallback
+    EarlyStoppingCallback,
+    DataCollatorWithPadding
 )
 from datasets import Dataset, DatasetDict
+from src.utils.text_cleaning import anonymize_text
 
 # We use the existing logger pattern for consistency across the project
 logger = logging.getLogger(__name__)
@@ -58,6 +60,7 @@ class DistilBertTrainer:
 
         self.device = DeviceManager.get_device()
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
+        self.data_collator = DataCollatorWithPadding(tokenizer=self.tokenizer)
 
         # We initialize the model with the specific label mapping
         self.model = AutoModelForSequenceClassification.from_pretrained(
@@ -107,7 +110,7 @@ class DistilBertTrainer:
         self,
         csv_path: str,
         val_size: float = 0.2,
-        max_length: int = 256,
+        max_length: int = 64,
         balance: bool = False
     ) -> DatasetDict:
         """
@@ -117,12 +120,11 @@ class DistilBertTrainer:
         logger.info(f"[Trainer] Loading dataset from {csv_path}")
         df = pd.read_csv(csv_path)
 
+        # Keep preprocessing consistent with the inference service.
+        df['text'] = df['text'].fillna('').astype(str).map(anonymize_text)
+
         # Ensure our target column is mapped correctly to numeric IDs
         df['label'] = df['urgency'].map(self.label2id)
-
-        # Optional balancing via oversampling
-        if balance:
-            df = self._balance_dataframe(df)
 
         # Stratified split ensures even label distribution in small sets
         train_df, val_df = train_test_split(
@@ -131,6 +133,10 @@ class DistilBertTrainer:
             random_state=42,
             stratify=df['label']
         )
+
+        # Optional balancing via oversampling
+        if balance:
+            train_df = self._balance_dataframe(train_df)
 
         # Build the HF datasets
         train_ds = Dataset.from_pandas(train_df[['text', 'label']])
@@ -164,12 +170,18 @@ class DistilBertTrainer:
         precision, recall, f1, _ = precision_recall_fscore_support(
             labels, predictions, average='weighted'
         )
+        macro_precision, macro_recall, macro_f1, _ = precision_recall_fscore_support(
+            labels, predictions, average='macro'
+        )
 
         return {
             'accuracy': accuracy,
             'precision': precision,
             'recall': recall,
             'f1': f1
+            , 'macro_precision': macro_precision,
+            'macro_recall': macro_recall,
+            'f1_macro': macro_f1
         }
 
     def train(
@@ -178,7 +190,7 @@ class DistilBertTrainer:
         output_dir: str,
         epochs: int = 5,
         batch_size: int = 16,
-        learning_rate: float = 2e-5
+        learning_rate: float = 3e-5
     ):
         """Executes the fine-tuning process."""
         training_args = TrainingArguments(
@@ -191,7 +203,10 @@ class DistilBertTrainer:
             save_strategy="epoch",
             logging_steps=10,
             load_best_model_at_end=True,
-            metric_for_best_model="accuracy",
+            metric_for_best_model="f1_macro",
+            greater_is_better=True,
+            weight_decay=0.01,
+            warmup_ratio=0.1,
             # Enable fp16 only if using NVIDIA GPU
             fp16=self.device.type == "cuda",
             report_to="none"
@@ -203,7 +218,7 @@ class DistilBertTrainer:
             train_dataset=tokenized_datasets['train'],
             eval_dataset=tokenized_datasets['validation'],
             compute_metrics=self.compute_metrics,
-            callbacks=[EarlyStoppingCallback(early_stopping_patience=2)]
+            callbacks=[EarlyStoppingCallback(early_stopping_patience=2)],
         )
 
         logger.info("[Trainer] Starting training loop...")

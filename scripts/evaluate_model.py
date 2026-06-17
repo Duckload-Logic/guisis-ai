@@ -10,6 +10,13 @@ from transformers import (
     AutoModelForSequenceClassification
 )
 
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.abspath(os.path.join(current_dir, ".."))
+if project_root not in sys.path:
+    sys.path.append(project_root)
+
+from src.utils.text_cleaning import anonymize_text
+
 MODEL_PATH = "ai_models/distilbert/model/outputs"
 DATA_PATH = "ai_models/distilbert/datasets/labeled_dataset.csv"
 TEST_SPLIT_SIZE = 0.2
@@ -51,12 +58,13 @@ def evaluate():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
-    model = AutoModelForSequenceClassification
-        .from_pretrained(MODEL_PATH)
-        .to(device)
+    model = AutoModelForSequenceClassification.from_pretrained(
+        MODEL_PATH
+    ).to(device)
+
     model.eval()
 
-    texts = val_df["text"].tolist()
+    texts = val_df["text"].fillna("").astype(str).map(anonymize_text).tolist()
     true_labels = val_df["label"].tolist()
     pred_labels = []
 

@@ -236,6 +236,7 @@ class OCRService:
                             words=words
                         )
                     )
+
             return pages_data
         except Exception as e:
             logger.warning(
