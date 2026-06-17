@@ -244,11 +244,13 @@ class ClassifierService:
 
         payload = {"inputs": text}
 
+        target_url = str(settings.hf_classify_url).strip()
+
         async with httpx.AsyncClient(
             timeout=httpx.Timeout(10.0, connect=5.0)
         ) as client:
             response = await client.post(
-                settings.hf_classify_url,
+                target_url,
                 json=payload,
                 headers=headers,
             )
