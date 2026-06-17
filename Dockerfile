@@ -12,10 +12,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     tesseract-ocr \
     && rm -rf /var/lib/apt/lists/*
 
-# Install production python dependencies only.
-COPY requirements.prod.txt /app/requirements.prod.txt
+# Install python dependencies (torch required for local inference).
+COPY requirements.txt /app/requirements.txt
 RUN pip install --upgrade pip
-RUN pip install --no-cache-dir -r requirements.prod.txt
+RUN pip install --no-cache-dir torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy project
 COPY . /app/

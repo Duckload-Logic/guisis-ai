@@ -453,13 +453,29 @@ class ClassifierService:
             clean_text = self._anonymize_text(request.text)
 
             if settings.hf_classify_url:
-                logger.info("[ClassifierService] Using Hugging Face inference API.")
-                return await self._classify_via_huggingface(
-                    clean_text,
-                    request.text,
-                )
+                try:
+                    logger.info(
+                        "[ClassifierService] Using Hugging Face "
+                        "inference API."
+                    )
+                    return await self._classify_via_huggingface(
+                        clean_text,
+                        request.text,
+                    )
+                except HTTPException as hf_err:
+                    logger.warning(
+                        f"[ClassifierService] HF API unavailable "
+                        f"(status {hf_err.status_code}), "
+                        f"falling back to rule-based classifier."
+                    )
+                except httpx.RequestError as hf_conn_err:
+                    logger.warning(
+                        f"[ClassifierService] HF connection failed "
+                        f"({hf_conn_err}), "
+                        f"falling back to rule-based classifier."
+                    )
 
-            # Attempt local model first
+            # Attempt local model
             if (
                 os.path.exists(settings.model_path)
                 or "/" in settings.model_path
@@ -470,12 +486,21 @@ class ClassifierService:
                 except Exception as local_err:
                     logger.warning(
                         f"[ClassifierService] Local inference failed, "
-                        f"falling back to API: {local_err}"
+                        f"using rule-based fallback: {local_err}"
                     )
 
-            raise FileNotFoundError(
-                f"No usable local model found at {settings.model_path}"
+            # Rule-based fallback — applies all business rules on a
+            # neutral MEDIUM baseline. No model required.
+            logger.warning(
+                "[ClassifierService] No model available. "
+                "Using rule-based classifier only."
             )
+            baseline = ClassificationResponse(
+                level="MEDIUM",
+                confidence=0.5,
+                metadata={"model_type": "rule-based-fallback"},
+            )
+            return self._apply_business_rules(request.text, baseline)
 
         except httpx.RequestError as e:
             logger.error(f"[ClassifierService] Connection error: {e}")
