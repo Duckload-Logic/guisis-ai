@@ -237,23 +237,26 @@ class ClassifierService:
         text: str,
         original_text: str,
     ) -> ClassificationResponse:
-        """Run inference through the Hugging Face Inference API."""
+        """Run inference through the Hugging Face Inference API.
+        """
         headers = {}
         if settings.hf_token:
             headers["Authorization"] = f"Bearer {settings.hf_token}"
 
         payload = {"inputs": text}
-
         target_url = str(settings.hf_classify_url).strip()
+        timeout = httpx.Timeout(10.0, connect=5.0)
 
-        async with httpx.AsyncClient(
-            timeout=httpx.Timeout(10.0, connect=5.0)
-        ) as client:
-            response = await client.post(
-                target_url,
-                json=payload,
-                headers=headers,
-            )
+        def _sync_post() -> httpx.Response:
+            with httpx.Client(timeout=timeout) as client:
+                return client.post(
+                    target_url,
+                    json=payload,
+                    headers=headers,
+                )
+
+        import asyncio
+        response = await asyncio.to_thread(_sync_post)
 
         if response.status_code != 200:
             logger.error(
