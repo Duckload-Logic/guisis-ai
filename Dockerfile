@@ -7,17 +7,15 @@ ENV PYTHONUNBUFFERED 1
 # Set work directory
 WORKDIR /app
 
-# Install system dependencies (only build-essential and tesseract-ocr)
+# Install system dependencies needed by OCR at runtime.
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential \
     tesseract-ocr \
     && rm -rf /var/lib/apt/lists/*
 
-# Install python dependencies
-COPY requirements.txt /app/requirements.txt
+# Install production python dependencies only.
+COPY requirements.prod.txt /app/requirements.prod.txt
 RUN pip install --upgrade pip
-RUN pip install --no-cache-dir torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.prod.txt
 
 # Copy project
 COPY . /app/

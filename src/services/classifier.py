@@ -232,6 +232,64 @@ class ClassifierService:
             },
         )
 
+    async def _classify_via_huggingface(
+        self,
+        text: str,
+        original_text: str,
+    ) -> ClassificationResponse:
+        """Run inference through the Hugging Face Inference API."""
+        headers = {}
+        if settings.hf_token:
+            headers["Authorization"] = f"Bearer {settings.hf_token}"
+
+        payload = {"inputs": text}
+
+        async with httpx.AsyncClient(
+            timeout=httpx.Timeout(10.0, connect=5.0)
+        ) as client:
+            response = await client.post(
+                settings.hf_classify_url,
+                json=payload,
+                headers=headers,
+            )
+
+        if response.status_code != 200:
+            logger.error(
+                f"[ClassifierService] HF API returned "
+                f"{response.status_code}: {response.text}"
+            )
+            raise HTTPException(
+                status_code=502,
+                detail=(
+                    f"AI Classification Service (Hugging Face) "
+                    f"failed: Status {response.status_code}"
+                ),
+            )
+
+        predictions = response.json()
+        if not isinstance(predictions, list) or not predictions:
+            raise ValueError("Invalid response format from Inference API")
+
+        target_list = (
+            predictions[0]
+            if isinstance(predictions[0], list)
+            else predictions
+        )
+        best_pred = max(target_list, key=lambda x: x.get("score", 0.0))
+        level = best_pred.get("label", "LOW")
+        confidence = float(best_pred.get("score", 0.0))
+
+        result = ClassificationResponse(
+            level=level,
+            confidence=confidence,
+            metadata={
+                "model_type": "huggingface-serverless",
+                "device": "cloud-serverless",
+            },
+        )
+
+        return self._apply_business_rules(original_text, result)
+
     def _anonymize_text(self, text: str) -> str:
         """Remove personally identifiable information before forwarding."""
         return anonymize_text(text)
@@ -389,6 +447,13 @@ class ClassifierService:
         try:
             clean_text = self._anonymize_text(request.text)
 
+            if settings.hf_classify_url:
+                logger.info("[ClassifierService] Using Hugging Face inference API.")
+                return await self._classify_via_huggingface(
+                    clean_text,
+                    request.text,
+                )
+
             # Attempt local model first
             if (
                 os.path.exists(settings.model_path)
@@ -403,59 +468,9 @@ class ClassifierService:
                         f"falling back to API: {local_err}"
                     )
 
-            # Fallback to Hugging Face Inference API
-            headers = {}
-            if settings.hf_token:
-                headers["Authorization"] = f"Bearer {settings.hf_token}"
-
-            payload = {"inputs": clean_text}
-
-            async with httpx.AsyncClient(
-                timeout=httpx.Timeout(10.0, connect=5.0)
-            ) as client:
-                response = await client.post(
-                    settings.hf_classify_url,
-                    json=payload,
-                    headers=headers
-                )
-
-            if response.status_code != 200:
-                logger.error(
-                    f"[ClassifierService] HF API returned "
-                    f"{response.status_code}: {response.text}"
-                )
-                raise HTTPException(
-                    status_code=502,
-                    detail=(
-                        f"AI Classification Service (Hugging Face) "
-                        f"failed: Status {response.status_code}"
-                    )
-                )
-
-            predictions = response.json()
-            if not isinstance(predictions, list) or not predictions:
-                raise ValueError("Invalid response format from Inference API")
-
-            target_list = (
-                predictions[0] if isinstance(
-                    predictions[0],
-                    list
-                ) else predictions
+            raise FileNotFoundError(
+                f"No usable local model found at {settings.model_path}"
             )
-            best_pred = max(target_list, key=lambda x: x.get("score", 0.0))
-            level = best_pred.get("label", "LOW")
-            confidence = float(best_pred.get("score", 0.0))
-
-            result = ClassificationResponse(
-                level=level,
-                confidence=confidence,
-                metadata={
-                    "model_type": "huggingface-serverless",
-                    "device": "cloud-serverless"
-                }
-            )
-
-            return self._apply_business_rules(request.text, result)
 
         except httpx.RequestError as e:
             logger.error(f"[ClassifierService] Connection error: {e}")
