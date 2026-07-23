@@ -70,3 +70,5 @@ debug.log
 **/outputs/results/
 *.safetensors
 tests
+project_colab.zip
+**/outputs/dry_run/

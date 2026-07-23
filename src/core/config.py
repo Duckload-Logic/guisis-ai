@@ -28,6 +28,7 @@ class Settings(BaseModel):
     # Hugging Face Settings
     hf_token: str | None = os.getenv("HF_TOKEN")
     hf_classify_url: str | None = os.getenv("HF_CLASSIFY_URL")
+    model_source: str = os.getenv("MODEL_SOURCE", "auto").strip().lower()
 
     # Local Model Settings
     model_path: str = os.getenv(

@@ -133,10 +133,14 @@ def evaluate():
 
     df["label"] = df["urgency"].map(label2id)
 
+    # Drop any rows with NaN labels or missing text
+    df = df.dropna(subset=['label', 'text'])
+    df['label'] = df['label'].astype(int)
+
     print(
         "[Evaluate] Splitting data "
         f"({int((1-TEST_SPLIT_SIZE)*100)}/"
-        f"{int(TEST_SPLIT_SIZE*100)} stratified split)...",
+        f"{int(TEST_SPLIT_SIZE*100)} stratified split)..."
     )
     _, val_df = train_test_split(
         df,

@@ -10,6 +10,9 @@ NAME_REDACTION_PATTERN = re.compile(
 
 def anonymize_text(text: str) -> str:
     """Redact common PII patterns while preserving task-relevant text."""
+    # Normalize whitespace (multiple spaces/newlines -> single space)
+    text = re.sub(r"\s+", " ", text).strip()
+
     clean = re.sub(
         r"\b\d{4}-\d{5}-TG-\d\S*\b",
         "[STUDENT_NUMBER_REDACTED]",

@@ -1,5 +1,7 @@
 import os
+import re
 import json
+import random
 import logging
 import numpy as np
 import pandas as pd
@@ -106,12 +108,121 @@ class DistilBertTrainer:
         logger.info(f"[Trainer] Balancing complete: {counts_new}")
         return balanced_df
 
+    def _augment_dataframe(self, df: pd.DataFrame) -> pd.DataFrame:
+        """
+        Augments training data by stripping prefixes and injecting noise.
+        Only applied to train split to avoid data leakage to validation.
+        """
+        prefixes = [
+            "hi po", "hello po", "good morning po", "good morning",
+            "good day po", "good day", "ma'am", "sir", "excuse me po",
+            "excuse me", "tanong ko lang po", "tanong ko lang",
+            "gusto ko lang po sana ipaalam", "gusto ko lang po sana",
+            "gusto ko lang po", "gusto ko lang", "pwede po ba",
+            "pwede ba", "pakiusap po", "sana po", "please po",
+            "sa totoo lang po", "seriously", "uy", "ma'am/sir",
+            "sir/ma'am", "salamat po", "salamat", "good afternoon po",
+            "good afternoon"
+        ]
+
+        def clean_and_strip(text: str) -> str:
+            text = text.strip('"\' ')
+            changed = True
+            while changed:
+                changed = False
+                lower_text = text.lower()
+                for prefix in prefixes:
+                    if lower_text.startswith(prefix):
+                        slice_idx = len(prefix)
+                        while (
+                            slice_idx < len(text)
+                            and text[slice_idx] in ",.!?’- \t"
+                        ):
+                            slice_idx += 1
+                        text = text[slice_idx:]
+                        changed = True
+                        break
+            if text:
+                text = text[0].upper() + text[1:]
+            return text.strip()
+
+        def apply_taglish_noise(text: str) -> str:
+            words = text.split()
+            new_words = []
+            for w in words:
+                w_lower = w.lower().strip(",.!?")
+                if w_lower in ["po", "opo"] and random.random() < 0.7:
+                    continue
+                new_words.append(w)
+            text = " ".join(new_words)
+
+            abbrev_map = {
+                r"\bkasi\b": "kc",
+                r"\bsiya\b": "sya",
+                r"\bniya\b": "nya",
+                r"\bna lang\b": "nalang",
+                r"\bkapag\b": "pag",
+                r"\bako\b": "aq",
+                r"\bplease\b": "pls",
+                r"\bkaibigan\b": "tropa",
+                r"\bschool\b": "iskul",
+            }
+            for pattern, repl in abbrev_map.items():
+                if random.random() < 0.5:
+                    text = re.sub(pattern, repl, text, flags=re.IGNORECASE)
+            return text.strip()
+
+        augmented_rows = []
+        random.seed(42)
+
+        for _, row in df.iterrows():
+            orig_text = str(row["text"])
+            label = row["label"]
+            row_dict = row.to_dict()
+
+            # 1. Prefix stripped version
+            stripped = clean_and_strip(orig_text)
+            if stripped and stripped.lower() != orig_text.lower():
+                new_row = row_dict.copy()
+                new_row["text"] = stripped
+                augmented_rows.append(new_row)
+
+                # 1b. Slang/typo version of stripped
+                noisy_stripped = apply_taglish_noise(stripped)
+                if (
+                    noisy_stripped
+                    and noisy_stripped.lower() != stripped.lower()
+                ):
+                    new_row = row_dict.copy()
+                    new_row["text"] = noisy_stripped
+                    augmented_rows.append(new_row)
+
+            # 2. Slang/typo version of original
+            noisy_orig = apply_taglish_noise(orig_text)
+            if noisy_orig and noisy_orig.lower() != orig_text.lower():
+                new_row = row_dict.copy()
+                new_row["text"] = noisy_orig
+                augmented_rows.append(new_row)
+
+        if augmented_rows:
+            aug_df = pd.DataFrame(augmented_rows)
+            aug_df = aug_df.drop_duplicates(subset=["text"])
+            combined_df = pd.concat([df, aug_df], ignore_index=True)
+            combined_df = combined_df.drop_duplicates(subset=["text"])
+            logger.info(
+                f"[Trainer] Augmentation added {len(combined_df) - len(df)} "
+                f"rows. New training size: {len(combined_df)}"
+            )
+            return combined_df
+        return df
+
     def prepare_dataset(
         self,
         csv_path: str,
         val_size: float = 0.2,
-        max_length: int = 64,
-        balance: bool = False
+        max_length: int = 256,
+        balance: bool = False,
+        augment: bool = False
     ) -> DatasetDict:
         """
         Loads CSV and converts it into a tokenized Hugging Face Dataset.
@@ -126,6 +237,10 @@ class DistilBertTrainer:
         # Ensure our target column is mapped correctly to numeric IDs
         df['label'] = df['urgency'].map(self.label2id)
 
+        # Drop any rows with NaN labels or missing text
+        df = df.dropna(subset=['label', 'text'])
+        df['label'] = df['label'].astype(int)
+
         # Stratified split ensures even label distribution in small sets
         train_df, val_df = train_test_split(
             df,
@@ -133,6 +248,10 @@ class DistilBertTrainer:
             random_state=42,
             stratify=df['label']
         )
+
+        # Augment training set to prevent OOD leakage
+        if augment:
+            train_df = self._augment_dataframe(train_df)
 
         # Optional balancing via oversampling
         if balance:
@@ -207,6 +326,7 @@ class DistilBertTrainer:
             greater_is_better=True,
             weight_decay=0.01,
             warmup_ratio=0.1,
+            lr_scheduler_type="cosine",
             # Enable fp16 only if using NVIDIA GPU
             fp16=self.device.type == "cuda",
             report_to="none"
@@ -218,7 +338,7 @@ class DistilBertTrainer:
             train_dataset=tokenized_datasets['train'],
             eval_dataset=tokenized_datasets['validation'],
             compute_metrics=self.compute_metrics,
-            callbacks=[EarlyStoppingCallback(early_stopping_patience=2)],
+            callbacks=[EarlyStoppingCallback(early_stopping_patience=3)],
         )
 
         logger.info("[Trainer] Starting training loop...")

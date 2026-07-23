@@ -1,0 +1,162 @@
+[
+  {
+    "text": "hi sir/maam ask lang po kung kelan start ng submission of excuse letter for midterms?",
+    "urgency": "LOW"
+  },
+  {
+    "text": "good morning po guidance office pwede po magpa-reschedule ng walk-in slots?",
+    "urgency": "LOW"
+  },
+  {
+    "text": "pwede po ba magtanong kung pano mag file ng application form pag mag shi-shift?",
+    "urgency": "LOW"
+  },
+  {
+    "text": "thank you so much po sa guidance counselor na nakausap ko kanina!",
+    "urgency": "LOW"
+  },
+  {
+    "text": "May copy po ba kayo ng format para sa OJT resume outline?",
+    "urgency": "LOW"
+  },
+  {
+    "text": "Hello po active pa ba ang slots para sa general counseling sessions?",
+    "urgency": "LOW"
+  },
+  {
+    "text": "excuse slip online application instruction sheet can i ask for copy?",
+    "urgency": "LOW"
+  },
+  {
+    "text": "maam ask ko lang kelan deadline ng registration for next semester?",
+    "urgency": "LOW"
+  },
+  {
+    "text": "pwede po ba mag walk in bukas ng hapon para magpa sign?",
+    "urgency": "LOW"
+  },
+  {
+    "text": "Good day po, may template po ba kayo ng excuse letter para sa OJT interview?",
+    "urgency": "LOW"
+  },
+  {
+    "text": "kinakabahan ako para sa thesis presentation next week, feel ko mabibigo ko groupmates ko",
+    "urgency": "MEDIUM"
+  },
+  {
+    "text": "medyo hirap po ako mag-focus sa lessons lately, andaming nangyayari sa bahay",
+    "urgency": "MEDIUM"
+  },
+  {
+    "text": "nag-aalala ako sa grades ko sa Calculus, feeling ko babagsak ako sa finals",
+    "urgency": "MEDIUM"
+  },
+  {
+    "text": "sad lang po ako at problemado sa group project namin, di sila nagre-reply sa gc",
+    "urgency": "MEDIUM"
+  },
+  {
+    "text": "maam medyo lagnatan ako ngayon, baka pwedeng humingi ng excuse letter for exam?",
+    "urgency": "MEDIUM"
+  },
+  {
+    "text": "naguguluhan po ako sa major requirements namin, medyo kaba pag naiisip ko yung defense",
+    "urgency": "MEDIUM"
+  },
+  {
+    "text": "Sir medyo stressed lang sa time management kasi may part time job din ako sa gabi",
+    "urgency": "MEDIUM"
+  },
+  {
+    "text": "lungkot na lungkot ako kasi di ko alam kung paano kakausapin parents ko about sa course ko",
+    "urgency": "MEDIUM"
+  },
+  {
+    "text": "anxious lang po ako na baka hindi umabot sa deadline ng group submission namin",
+    "urgency": "MEDIUM"
+  },
+  {
+    "text": "medyo kinakabahan na baka di ma-approve yung shifting form ko next week",
+    "urgency": "MEDIUM"
+  },
+  {
+    "text": "hindi ko na talaga kaya yung pressure sa bahay, sumasabog na yung utak ko sa sigawan",
+    "urgency": "HIGH"
+  },
+  {
+    "text": "sobrang depressed ko na po at overwhelmed, ayoko na pumasok sa PUP-Taguig",
+    "urgency": "HIGH"
+  },
+  {
+    "text": "wala na akong gana sa lahat, pati kumain ayoko na, parang gusto ko na lang matulog maghapon",
+    "urgency": "HIGH"
+  },
+  {
+    "text": "natatakot po ako pumasok kasi may panic attacks ako sa loob ng classroom pag recitation",
+    "urgency": "HIGH"
+  },
+  {
+    "text": "maam please help, baka ma-dismiss ako sa course pag bumagsak ako sa major",
+    "urgency": "HIGH"
+  },
+  {
+    "text": "hirap huminga lately pag naiisip ko yung failing grades ko, di ko na po alam gagawin",
+    "urgency": "HIGH"
+  },
+  {
+    "text": "ubos na ubos na energy ko mag-aral, parang wala nang sense yung ginagawa ko at hopeless na",
+    "urgency": "HIGH"
+  },
+  {
+    "text": "emergency po sa pamilya namin, kailangan ko mag-request ng extension sa dean's office",
+    "urgency": "HIGH"
+  },
+  {
+    "text": "sobrang stressed na ako sa peer pressure, pinipilit ako mag-cutting ng classmates ko",
+    "urgency": "HIGH"
+  },
+  {
+    "text": "breakup kami ng boyfriend ko and sobrang sakit talaga, di ako makatulog at makakain",
+    "urgency": "HIGH"
+  },
+  {
+    "text": "gusto ko na lang mawala... parang wala nang saysay ang buhay ko at sumuko na ko",
+    "urgency": "CRITICAL"
+  },
+  {
+    "text": "sir tinatangka ko na namang maglaslas sa CR kanina kasi di ko na talaga kaya",
+    "urgency": "CRITICAL"
+  },
+  {
+    "text": "may stalker po ako sa campus, natatakot ako pumasok baka sundan niya ko pag-uwi",
+    "urgency": "CRITICAL"
+  },
+  {
+    "text": "sinusundan po ako ng group of students at binubully ako online, natatakot ako sa kaligtasan ko",
+    "urgency": "CRITICAL"
+  },
+  {
+    "text": "pinagbabantaan po ako ng ex ko na sasaktan ako pag nakita niya ko sa school",
+    "urgency": "CRITICAL"
+  },
+  {
+    "text": "naisip ko po magpakamatay kagabi, kailangan ko po ng tulong niyo agad please",
+    "urgency": "CRITICAL"
+  },
+  {
+    "text": "may suicidal thoughts po ako at nagko-cut ako ng kamay kapag sobrang overwhelmed",
+    "urgency": "CRITICAL"
+  },
+  {
+    "text": "binabantaan po ako ng ibang blockmates ko na aabangan daw ako sa labas ng campus",
+    "urgency": "CRITICAL"
+  },
+  {
+    "text": "feeling ko gusto ko nang tapusin 'to lahat, wala na pong point mabuhay pa",
+    "urgency": "CRITICAL"
+  },
+  {
+    "text": "tinatakot po ako ng stalker ko na ipapakalat daw niya mga private photos ko",
+    "urgency": "CRITICAL"
+  }
+]

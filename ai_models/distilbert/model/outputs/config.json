@@ -1,15 +1,17 @@
 {
-  "activation": "gelu",
+  "add_cross_attention": false,
   "architectures": [
-    "DistilBertForSequenceClassification"
+    "BertForSequenceClassification"
   ],
-  "attention_dropout": 0.1,
+  "attention_probs_dropout_prob": 0.1,
   "bos_token_id": null,
-  "dim": 768,
-  "dropout": 0.1,
+  "classifier_dropout": null,
+  "directionality": "bidi",
   "dtype": "float32",
   "eos_token_id": null,
-  "hidden_dim": 3072,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
   "id2label": {
     "0": "LOW",
     "1": "MEDIUM",
@@ -17,25 +19,29 @@
     "3": "CRITICAL"
   },
   "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
   "label2id": {
     "CRITICAL": 3,
     "HIGH": 2,
     "LOW": 0,
     "MEDIUM": 1
   },
+  "layer_norm_eps": 1e-12,
   "max_position_embeddings": 512,
-  "model_type": "distilbert",
-  "n_heads": 12,
-  "n_layers": 6,
-  "output_past": true,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
   "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
   "problem_type": "single_label_classification",
-  "qa_dropout": 0.1,
-  "seq_classif_dropout": 0.2,
-  "sinusoidal_pos_embds": false,
-  "tie_weights_": true,
   "tie_word_embeddings": true,
   "transformers_version": "5.5.4",
+  "type_vocab_size": 2,
   "use_cache": false,
   "vocab_size": 119547
 }

@@ -49,7 +49,7 @@ def main():
 
     # Training hyperparameters
     parser.add_argument(
-        "--epochs", type=int, default=5, help="Number of training epochs"
+        "--epochs", type=int, default=7, help="Number of training epochs"
     )
     parser.add_argument(
         "--batch-size", type=int, default=16, help="Training batch size"
@@ -60,6 +60,18 @@ def main():
 
     # Debugging / Testing / Data
     parser.add_argument(
+        "--model",
+        type=str,
+        default="distilbert-base-multilingual-cased",
+        help="Hugging Face model to fine-tune"
+    )
+    parser.add_argument(
+        "--max-len",
+        type=int,
+        default=256,
+        help="Maximum sequence length for tokenization"
+    )
+    parser.add_argument(
         "--dry-run",
         action="store_true",
         help="Run a single step for verification"
@@ -69,6 +81,11 @@ def main():
         action="store_true",
         help="Balance the dataset using oversampling before training"
     )
+    parser.add_argument(
+        "--augment",
+        action="store_true",
+        help="Augment the training dataset to prevent OOD overfitting"
+    )
 
     # Use parse_known_args to avoid crashes in Jupyter/Colab
     args, unknown = parser.parse_known_args()
@@ -76,7 +93,7 @@ def main():
         logger.warning(f"[CLI] Ignored unknown arguments: {unknown}")
 
     # Initialize the trainer
-    trainer = DistilBertTrainer()
+    trainer = DistilBertTrainer(model_name=args.model)
 
     # Resolve dataset path automatically
     csv_path = args.csv
@@ -85,6 +102,7 @@ def main():
             "guisis-ai/ai_models/distilbert/datasets/labeled_dataset.csv",
             "../datasets/labeled_dataset.csv",
             "labeled_dataset.csv",
+            "c:/Users/JA/school_programming/capstone/DuckLoadLogic-Capstone/guisis-ai/ai_models/distilbert/datasets/labeled_dataset.csv",
         ]
         found = False
         for alt in alternatives:
@@ -109,7 +127,9 @@ def main():
     try:
         tokenized_datasets = trainer.prepare_dataset(
             csv_path=csv_path,
-            balance=args.balance
+            max_length=args.max_len,
+            balance=args.balance,
+            augment=args.augment
         )
     except Exception as e:
         logger.error(f"[CLI] Data Preparation Error: {e}")

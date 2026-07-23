@@ -1,0 +1,74 @@
+name: Build and Deploy AI
+
+on:
+    push:
+        branches:
+            - main
+            - staging
+
+permissions:
+    packages: write
+    contents: read
+
+jobs:
+    build-and-push:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Log in to GHCR
+              uses: docker/login-action@v3
+              with:
+                  registry: ghcr.io
+                  username: ${{ github.repository_owner }}
+                  password: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Extract metadata for Docker
+              id: meta
+              uses: docker/metadata-action@v5
+              with:
+                  images: ghcr.io/${{ github.repository }}
+                  tags: |
+                      type=ref,event=branch
+
+            - name: Build and push Docker image
+              uses: docker/build-push-action@v5
+              with:
+                  context: .
+                  push: true
+                  tags: ${{ steps.meta.outputs.tags }}
+                  labels: ${{ steps.meta.outputs.labels }}
+
+    deploy:
+        needs: build-and-push
+        runs-on: ubuntu-latest
+        environment: >-
+            ${{ github.ref_name == 'main'
+            && 'prod' || 'staging' }}
+        steps:
+            - name: Deploy to VPS via SSH
+              uses: appleboy/ssh-action@v1.0.3
+              with:
+                  host: ${{ secrets.SSH_HOST }}
+                  username: ${{ secrets.SSH_USERNAME }}
+                  key: ${{ secrets.SSH_PRIVATE_KEY }}
+                  port: ${{ secrets.SSH_PORT }}
+                  script: |
+                      ENV_NAME="staging"
+                      if [ "${{ github.ref_name }}" = "main" ]; then
+                        ENV_NAME="prod"
+                      fi
+                      cd "/home/docker/projects/capstone-${ENV_NAME}"
+
+                      # Log into GHCR on the VPS
+                      echo "${{ secrets.GITHUB_TOKEN }}" | \
+                        docker login ghcr.io \
+                        -u ${{ github.repository_owner }} \
+                        --password-stdin
+
+                      # Pull the newly pushed AI image
+                      docker compose pull ai
+
+                      # Recreate the AI service container
+                      docker compose up -d ai

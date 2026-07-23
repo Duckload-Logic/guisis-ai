@@ -102,6 +102,43 @@ class ClassifierService:
     def __init__(self):
         pass
 
+    @staticmethod
+    def _model_source_mode() -> str:
+        """Return the configured model source mode."""
+        mode = settings.model_source
+        if mode not in {"auto", "local", "hf"}:
+            logger.warning(
+                "[ClassifierService] Invalid MODEL_SOURCE=%s; using auto.",
+                mode,
+            )
+            return "auto"
+
+        return mode
+
+    @classmethod
+    def _should_use_huggingface(cls) -> bool:
+        """Decide whether the request should go to Hugging Face."""
+        mode = cls._model_source_mode()
+        if mode == "hf":
+            return True
+
+        if mode == "local":
+            return False
+
+        return bool(settings.hf_classify_url)
+
+    @classmethod
+    def _should_use_local_model(cls) -> bool:
+        """Decide whether the local model should be attempted."""
+        mode = cls._model_source_mode()
+        if mode == "local":
+            return True
+
+        if mode == "hf":
+            return False
+
+        return os.path.exists(settings.model_path)
+
     @classmethod
     def load_rules(cls) -> Dict[str, Any]:
         """Load business rules from the built-in defaults."""
@@ -333,6 +370,7 @@ class ClassifierService:
                 window_text = " ".join(words[window_start:window_end])
                 if any(re.search(req, window_text) for req in require_near):
                     return True
+
         return False
 
     def _contains_crisis_keyword(self, text_lower: str) -> bool:
@@ -370,6 +408,7 @@ class ClassifierService:
                     exc in text_lower for exc in pat["exceptions"]
                 ):
                     return False
+
             return True
 
         # Otherwise check the contextual patterns
@@ -403,6 +442,22 @@ class ClassifierService:
         original_conf = response.confidence
         response.metadata["original_level"] = original_level
         response.metadata["original_confidence"] = original_conf
+
+        # 0. Unconditional Safety Gate override for self-harm/stalking/threats
+        unconditional_crisis = [
+            r"\b(laslas|maglaslas|naglaslas)\b",
+            r"\b(magpakamatay|suicide|suicidal)\b",
+            r"\b(stalker|stalking|sinusundan)\b",
+            r"\b(pinagbabantaan|binabantaan|aabangan)\b",
+            r"\b(nagko-cut|self-harm|self harm)\b",
+            r"\b(ending my life|kill myself|tapusin.*buhay)\b",
+            r"\b(suicidal thoughts)\b"
+        ]
+        if any(re.search(pat, text_lower) for pat in unconditional_crisis):
+            response.level = "CRITICAL"
+            response.confidence = 1.0
+            response.metadata["rule_applied"] = "safety_gate_critical"
+            return response
 
         # 1. Crisis detection – two‑tier
         if self._contains_crisis_keyword(text_lower):
@@ -452,7 +507,7 @@ class ClassifierService:
         try:
             clean_text = self._anonymize_text(request.text)
 
-            if settings.hf_classify_url:
+            if self._should_use_huggingface():
                 try:
                     logger.info(
                         "[ClassifierService] Using Hugging Face "
@@ -476,10 +531,7 @@ class ClassifierService:
                     )
 
             # Attempt local model
-            if (
-                os.path.exists(settings.model_path)
-                or "/" in settings.model_path
-            ):
+            if self._should_use_local_model():
                 try:
                     result = self._classify_locally(clean_text)
                     return self._apply_business_rules(request.text, result)
@@ -516,3 +568,4 @@ class ClassifierService:
                 status_code=500,
                 detail=f"Internal Server Error during classification: {e}"
             )
+
