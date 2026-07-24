@@ -3,11 +3,14 @@ import re
 import json
 import random
 import logging
+# pyrefly: ignore [missing-import]
 import numpy as np
 import pandas as pd
+# pyrefly: ignore [missing-import]
 import torch
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
+# pyrefly: ignore [missing-import]
 from transformers import (
     AutoTokenizer,
     AutoModelForSequenceClassification,

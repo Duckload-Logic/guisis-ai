@@ -157,6 +157,7 @@ class ClassifierService:
 
     @staticmethod
     def get_device():
+        # pyrefly: ignore [missing-import]
         import torch
         if torch.cuda.is_available():
             logger.info("[Device] CUDA GPU detected.")
@@ -175,6 +176,7 @@ class ClassifierService:
         if cls._model is not None:
             return
 
+        # pyrefly: ignore [missing-import]
         from transformers import (
             AutoTokenizer,
             AutoModelForSequenceClassification,
@@ -198,10 +200,12 @@ class ClassifierService:
         elif "/" in model_path:
             # Hugging Face Hub repository
             if settings.hf_token:
+                # pyrefly: ignore [missing-import]
                 import huggingface_hub
                 huggingface_hub.login(settings.hf_token)
 
             try:
+                # pyrefly: ignore [missing-import]
                 from huggingface_hub import hf_hub_download
                 mapping_file = hf_hub_download(
                     repo_id=model_path,
@@ -237,6 +241,7 @@ class ClassifierService:
 
     def _classify_locally(self, text: str) -> ClassificationResponse:
         """Run inference on the local DistilBERT model."""
+        # pyrefly: ignore [missing-import]
         import torch
 
         self._load_local_model()
