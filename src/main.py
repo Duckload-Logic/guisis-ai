@@ -46,6 +46,14 @@ def create_app() -> FastAPI:
         Log startup of the gateway router.
         """
         logger.info("[Main] Starting up lightweight AI Gateway...")
+        from src.services.classifier import ClassifierService
+        if ClassifierService._should_use_local_model():
+            logger.info("[Main] Pre-loading local AI model...")
+            try:
+                ClassifierService._load_local_model()
+                logger.info("[Main] AI model loaded successfully.")
+            except Exception as e:
+                logger.error(f"[Main] Failed to pre-load local model: {e}")
 
     # Register API versioned routers.
     app.include_router(
