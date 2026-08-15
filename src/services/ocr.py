@@ -334,7 +334,10 @@ class OCRService:
             [89.0, 550.0], [1677.0, 550.0], [1677.0, 620.0], [89.0, 620.0]
         ]
         b_pc = [
-            [2654.0, 550.0], [3114.0, 550.0], [3114.0, 620.0], [2654.0, 620.0]
+            [2654.0, 530.0],
+            [3150.0, 530.0],
+            [3150.0, 640.0],
+            [2654.0, 640.0]
         ]
         b_pd = [
             [70.0, 640.0], [3150.0, 640.0], [3150.0, 720.0], [70.0, 720.0]
@@ -355,7 +358,10 @@ class OCRService:
                 "program_description", b_pg,
                 r"PROGRAM DESCRIPTION:\s*(.*?)\s*\("
             ),
-            CORField("program_code", b_pc, r"PROGRAM CODE:\s*([A-Z0-9]+)"),
+            CORField(
+                "program_code", b_pc, r"PROGRAM CODE:\s*([A-Z0-9\-\s]+)",
+                post_process=lambda x: "".join(x.split())
+            ),
             CORField(
                 "year_level", b_pd,
                 r"YEAR LEVEL:\s*(First|Second|Third|Fourth)\sYear",
