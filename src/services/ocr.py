@@ -359,7 +359,8 @@ class OCRService:
             ),
             CORField(
                 "program_description", b_pg,
-                r"PROGRAM DESCRIPTION:\s*(.*?)\s*\("
+                r"PROGRAM DESCRIPTION:\s*(.*?)(?:\s*\(|$)",
+                post_process=lambda x: " ".join(x.split())
             ),
             CORField(
                 "program_code", b_pc, r"PROGRAM CODE:\s*([A-Z0-9\-\s]+)",
@@ -374,7 +375,8 @@ class OCRService:
             ),
             CORField(
                 "campus", b_pd,
-                r"Campus:\s*([A-Za-z\s-]+?)(?=\s*YEAR LEVEL:|$)"
+                r"Campus:\s*([A-Za-z\s\-]+?)(?=\s*(?-i:[A-Z_]{4,})|\n|$)",
+                post_process=lambda x: " ".join(x.split())
             ),
             CORField("section", b_pd, r"SECTION:\s*(\d+)"),
         ]
@@ -443,9 +445,10 @@ class OCRService:
                         "first": 1, "second": 2
                     }.get(t_str.lower(), 1)
                 elif f.name == "program_description":
-                    ext[f.name] = search_fallback(
-                        r"PROGRAM DESCRIPTION:\s*(.*?)\s*(?:\(|Campus:)"
+                    desc_str = search_fallback(
+                        r"PROGRAM DESCRIPTION:\s*([\s\S]*?)\s*(?:\(|Campus:)"
                     )
+                    ext[f.name] = " ".join(desc_str.split())
                 elif f.name == "program_code":
                     code_str = search_fallback(
                         r"PROGRAM CODE:\s*([A-Z0-9\-\s]+)"
@@ -459,9 +462,11 @@ class OCRService:
                         "first": 1, "second": 2, "third": 3, "fourth": 4
                     }.get(yl_str.lower(), 1)
                 elif f.name == "campus":
-                    ext[f.name] = search_fallback(
-                        r"Campus:\s*([A-Za-z\s-]+?)(?=\s*YEAR LEVEL:|$)"
+                    campus_str = search_fallback(
+                        r"Campus:\s*([A-Za-z\s\-]+?)"
+                        r"(?=\s*(?-i:[A-Z_]{4,})|\n|$)"
                     )
+                    ext[f.name] = " ".join(campus_str.split())
                 elif f.name == "section":
                     ext[f.name] = search_fallback(r"SECTION:\s*(\d+)")
                 else:
