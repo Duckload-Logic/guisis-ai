@@ -371,6 +371,24 @@ class OCRService:
         if not ocr.pages:
             raise ValueError("Document contains no readable pages")
 
+        # Verify that it is a COR document from PUP/Registration
+        full_text_upper = ocr.full_text.upper()
+        has_pup = (
+            "POLYTECHNIC" in full_text_upper
+            or "PUP" in full_text_upper
+            or "ISKOLAR" in full_text_upper
+        )
+        has_cor = (
+            "REGISTRATION" in full_text_upper
+            or "CERTIFICATE" in full_text_upper
+            or "ENROLLMENT" in full_text_upper
+        )
+
+        if not (has_pup or has_cor):
+            raise ValueError(
+                "Document does not contain PUP or Registration headers"
+            )
+
         words = ocr.pages[0].words
         # Reading order sort: y (line) then x (column)
         words.sort(
@@ -382,34 +400,59 @@ class OCRService:
 
         ext = {}
         for f in fields:
-            ext[f.name] = await self._apply_field_rules(f, words)
+            try:
+                ext[f.name] = await self._apply_field_rules(f, words)
+            except ValueError as e:
+                logger.warning(f"Failed to extract field {f.name}: {e}")
+                if f.name in ("term", "year_level", "section"):
+                    ext[f.name] = 1
+                else:
+                    ext[f.name] = ""
 
         # Reconstruct name for directory-style records
-        full = ext["full_name"]
-        last = full.split(",")[0].strip() if "," in full else full.split()[-1]
+        full = ext.get("full_name", "")
+        last = ""
+        if full:
+            if "," in full:
+                last = full.split(",")[0].strip()
+            else:
+                parts = full.split()
+                if parts:
+                    last = parts[-1]
 
         # Year handling
-        ay_r = ext["academic_year"]
-        if "-" in ay_r:
-            s_ay, e_ay = ay_r.split("-")
-        elif len(ay_r) == 4:
-            s_ay, e_ay = "20" + ay_r[:2], "20" + ay_r[2:]
-        else:
-            s_ay, e_ay = ay_r, ay_r
+        ay_r = ext.get("academic_year", "")
+        s_ay, e_ay = "", ""
+        if ay_r:
+            if "-" in ay_r:
+                parts = ay_r.split("-")
+                s_ay = parts[0]
+                e_ay = parts[1] if len(parts) > 1 else parts[0]
+            elif len(ay_r) == 4:
+                s_ay, e_ay = "20" + ay_r[:2], "20" + ay_r[2:]
+            else:
+                s_ay, e_ay = ay_r, ay_r
+
+        # Helper to convert to int safely
+        def safe_int(val: Any) -> int:
+            try:
+                return int(val)
+            except (ValueError, TypeError):
+                return 1
 
         return CORResponse(
             filename=ocr.filename,
             last_name=last.upper(),
             full_name=full,
-            student_number=ext["student_number"],
+            student_number=ext.get("student_number", ""),
             start_academic_year=s_ay,
             end_academic_year=e_ay,
-            term=int(ext["term"]),
-            program_desc=ext["program_description"],
-            program_code=ext["program_code"],
-            year_level=int(ext["year_level"]),
-            campus=ext["campus"],
-            section=int(ext["section"]),
+            term=safe_int(ext.get("term", 1)),
+            program_desc=ext.get("program_description", ""),
+            program_code=ext.get("program_code", ""),
+            year_level=safe_int(ext.get("year_level", 1)),
+            campus=ext.get("campus", ""),
+            section=safe_int(ext.get("section", 1)),
         )
 
     async def process_bulk_documents(
