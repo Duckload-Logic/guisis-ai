@@ -404,14 +404,58 @@ class OCRService:
             )
         )
 
+        # Helper to apply regex on full_text if bounding box fails
+        def search_fallback(pattern: str) -> str:
+            m = re.search(pattern, ocr.full_text, re.IGNORECASE)
+            return m.group(1).strip() if m else ""
+
         ext = {}
         for f in fields:
             try:
                 ext[f.name] = await self._apply_field_rules(f, words)
             except ValueError as e:
-                logger.warning(f"Failed to extract field {f.name}: {e}")
-                if f.name in ("term", "year_level", "section"):
-                    ext[f.name] = 1
+                logger.warning(
+                    f"Coords failed for {f.name}: {e}. Trying full text."
+                )
+                if f.name == "full_name":
+                    ext[f.name] = search_fallback(
+                        r"POLYTECHNIC UNIVERSITY OF THE PHILIPPINES\s+"
+                        r"([A-Za-zÀ-ÿ\s,.\-]+?)\s+"
+                        r"\d{4}-\d{5}-[A-Z]{2,3}-[01]"
+                    )
+                elif f.name == "student_number":
+                    ext[f.name] = search_fallback(
+                        r"(\d{4}-\d{5}-[A-Z]{2,3}-[01]\S*)"
+                    )
+                elif f.name == "academic_year":
+                    ext[f.name] = search_fallback(r"A\.Y\.:\s*(\d+)")
+                elif f.name == "term":
+                    t_str = search_fallback(
+                        r"TERM:\s*(First|Second)\s*Semester"
+                    )
+                    ext[f.name] = {
+                        "first": 1, "second": 2
+                    }.get(t_str.lower(), 1)
+                elif f.name == "program_description":
+                    ext[f.name] = search_fallback(
+                        r"PROGRAM DESCRIPTION:\s*(.*?)\s*(?:\(|Campus:)"
+                    )
+                elif f.name == "program_code":
+                    code_str = search_fallback(
+                        r"PROGRAM CODE:\s*([A-Z0-9\-\s]+)"
+                    )
+                    ext[f.name] = "".join(code_str.split())
+                elif f.name == "year_level":
+                    yl_str = search_fallback(
+                        r"YEAR LEVEL:\s*(First|Second|Third|Fourth)\s*Year"
+                    )
+                    ext[f.name] = {
+                        "first": 1, "second": 2, "third": 3, "fourth": 4
+                    }.get(yl_str.lower(), 1)
+                elif f.name == "campus":
+                    ext[f.name] = search_fallback(r"Campus:\s*([A-Za-z]+)")
+                elif f.name == "section":
+                    ext[f.name] = search_fallback(r"SECTION:\s*(\d+)")
                 else:
                     ext[f.name] = ""
 
