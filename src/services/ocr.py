@@ -331,7 +331,10 @@ class OCRService:
             [2668.0, 457.0], [3149.0, 464.0], [3148.0, 510.0], [2667.0, 502.0]
         ]
         b_pg = [
-            [89.0, 550.0], [1677.0, 550.0], [1677.0, 620.0], [89.0, 620.0]
+            [89.0, 550.0],
+            [2600.0, 550.0],
+            [2600.0, 620.0],
+            [89.0, 620.0],
         ]
         b_pc = [
             [2654.0, 530.0],
@@ -364,12 +367,15 @@ class OCRService:
             ),
             CORField(
                 "year_level", b_pd,
-                r"YEAR LEVEL:\s*(First|Second|Third|Fourth)\sYear",
+                r"YEAR LEVEL:\s*(First|Second|Third|Fourth)\s*Year",
                 post_process=lambda x: {
                     "first": 1, "second": 2, "third": 3, "fourth": 4
                 }.get(x.lower())
             ),
-            CORField("campus", b_pd, r"Campus:\s*([A-Za-z\s-]+)"),
+            CORField(
+                "campus", b_pd,
+                r"Campus:\s*([A-Za-z\s-]+?)(?=\s*YEAR LEVEL:|$)"
+            ),
             CORField("section", b_pd, r"SECTION:\s*(\d+)"),
         ]
 
@@ -453,7 +459,9 @@ class OCRService:
                         "first": 1, "second": 2, "third": 3, "fourth": 4
                     }.get(yl_str.lower(), 1)
                 elif f.name == "campus":
-                    ext[f.name] = search_fallback(r"Campus:\s*([A-Za-z]+)")
+                    ext[f.name] = search_fallback(
+                        r"Campus:\s*([A-Za-z\s-]+?)(?=\s*YEAR LEVEL:|$)"
+                    )
                 elif f.name == "section":
                     ext[f.name] = search_fallback(r"SECTION:\s*(\d+)")
                 else:
