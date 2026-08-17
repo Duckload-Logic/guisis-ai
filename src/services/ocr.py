@@ -285,14 +285,14 @@ class OCRService:
                 except Exception as e:
                     raise ValueError(f"Could not decode image: {e}")
 
-                if dpi < 300:
-                    w, h = img.size
-                    if w > 1500 or h > 1500:
-                        scale = dpi / 300.0
-                        img = img.resize(
-                            (int(w * scale), int(h * scale)),
-                            Image.Resampling.LANCZOS
-                        )
+                w, h = img.size
+                max_dim = 2000
+                if w > max_dim or h > max_dim:
+                    scale = max_dim / float(max(w, h))
+                    img = img.resize(
+                        (int(w * scale), int(h * scale)),
+                        Image.Resampling.LANCZOS
+                    )
 
                 stats = self._process_image(img, 1)
                 if stats:
@@ -381,7 +381,7 @@ class OCRService:
             CORField("section", b_pd, r"SECTION:\s*(\d+)"),
         ]
 
-        ocr: OCRResponse = await self.process_document(file)
+        ocr: OCRResponse = await self.process_document(file, max_pages=1)
         if not ocr.pages:
             raise ValueError("Document contains no readable pages")
 
