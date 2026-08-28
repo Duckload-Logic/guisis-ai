@@ -363,7 +363,7 @@ class OCRService:
                 post_process=lambda x: " ".join(x.split())
             ),
             CORField(
-                "program_code", b_pc, r"PROGRAM CODE:\s*([A-Z0-9\-\s]+)",
+                "program_code", b_pc, r"PROGRAM CODE:\s*([A-Z0-9\-]+)",
                 post_process=lambda x: "".join(x.split())
             ),
             CORField(
@@ -375,7 +375,7 @@ class OCRService:
             ),
             CORField(
                 "campus", b_pd,
-                r"Campus:\s*([A-Za-z\s\-]+?)(?=\s*(?-i:[A-Z_]{4,})|\n|$)",
+                r"Campus:\s*([A-Za-z\s\-]+?)(?=\s*(?:YEAR|LEVEL|SECTION|STATUS|TERM|DATE|PROGRAM|CODE|STUDENT)|\n|$)",
                 post_process=lambda x: " ".join(x.split())
             ),
             CORField("section", b_pd, r"SECTION:\s*(\d+)"),
@@ -451,7 +451,7 @@ class OCRService:
                     ext[f.name] = " ".join(desc_str.split())
                 elif f.name == "program_code":
                     code_str = search_fallback(
-                        r"PROGRAM CODE:\s*([A-Z0-9\-\s]+)"
+                        r"PROGRAM CODE:\s*([A-Z0-9\-]+)"
                     )
                     ext[f.name] = "".join(code_str.split())
                 elif f.name == "year_level":
@@ -464,7 +464,7 @@ class OCRService:
                 elif f.name == "campus":
                     campus_str = search_fallback(
                         r"Campus:\s*([A-Za-z\s\-]+?)"
-                        r"(?=\s*(?-i:[A-Z_]{4,})|\n|$)"
+                        r"(?=\s*(?:YEAR|LEVEL|SECTION|STATUS|TERM|DATE|PROGRAM|CODE|STUDENT)|\n|$)"
                     )
                     ext[f.name] = " ".join(campus_str.split())
                 elif f.name == "section":
