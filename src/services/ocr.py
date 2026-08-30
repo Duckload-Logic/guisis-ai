@@ -22,17 +22,7 @@ from src.schemas.ocr import (
 logger = logging.getLogger(__name__)
 
 
-@dataclass(frozen=True)
-class CORField:
-    """
-    Configuration for a specific document field to be extracted via OCR.
-    """
 
-    name: str
-    bbox: List[List[float]]
-    pattern: str
-    post_process: Optional[Callable[[str], Any]] = None
-    flags: re.RegexFlag = re.IGNORECASE
 
 
 class OCRService:
@@ -100,75 +90,7 @@ class OCRService:
             words=words
         )
 
-    async def _extract_field_text(
-        self, target_bbox: List[List[float]], words: List[OCRWord]
-    ) -> Optional[str]:
-        """
-        Retrieves text fragments that spatially overlap with a target region.
-        """
-        t_x_min = min(p[0] for p in target_bbox)
-        t_y_min = min(p[1] for p in target_bbox)
-        t_x_max = max(p[0] for p in target_bbox)
-        t_y_max = max(p[1] for p in target_bbox)
 
-        found = []
-        for word in words:
-            if not word.bounding_box:
-                continue
-
-            w_x_min = min(p[0] for p in word.bounding_box)
-            w_y_min = min(p[1] for p in word.bounding_box)
-            w_x_max = max(p[0] for p in word.bounding_box)
-            w_y_max = max(p[1] for p in word.bounding_box)
-
-            # Check overlap using bounding box bounds
-            if (
-                w_x_min < t_x_max
-                and w_x_max > t_x_min
-                and w_y_min < t_y_max
-                and w_y_max > t_y_min
-            ):
-                found.append(word)
-
-        if not found:
-            return None
-
-        # Sort by vertical then horizontal position
-        found.sort(
-            key=lambda x: (
-                min(p[1] for p in x.bounding_box) // 15,
-                min(p[0] for p in x.bounding_box)
-            )
-        )
-
-        return " ".join([w.text for w in found])
-
-    async def _apply_field_rules(
-        self, field: CORField, words: List[OCRWord]
-    ) -> str:
-        """
-        Validates extracted text against regex patterns and transformations.
-        """
-        raw = await self._extract_field_text(field.bbox, words)
-        if raw is None:
-            raise ValueError(f"No text detected in region for {field.name}")
-
-        match = re.search(field.pattern, raw, field.flags)
-        if not match:
-            raise ValueError(
-                f"Pattern {field.pattern} not found for {field.name}. "
-                f"Region text: '{raw[:100]}...'"
-            )
-
-        val = match.group(1).strip()
-        if field.post_process:
-            processed = field.post_process(val)
-            if processed is None:
-                raise ValueError(f"Invalid {field.name} value: '{val}'")
-
-            val = processed
-
-        return val
 
     def _pdf_to_images(
         self,
@@ -315,73 +237,10 @@ class OCRService:
 
     async def process_cor(self, file: UploadFile) -> CORResponse:
         """
-        Specialized pipeline for extracting student data from COR PDFs.
+        Specialized pipeline for extracting student data from COR PDFs using full-text regex.
         """
-        # Coordinate definitions (Assumes 300 DPI standardized layout)
-        b_name = [
-            [79.0, 412.0], [1500.0, 412.0], [1500.0, 500.0], [79.0, 500.0]
-        ]
-        b_no = [
-            [76.0, 461.0], [440.0, 461.0], [440.0, 506.0], [76.0, 506.0]
-        ]
-        b_ay = [
-            [2341.0, 461.0], [2451.0, 461.0], [2451.0, 509.0], [2341.0, 509.0]
-        ]
-        b_tm = [
-            [2668.0, 457.0], [3149.0, 464.0], [3148.0, 510.0], [2667.0, 502.0]
-        ]
-        b_pg = [
-            [89.0, 550.0],
-            [2600.0, 550.0],
-            [2600.0, 620.0],
-            [89.0, 620.0],
-        ]
-        b_pc = [
-            [2654.0, 530.0],
-            [3150.0, 530.0],
-            [3150.0, 640.0],
-            [2654.0, 640.0]
-        ]
-        b_pd = [
-            [70.0, 640.0], [3150.0, 640.0], [3150.0, 720.0], [70.0, 720.0]
-        ]
-
-        fields = [
-            CORField("full_name", b_name, r"([A-Za-zÀ-ÿ\s,.\-]+)"),
-            CORField(
-                "student_number", b_no,
-                r"(\d{4}-\d{5}-[A-Z]{2,3}-[01]\S*)"
-            ),
-            CORField("academic_year", b_ay, r"(\d{2,4}-?\d{2,4})"),
-            CORField(
-                "term", b_tm, r"TERM:\s*(First|Second)\s*Semester",
-                post_process=lambda x: {"first": 1, "second": 2}.get(x.lower())
-            ),
-            CORField(
-                "program_description", b_pg,
-                r"PROGRAM DESCRIPTION:\s*(.*?)(?:\s*\(|$)",
-                post_process=lambda x: " ".join(x.split())
-            ),
-            CORField(
-                "program_code", b_pc, r"PROGRAM CODE:\s*([A-Z0-9\-]+)",
-                post_process=lambda x: "".join(x.split())
-            ),
-            CORField(
-                "year_level", b_pd,
-                r"YEAR LEVEL:\s*(First|Second|Third|Fourth)\s*Year",
-                post_process=lambda x: {
-                    "first": 1, "second": 2, "third": 3, "fourth": 4
-                }.get(x.lower())
-            ),
-            CORField(
-                "campus", b_pd,
-                r"Campus:\s*([A-Za-z\s\-]+?)(?=\s*(?:YEAR|LEVEL|SECTION|STATUS|TERM|DATE|PROGRAM|CODE|STUDENT)|\n|$)",
-                post_process=lambda x: " ".join(x.split())
-            ),
-            CORField("section", b_pd, r"SECTION:\s*(\d+)"),
-        ]
-
-        ocr: OCRResponse = await self.process_document(file, max_pages=1)
+        # Run OCR at 150 DPI for faster image extraction
+        ocr: OCRResponse = await self.process_document(file, max_pages=1, dpi=150)
         if not ocr.pages:
             raise ValueError("Document contains no readable pages")
 
@@ -403,74 +262,39 @@ class OCRService:
                 "Document does not contain PUP or Registration headers"
             )
 
-        words = ocr.pages[0].words
-        # Reading order sort: y (line) then x (column)
-        words.sort(
-            key=lambda x: (
-                min(p[1] for p in x.bounding_box) // 10,
-                min(p[0] for p in x.bounding_box)
-            )
-        )
-
-        # Helper to apply regex on full_text if bounding box fails
+        # Helper to apply regex on full_text
         def search_fallback(pattern: str) -> str:
             m = re.search(pattern, ocr.full_text, re.IGNORECASE)
             return m.group(1).strip() if m else ""
 
         ext = {}
-        for f in fields:
-            try:
-                ext[f.name] = await self._apply_field_rules(f, words)
-            except ValueError as e:
-                logger.warning(
-                    f"Coords failed for {f.name}: {e}. Trying full text."
-                )
-                if f.name == "full_name":
-                    ext[f.name] = search_fallback(
-                        r"POLYTECHNIC UNIVERSITY OF THE PHILIPPINES\s+"
-                        r"([A-Za-zÀ-ÿ\s,.\-]+?)\s+"
-                        r"\d{4}-\d{5}-[A-Z]{2,3}-[01]"
-                    )
-                elif f.name == "student_number":
-                    ext[f.name] = search_fallback(
-                        r"(\d{4}-\d{5}-[A-Z]{2,3}-[01]\S*)"
-                    )
-                elif f.name == "academic_year":
-                    ext[f.name] = search_fallback(r"A\.Y\.:\s*(\d+)")
-                elif f.name == "term":
-                    t_str = search_fallback(
-                        r"TERM:\s*(First|Second)\s*Semester"
-                    )
-                    ext[f.name] = {
-                        "first": 1, "second": 2
-                    }.get(t_str.lower(), 1)
-                elif f.name == "program_description":
-                    desc_str = search_fallback(
-                        r"PROGRAM DESCRIPTION:\s*([\s\S]*?)\s*(?:\(|Campus:)"
-                    )
-                    ext[f.name] = " ".join(desc_str.split())
-                elif f.name == "program_code":
-                    code_str = search_fallback(
-                        r"PROGRAM CODE:\s*([A-Z0-9\-]+)"
-                    )
-                    ext[f.name] = "".join(code_str.split())
-                elif f.name == "year_level":
-                    yl_str = search_fallback(
-                        r"YEAR LEVEL:\s*(First|Second|Third|Fourth)\s*Year"
-                    )
-                    ext[f.name] = {
-                        "first": 1, "second": 2, "third": 3, "fourth": 4
-                    }.get(yl_str.lower(), 1)
-                elif f.name == "campus":
-                    campus_str = search_fallback(
-                        r"Campus:\s*([A-Za-z\s\-]+?)"
-                        r"(?=\s*(?:YEAR|LEVEL|SECTION|STATUS|TERM|DATE|PROGRAM|CODE|STUDENT)|\n|$)"
-                    )
-                    ext[f.name] = " ".join(campus_str.split())
-                elif f.name == "section":
-                    ext[f.name] = search_fallback(r"SECTION:\s*(\d+)")
-                else:
-                    ext[f.name] = ""
+        ext["full_name"] = search_fallback(
+            r"POLYTECHNIC UNIVERSITY OF THE PHILIPPINES\s+"
+            r"([A-Za-zÀ-ÿ\s,.\-]+?)\s+"
+            r"\d{4}-\d{5}-[A-Z]{2,3}-[01]"
+        )
+        ext["student_number"] = search_fallback(r"(\d{4}-\d{5}-[A-Z]{2,3}-[01]\S*)")
+        ext["academic_year"] = search_fallback(r"A\.Y\.:\s*(\d+)")
+        
+        t_str = search_fallback(r"TERM:\s*(First|Second)\s*Semester")
+        ext["term"] = {"first": 1, "second": 2}.get(t_str.lower(), 1)
+        
+        desc_str = search_fallback(r"PROGRAM DESCRIPTION:\s*([\s\S]*?)\s*(?:\(|Campus:)")
+        ext["program_description"] = " ".join(desc_str.split())
+        
+        code_str = search_fallback(r"PROGRAM CODE:\s*([A-Z0-9\-]+)")
+        ext["program_code"] = "".join(code_str.split())
+        
+        yl_str = search_fallback(r"YEAR LEVEL:\s*(First|Second|Third|Fourth)\s*Year")
+        ext["year_level"] = {"first": 1, "second": 2, "third": 3, "fourth": 4}.get(yl_str.lower(), 1)
+        
+        campus_str = search_fallback(
+            r"Campus:\s*([A-Za-z\s\-]+?)"
+            r"(?=\s*(?:YEAR|LEVEL|SECTION|STATUS|TERM|DATE|PROGRAM|CODE|STUDENT)|\n|$)"
+        )
+        ext["campus"] = " ".join(campus_str.split())
+        
+        ext["section"] = search_fallback(r"SECTION:\s*(\d+)")
 
         # Reconstruct name for directory-style records
         full = ext.get("full_name", "")
