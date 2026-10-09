@@ -1,7 +1,8 @@
+import asyncio
+import io
 import logging
 import re
 import time
-import io
 import traceback
 from dataclasses import dataclass
 from typing import Any, Callable, List, Optional
@@ -185,8 +186,11 @@ class OCRService:
             engine_name = "Tesseract OCR v0.3.13"
 
             if is_pdf:
-                # Try digital PDF fast extraction first
-                digital_pages = self._extract_digital_pdf_text(content)
+                # Try digital PDF fast extraction first offloaded to thread
+                digital_pages = await asyncio.to_thread(
+                    self._extract_digital_pdf_text,
+                    content,
+                )
                 if digital_pages:
                     if max_pages is not None:
                         pages_data = digital_pages[:max_pages]
@@ -194,11 +198,18 @@ class OCRService:
                         pages_data = digital_pages
                     engine_name = "PyMuPDF Fast Extraction"
                 else:
-                    imgs = self._pdf_to_images(
-                        content, max_pages=max_pages, dpi=dpi
+                    imgs = await asyncio.to_thread(
+                        self._pdf_to_images,
+                        content,
+                        max_pages=max_pages,
+                        dpi=dpi,
                     )
                     for i, img in enumerate(imgs):
-                        stats = self._process_image(img, i + 1)
+                        stats = await asyncio.to_thread(
+                            self._process_image,
+                            img,
+                            i + 1,
+                        )
                         if stats:
                             pages_data.append(stats)
             else:
@@ -213,10 +224,14 @@ class OCRService:
                     scale = max_dim / float(max(w, h))
                     img = img.resize(
                         (int(w * scale), int(h * scale)),
-                        Image.Resampling.LANCZOS
+                        Image.Resampling.LANCZOS,
                     )
 
-                stats = self._process_image(img, 1)
+                stats = await asyncio.to_thread(
+                    self._process_image,
+                    img,
+                    1,
+                )
                 if stats:
                     pages_data.append(stats)
 

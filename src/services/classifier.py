@@ -1,5 +1,6 @@
 # src/services/classifier_service.py
 
+import asyncio
 import re
 import os
 import json
@@ -535,10 +536,13 @@ class ClassifierService:
                         f"falling back to rule-based classifier."
                     )
 
-            # Attempt local model
+            # Attempt local model offloaded to worker thread pool
             if self._should_use_local_model():
                 try:
-                    result = self._classify_locally(clean_text)
+                    result = await asyncio.to_thread(
+                        self._classify_locally,
+                        clean_text,
+                    )
                     return self._apply_business_rules(request.text, result)
                 except Exception as local_err:
                     logger.warning(
