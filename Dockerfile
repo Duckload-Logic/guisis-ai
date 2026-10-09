@@ -24,5 +24,5 @@ COPY . /app/
 # Expose port (local container port)
 EXPOSE 8000
 
-# Run the application with multiple workers to bypass Python GIL
-CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "4"]
+# Run the application
+CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]
