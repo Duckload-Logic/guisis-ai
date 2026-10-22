@@ -56,8 +56,10 @@ jobs:
                   port: ${{ secrets.SSH_PORT }}
                   script: |
                       ENV_NAME="staging"
+                      PROFILE_FLAG="--profile qa-heavy"
                       if [ "${{ github.ref_name }}" = "main" ]; then
                         ENV_NAME="prod"
+                        PROFILE_FLAG=""
                       fi
                       cd "/home/docker/projects/capstone-${ENV_NAME}"
 
@@ -68,7 +70,7 @@ jobs:
                         --password-stdin
 
                       # Pull the newly pushed AI image
-                      docker compose pull ai
+                      docker compose ${PROFILE_FLAG} pull ai
 
                       # Recreate the AI service container
-                      docker compose up -d ai
+                      docker compose ${PROFILE_FLAG} up -d --force-recreate ai
