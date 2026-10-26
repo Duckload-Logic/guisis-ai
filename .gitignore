@@ -72,3 +72,5 @@ debug.log
 tests
 project_colab.zip
 **/outputs/dry_run/
+
+test_corpus/
