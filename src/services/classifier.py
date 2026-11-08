@@ -25,8 +25,6 @@ DEFAULT_RULES: Dict[str, Any] = {
         "ayoko na", "di ko na kaya", "mawala", "disappear", "ending it",
         "self harm", "hurting myself", "die", "mamatay"
     ],
-    "crisis_short_word_limit": 7,
-    "crisis_flag_long_messages": True,
     "scheduling_keywords": ["schedule", "appointment", "pa-schedule"],
     "routine_patterns": [
         {
@@ -82,6 +80,14 @@ DEFAULT_RULES: Dict[str, Any] = {
         "routine_downgrade": 0.65,
     }
 }
+
+GREETING_DEFAULT_CONFIDENCE = 0.95
+
+PURE_GREETING_PATTERN = (
+    r"^(?:hi|hello|hey|kamusta|musta|"
+    r"good\s+(?:morning|afternoon|evening)|test|testing)"
+    r"[.!? ]*(?:po|naman)?[.!? ]*$"
+)
 
 
 class ClassifierService:
@@ -194,7 +200,8 @@ class ClassifierService:
             cls._device = cls.get_device()
             cls._tokenizer = AutoTokenizer.from_pretrained(model_path)
             cls._model = AutoModelForSequenceClassification.from_pretrained(
-                model_path
+                model_path,
+                attn_implementation="eager",
             ).to(cls._device)
             cls._model.eval()
 
@@ -233,7 +240,8 @@ class ClassifierService:
             cls._device = cls.get_device()
             cls._tokenizer = AutoTokenizer.from_pretrained(model_path)
             cls._model = AutoModelForSequenceClassification.from_pretrained(
-                model_path
+                model_path,
+                attn_implementation="eager",
             ).to(cls._device)
             cls._model.eval()
         else:
@@ -256,9 +264,10 @@ class ClassifierService:
         ).to(self._device)
 
         with torch.no_grad():
-            outputs = self._model(**inputs)
+            outputs = self._model(**inputs, output_attentions=True)
             logits = outputs.logits
             pred_id = int(torch.argmax(logits, dim=-1).cpu().item())
+            attentions = outputs.attentions
 
         id2label = self._label_mapping.get("id2label", {})
         label = id2label.get(str(pred_id), "LOW")
@@ -266,14 +275,121 @@ class ClassifierService:
         probabilities = torch.softmax(logits, dim=-1).cpu().numpy()[0]
         confidence = float(probabilities[pred_id])
 
+        salient_tokens = self._extract_salient_tokens(inputs, attentions)
+
         return ClassificationResponse(
             level=label,
             confidence=confidence,
             metadata={
                 "model_type": "local-distilbert",
                 "device": str(self._device),
+                "salient_tokens": salient_tokens,
             },
         )
+
+    @classmethod
+    def _extract_salient_tokens(
+        cls,
+        inputs: Any,
+        attentions: Any,
+        top_k: int = 4,
+    ) -> List[str]:
+        """Extract salient tokens from DistilBERT [CLS] attention."""
+        if not attentions or cls._tokenizer is None:
+            return []
+
+        try:
+            last_layer = attentions[-1][0]
+            avg_attention = last_layer.mean(dim=0)
+            cls_weights = avg_attention[0].detach().cpu().numpy()
+
+            input_ids = inputs["input_ids"][0]
+            tokens = cls._tokenizer.convert_ids_to_tokens(input_ids)
+
+            stopwords = {
+                "ako", "sa", "ng", "ang", "ko", "mo", "na", "pa", "ka",
+                "si", "ni", "kay", "mga", "at", "o", "po", "opo", "naman",
+                "lang", "din", "rin", "the", "a", "an", "in", "on", "at",
+                "to", "for", "of", "and", "or", "is", "are", "was", "were",
+                "i", "my", "me", "you", "your", "it", "[cls]", "[sep]",
+                "[pad]", "[unk]"
+            }
+
+            merged_words: List[tuple[str, float]] = []
+            current_word = ""
+            current_weight = 0.0
+            current_count = 0
+
+            for i, token in enumerate(tokens):
+                if token.startswith("##"):
+                    current_word += token[2:]
+                    current_weight += cls_weights[i]
+                    current_count += 1
+                else:
+                    if current_word:
+                        merged_words.append(
+                            (
+                                current_word,
+                                current_weight / max(current_count, 1),
+                            )
+                        )
+                    current_word = token
+                    current_weight = cls_weights[i]
+                    current_count = 1
+            if current_word:
+                merged_words.append(
+                    (current_word, current_weight / max(current_count, 1))
+                )
+
+            filtered = [
+                (w, wt)
+                for w, wt in merged_words
+                if w.lower() not in stopwords and len(w) > 2 and w.isalnum()
+            ]
+            filtered.sort(key=lambda x: x[1], reverse=True)
+
+            seen: set[str] = set()
+            top_tokens: List[str] = []
+            for w, _ in filtered:
+                wl = w.lower()
+                if wl not in seen:
+                    seen.add(wl)
+                    top_tokens.append(f"'{w}'")
+                    if len(top_tokens) >= top_k:
+                        break
+
+            return top_tokens
+        except Exception as e:
+            logger.warning(
+                f"[ClassifierService] Saliency extraction failed: {e}"
+            )
+            return []
+
+    @staticmethod
+    def _extract_fallback_tokens(text: str, top_k: int = 4) -> List[str]:
+        """Extract descriptive keywords when attention tensors are missing."""
+        stopwords = {
+            "ako", "sa", "ng", "ang", "ko", "mo", "na", "pa", "ka",
+            "si", "ni", "kay", "mga", "at", "o", "po", "opo", "naman",
+            "lang", "din", "rin", "the", "a", "an", "in", "on", "at",
+            "to", "for", "of", "and", "or", "is", "are", "was", "were",
+            "i", "my", "me", "you", "your", "it"
+        }
+        words = re.findall(r"\b[A-Za-z0-9'-]+\b", text)
+        filtered = [
+            w for w in words
+            if w.lower() not in stopwords and len(w) > 2
+        ]
+        seen: set[str] = set()
+        unique: List[str] = []
+        for w in filtered:
+            wl = w.lower()
+            if wl not in seen:
+                seen.add(wl)
+                unique.append(f"'{w}'")
+                if len(unique) >= top_k:
+                    break
+        return unique
 
     async def _classify_via_huggingface(
         self,
@@ -327,12 +443,14 @@ class ClassifierService:
         level = best_pred.get("label", "LOW")
         confidence = float(best_pred.get("score", 0.0))
 
+        salient_tokens = self._extract_fallback_tokens(original_text)
         result = ClassificationResponse(
             level=level,
             confidence=confidence,
             metadata={
                 "model_type": "huggingface-serverless",
                 "device": "cloud-serverless",
+                "salient_tokens": salient_tokens,
             },
         )
 
@@ -457,49 +575,89 @@ class ClassifierService:
             r"\b(pinagbabantaan|binabantaan|aabangan)\b",
             r"\b(nagko-cut|self-harm|self harm)\b",
             r"\b(ending my life|kill myself|tapusin.*buhay)\b",
-            r"\b(suicidal thoughts)\b"
+            r"\b(suicidal thoughts)\b",
         ]
         if any(re.search(pat, text_lower) for pat in unconditional_crisis):
             response.level = "CRITICAL"
             response.confidence = 1.0
             response.metadata["rule_applied"] = "safety_gate_critical"
+            response.metadata["rationale"] = (
+                "The AI inferred this appointment is CRITICAL because an "
+                "emergency safety gate detected explicit crisis keywords."
+            )
             return response
 
-        # 1. Crisis detection – two‑tier
-        if self._contains_crisis_keyword(text_lower):
-            short_limit = rules.get("crisis_short_word_limit", 7)
-            if len(text_lower.split()) <= short_limit:
-                response.level = "CRITICAL"
-                response.confidence = max(original_conf, 0.95)
-                response.metadata["rule_applied"] = "crisis_safety_rail"
-                return response
-            else:
-                # Flag for review, but don’t change label automatically
-                response.metadata["crisis_flag"] = True
+        # 1. Pure greeting or test pattern (deterministic safe baseline)
+        has_crisis = self._contains_crisis_keyword(text_lower)
+        has_high_risk = self._matches_high_risk(text_lower)
+        if (
+            not has_crisis
+            and not has_high_risk
+            and re.match(PURE_GREETING_PATTERN, text_lower)
+        ):
+            response.level = "LOW"
+            response.confidence = GREETING_DEFAULT_CONFIDENCE
+            response.metadata["rule_applied"] = "greeting_guardrail"
+            response.metadata["rationale"] = (
+                "The AI inferred this appointment is LOW because the "
+                "submission matches a routine greeting without distress "
+                "markers."
+            )
+            return response
 
-        # 2. Urgency upgrade (MEDIUM → HIGH) only
-        # if model confidence is below threshold
-        if original_level == "MEDIUM" and self._matches_high_risk(text_lower):
+        # 2. Flag crisis keyword in metadata without overriding AI inference
+        if has_crisis:
+            response.metadata["crisis_flag"] = True
+
+        # 3. Urgency upgrade (MEDIUM → HIGH) only if model is uncertain
+        if original_level == "MEDIUM" and has_high_risk:
             threshold = thresholds.get("urgency_upgrade", 0.80)
             if original_conf < threshold:
                 response.level = "HIGH"
                 response.metadata["rule_applied"] = "urgency_upgrade"
+                response.metadata["rationale"] = (
+                    "The AI inferred this appointment is HIGH because "
+                    "contextual high-risk indicators (academic or personal "
+                    "jeopardy) were detected."
+                )
             else:
                 # Model is confident; just flag for review
                 response.metadata["flag"] = "review_possible_high"
 
-        # 3. Routine downgrade (MEDIUM → LOW) with multiple safeguards
+        # 4. Routine downgrade (MEDIUM → LOW) only if model is uncertain
         if original_level == "MEDIUM" and self._is_routine_inquiry(text_lower):
             threshold = thresholds.get("routine_downgrade", 0.65)
             # Only downgrade if model is not confident,
             # and there are no crisis/high-risk words
             if (
                 original_conf < threshold
-                and not self._contains_crisis_keyword(text_lower)
-                and not self._matches_high_risk(text_lower)
+                and not has_crisis
+                and not has_high_risk
             ):
                 response.level = "LOW"
                 response.metadata["rule_applied"] = "routine_downgrade"
+                response.metadata["rationale"] = (
+                    "The AI inferred this appointment is LOW because the "
+                    "message matched standard informational or scheduling "
+                    "inquiry patterns."
+                )
+
+        if "rationale" not in response.metadata:
+            salient_tokens = response.metadata.get("salient_tokens", [])
+            if salient_tokens:
+                tokens_str = ", ".join(salient_tokens)
+                response.metadata["rationale"] = (
+                    f"The AI inferred this appointment is {response.level} "
+                    f"({response.confidence:.1%} confidence) driven by key "
+                    f"semantic indicators: {tokens_str}."
+                )
+            else:
+                response.metadata["rationale"] = (
+                    f"The AI inferred this appointment is {response.level} "
+                    f"({response.confidence:.1%} confidence) because semantic "
+                    f"language patterns indicate {response.level.lower()} "
+                    "counseling priority."
+                )
 
         return response
 
